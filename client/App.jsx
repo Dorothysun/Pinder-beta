@@ -1,7 +1,15 @@
 import React from 'react';
 import axios from 'axios';
 import Chance from 'chance';
+
 import CompanyMain from './CompanyMain.jsx';
+import TesterMain from './TesterMain.jsx';
+import CompanyLogin from './CompanyLogin.jsx';
+import TesterLogin from './TesterLogin.jsx';
+import CompanySearch from './CompanySearch.jsx';
+import TesterSearch from './TesterSearch.jsx';
+import WhatAreYou from './WhatAreYou.jsx';
+
 const chance = new Chance();
 
 class App extends React.Component {
@@ -9,70 +17,75 @@ class App extends React.Component {
   constructor () {
     super();
     this.state = {
-      users: [],
-      showComponent: false,
+      isCompany: false,
+      currentView: 'companymain'
     };
-    this._onButtonClick = this._onButtonClick.bind(this);
-    this.retrieveUsers = this.retrieveUsers.bind(this);
-    this.addRandomUser = this.addRandomUser.bind(this);
+    // this._onButtonClick = this._onButtonClick.bind(this);
+    // this.retrieveUsers = this.retrieveUsers.bind(this);
+    // this.addRandomUser = this.addRandomUser.bind(this);
   }
 
-  retrieveUsers () {
-    axios.get('/api/users')
-    .then(res => {
-      const users = res.data;
-      this.setState({
-        users: users
-      })
-    })
-    .catch(err => {
-      console.error(err);
-    })
-  }
+  // retrieveUsers () {
+  //   axios.get('/api/users')
+  //   .then(res => {
+  //     const users = res.data;
+  //     this.setState({
+  //       users: users
+  //     })
+  //   })
+  //   .catch(err => {
+  //     console.error(err);
+  //   })
+  // }
 
-  addRandomUser () {
-    axios.post('/api/users', {
-      name: chance.name(),
-      password: chance.word()
-    })
-    .then(res => {
-      const users = res.data;
-      this.setState({
-        users: users
-      })
-    })
-    .catch(err => {
-      console.error(err);
-    })
-  }
+  // addRandomUser () {
+  //   axios.post('/api/users', {
+  //     name: chance.name(),
+  //     password: chance.word()
+  //   })
+  //   .then(res => {
+  //     const users = res.data;
+  //     this.setState({
+  //       users: users
+  //     })
+  //   })
+  //   .catch(err => {
+  //     console.error(err);
+  //   })
+  // }
 
-  _onButtonClick() {
-    console.log('hello');
+  loginButton() {
     this.setState({
-      showComponent: true,
+      currentView: 'main'
     });
   }
 
+  getPage() {
+    if (this.state.currentView == 'login') {
+      return '<CompanyLogin />'
+    }
+  }
 
   render () {
       return (
-    <div className="loginDiv">
-      <h1>Login</h1>
-      <div id="loginForm">
-        <input placeholder='Username' />
-        <input placeholder='Password' />
-        <button 
-          className="btn btn-primary btn-block btn-large"
-          onClick={this._onButtonClick}>
-          Login
-        </button>
-        {this.state.showComponent ?
-           <CompanyMain /> :
-           null
-        }
+        <div>
+          {
+            (this.state.currentView == 'companylogin')
+            ? <CompanyLogin />
+            : (this.state.currentView == 'testerlogin')
+            ? <TesterLogin />
+            : (this.state.currentView == 'companymain')
+            ? <CompanyMain />
+            : (this.state.currentView == 'testermain')
+            ? <TesterMain />
+            : (this.state.currentView == 'companysearch')
+            ? <CompanySearch />
+            : (this.state.currentView == 'testersearch')
+            ? <TesterSearch />
+            : <WhatAreYou />
+          }
       </div>
-    </div>
-  )
+      )
   }
 }
 
