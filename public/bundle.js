@@ -1722,34 +1722,26 @@ var App = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { className: 'loginDiv' },
+        _react2.default.createElement(
+          'h1',
+          null,
+          'Login'
+        ),
         _react2.default.createElement(
           'div',
-          null,
-          'We\'re updating the index.html with this'
-        ),
-        _react2.default.createElement(
-          'button',
-          { onClick: this.retrieveUsers },
-          'Get Users'
-        ),
-        _react2.default.createElement(
-          'ul',
-          null,
-          this.state.users.map(function (user, index) {
-            return _react2.default.createElement(
-              'li',
-              { key: index },
-              user.name,
-              ', ',
-              user.password
-            );
-          })
-        ),
-        _react2.default.createElement(
-          'button',
-          { onClick: this.addRandomUser },
-          'Add Random User'
+          { id: 'loginForm' },
+          _react2.default.createElement('input', { placeholder: 'Username' }),
+          _react2.default.createElement('input', { placeholder: 'Password' }),
+          _react2.default.createElement(
+            'button',
+            {
+              className: 'btn btn-primary btn-block btn-large',
+              onClick: function onClick() {
+                console.log("hi");
+              } },
+            'Login'
+          )
         )
       );
     }

@@ -44,22 +44,20 @@ class App extends React.Component {
   }
 
   render () {
-    return (
-      <div>
-        <div>We're updating the index.html with this</div>
-        <button onClick={this.retrieveUsers}>Get Users</button>
-        <ul>
-        {
-          this.state.users.map((user, index) => {
-            return (
-              <li key={index}>{user.name}, {user.password}</li>
-            );
-          })
-        }
-        </ul>
-        <button onClick={this.addRandomUser}>Add Random User</button>
+      return (
+    <div className="loginDiv">
+      <h1>Login</h1>
+      <div id="loginForm">
+        <input placeholder='Username' />
+        <input placeholder='Password' />
+        <button 
+          className="btn btn-primary btn-block btn-large"
+          onClick={() => {console.log("hi")}}>
+          Login
+        </button>
       </div>
-    );
+    </div>
+  )
   }
 }
 
