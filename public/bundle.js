@@ -1660,6 +1660,10 @@ var _chance = __webpack_require__(45);
 
 var _chance2 = _interopRequireDefault(_chance);
 
+var _CompanyMain = __webpack_require__(60);
+
+var _CompanyMain2 = _interopRequireDefault(_CompanyMain);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1679,8 +1683,10 @@ var App = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
     _this.state = {
-      users: []
+      users: [],
+      showComponent: false
     };
+    _this._onButtonClick = _this._onButtonClick.bind(_this);
     _this.retrieveUsers = _this.retrieveUsers.bind(_this);
     _this.addRandomUser = _this.addRandomUser.bind(_this);
     return _this;
@@ -1718,6 +1724,14 @@ var App = function (_React$Component) {
       });
     }
   }, {
+    key: '_onButtonClick',
+    value: function _onButtonClick() {
+      console.log('hello');
+      this.setState({
+        showComponent: true
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -1737,11 +1751,10 @@ var App = function (_React$Component) {
             'button',
             {
               className: 'btn btn-primary btn-block btn-large',
-              onClick: function onClick() {
-                console.log("hi");
-              } },
+              onClick: this._onButtonClick },
             'Login'
-          )
+          ),
+          this.state.showComponent ? _react2.default.createElement(_CompanyMain2.default, null) : null
         )
       );
     }
@@ -29382,6 +29395,98 @@ function camelize(string) {
 }
 
 module.exports = camelize;
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var CompanyMain = function CompanyMain(props) {
+
+	return _react2.default.createElement(
+		"div",
+		{ className: "CompanyMain" },
+		_react2.default.createElement(
+			"div",
+			{ className: "nav" },
+			_react2.default.createElement(
+				"ul",
+				null,
+				_react2.default.createElement(
+					"li",
+					{ className: "New Search" },
+					_react2.default.createElement(
+						"a",
+						{ href: "#" },
+						"Search"
+					)
+				),
+				_react2.default.createElement(
+					"li",
+					{ className: "Favorites" },
+					_react2.default.createElement(
+						"a",
+						{ href: "#" },
+						"Favorites"
+					)
+				),
+				_react2.default.createElement(
+					"li",
+					{ className: "Profile" },
+					_react2.default.createElement(
+						"a",
+						{ href: "#" },
+						"Profile"
+					)
+				)
+			)
+		),
+		_react2.default.createElement(
+			"h1",
+			null,
+			"Company Name"
+		),
+		_react2.default.createElement(
+			"div",
+			{ id: "testerFilter" },
+			_react2.default.createElement(
+				"form",
+				null,
+				_react2.default.createElement("input", { placeholder: "Minimum Rating" }),
+				" ",
+				_react2.default.createElement("br", null),
+				_react2.default.createElement("input", { placeholder: "Years Experience" }),
+				" ",
+				_react2.default.createElement("br", null),
+				_react2.default.createElement("input", { placeholder: "System Experience" }),
+				" ",
+				_react2.default.createElement("br", null),
+				_react2.default.createElement("input", { placeholder: "Certifications" })
+			),
+			_react2.default.createElement(
+				"button",
+				{
+					className: "btn btn-primary btn-block btn-large"
+				},
+				"Search for Security Testers"
+			)
+		)
+	);
+};
+
+exports.default = CompanyMain;
 
 /***/ })
 /******/ ]);

@@ -4,11 +4,11 @@ const CompanyMain = (props) => {
 
 	return (
 		<div className="CompanyMain">
-			<div class="nav">
+			<div className="nav">
 				<ul>
-					<li class="New Search"><a href="#">Search</a></li>
-					<li class="Favorites"><a href="#">Favorites</a></li>
-					<li class="Profile"><a href="#">Profile</a></li>
+					<li className="New Search"><a href="#">Search</a></li>
+					<li className="Favorites"><a href="#">Favorites</a></li>
+					<li className="Profile"><a href="#">Profile</a></li>
 				</ul>
 			</div>
 			<h1>Company Name</h1>

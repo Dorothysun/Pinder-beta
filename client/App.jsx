@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Chance from 'chance';
+import CompanyMain from './CompanyMain.jsx';
 const chance = new Chance();
 
 class App extends React.Component {
@@ -8,8 +9,10 @@ class App extends React.Component {
   constructor () {
     super();
     this.state = {
-      users: []
+      users: [],
+      showComponent: false,
     };
+    this._onButtonClick = this._onButtonClick.bind(this);
     this.retrieveUsers = this.retrieveUsers.bind(this);
     this.addRandomUser = this.addRandomUser.bind(this);
   }
@@ -43,6 +46,14 @@ class App extends React.Component {
     })
   }
 
+  _onButtonClick() {
+    console.log('hello');
+    this.setState({
+      showComponent: true,
+    });
+  }
+
+
   render () {
       return (
     <div className="loginDiv">
@@ -52,9 +63,13 @@ class App extends React.Component {
         <input placeholder='Password' />
         <button 
           className="btn btn-primary btn-block btn-large"
-          onClick={() => {console.log("hi")}}>
+          onClick={this._onButtonClick}>
           Login
         </button>
+        {this.state.showComponent ?
+           <CompanyMain /> :
+           null
+        }
       </div>
     </div>
   )
