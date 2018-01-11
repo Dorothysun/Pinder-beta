@@ -10,6 +10,9 @@ app.use(bodyParser.json()); // body parsing middleware
 
 app.use('/api', require('./api')); // api routes
 
+// app.use('/company', require('./routes/company'));
+// app.use('/tester', require('./routes/tester'));
+
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.use('*', function (req, res) {
@@ -17,5 +20,5 @@ app.use('*', function (req, res) {
 }); // anything that is not the matching URI to anything we declared in api or files in public, we will default to sending the index.html
 
 app.listen(8000, function () {
-  console.log(chalk.magenta('Server is running on port 8000'));
+  console.log(chalk.green('Server is running on port 8000'));
 });

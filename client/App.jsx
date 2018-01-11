@@ -46,6 +46,7 @@ class App extends React.Component {
   render () {
     return (
       <div>
+        <div>We're updating the index.html with this</div>
         <button onClick={this.retrieveUsers}>Get Users</button>
         <ul>
         {
