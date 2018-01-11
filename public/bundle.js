@@ -1029,9 +1029,12 @@ var App = function (_React$Component) {
 
     _this.state = {
       isCompany: false,
-      currentView: 'companymain'
+      currentView: '',
+      prevView: ''
     };
-    // this._onButtonClick = this._onButtonClick.bind(this);
+    _this.loginButton = _this.loginButton.bind(_this);
+    _this.amCompany = _this.amCompany.bind(_this);
+    _this.amTester = _this.amTester.bind(_this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
     return _this;
@@ -1070,15 +1073,30 @@ var App = function (_React$Component) {
     key: 'loginButton',
     value: function loginButton() {
       this.setState({
+        prevView: this.state.currentView,
         currentView: 'main'
       });
+      console.log(this.state);
     }
   }, {
-    key: 'getPage',
-    value: function getPage() {
-      if (this.state.currentView == 'login') {
-        return '<CompanyLogin />';
-      }
+    key: 'amCompany',
+    value: function amCompany() {
+      this.setState({
+        prevView: this.state.currentView,
+        isCompany: true,
+        currentView: 'companylogin'
+      });
+      console.log(this.state);
+    }
+  }, {
+    key: 'amTester',
+    value: function amTester() {
+      this.setState({
+        prevView: this.state.currentView,
+        isCompany: false,
+        currentView: 'testerlogin'
+      });
+      console.log(this.state);
     }
   }, {
     key: 'render',
@@ -1086,7 +1104,7 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        this.state.currentView == 'companylogin' ? _react2.default.createElement(_CompanyLogin2.default, null) : this.state.currentView == 'testerlogin' ? _react2.default.createElement(_TesterLogin2.default, null) : this.state.currentView == 'companymain' ? _react2.default.createElement(_CompanyMain2.default, null) : this.state.currentView == 'testermain' ? _react2.default.createElement(_TesterMain2.default, null) : this.state.currentView == 'companysearch' ? _react2.default.createElement(_CompanySearch2.default, null) : this.state.currentView == 'testersearch' ? _react2.default.createElement(_TesterSearch2.default, null) : _react2.default.createElement(_WhatAreYou2.default, null)
+        this.state.currentView == 'companylogin' ? _react2.default.createElement(_CompanyLogin2.default, null) : this.state.currentView == 'testerlogin' ? _react2.default.createElement(_TesterLogin2.default, null) : this.state.currentView == 'companymain' ? _react2.default.createElement(_CompanyMain2.default, null) : this.state.currentView == 'testermain' ? _react2.default.createElement(_TesterMain2.default, null) : this.state.currentView == 'companysearch' ? _react2.default.createElement(_CompanySearch2.default, null) : this.state.currentView == 'testersearch' ? _react2.default.createElement(_TesterSearch2.default, null) : _react2.default.createElement(_WhatAreYou2.default, { amTester: this.amTester, amCompany: this.amCompany })
       );
     }
   }]);
@@ -30049,15 +30067,15 @@ var WhatAreYou = function WhatAreYou(props) {
 		_react2.default.createElement(
 			"button",
 			{
-				className: "btn btn-primary btn-block btn-large"
-			},
+				className: "btn btn-primary btn-block btn-large",
+				onClick: props.amCompany },
 			"Company"
 		),
 		_react2.default.createElement(
 			"button",
 			{
-				className: "btn btn-primary btn-block btn-large"
-			},
+				className: "btn btn-primary btn-block btn-large",
+				onClick: props.amTester },
 			"Tester"
 		)
 	);

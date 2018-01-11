@@ -18,9 +18,12 @@ class App extends React.Component {
     super();
     this.state = {
       isCompany: false,
-      currentView: 'companymain'
+      currentView: '',
+      prevView: ''
     };
-    // this._onButtonClick = this._onButtonClick.bind(this);
+    this.loginButton = this.loginButton.bind(this);
+    this.amCompany = this.amCompany.bind(this);
+    this.amTester = this.amTester.bind(this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
   }
@@ -56,14 +59,28 @@ class App extends React.Component {
 
   loginButton() {
     this.setState({
+      prevView: this.state.currentView,
       currentView: 'main'
     });
+    console.log(this.state);
   }
 
-  getPage() {
-    if (this.state.currentView == 'login') {
-      return '<CompanyLogin />'
-    }
+  amCompany() {
+    this.setState({
+      prevView: this.state.currentView,
+      isCompany: true,
+      currentView: 'companylogin'
+    });
+    console.log(this.state);
+  }
+
+  amTester() {
+    this.setState({
+      prevView: this.state.currentView,
+      isCompany: false,
+      currentView: 'testerlogin'
+    });
+    console.log(this.state);
   }
 
   render () {
@@ -82,7 +99,7 @@ class App extends React.Component {
             ? <CompanySearch />
             : (this.state.currentView == 'testersearch')
             ? <TesterSearch />
-            : <WhatAreYou />
+            : <WhatAreYou amTester={this.amTester} amCompany={this.amCompany} />
           }
       </div>
       )

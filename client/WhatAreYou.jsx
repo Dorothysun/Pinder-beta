@@ -6,12 +6,12 @@ const WhatAreYou = (props) => {
 		<div className="CompanyMain">
 				<button 
 					className="btn btn-primary btn-block btn-large"
-					>
+					onClick={props.amCompany}>
 					Company
 				</button>
 				<button 
 					className="btn btn-primary btn-block btn-large"
-					>
+					onClick={props.amTester}>
 					Tester
 				</button>
 		</div>
