@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CompanyResults = (props) => {
+const CompanySearch = (props) => {
 
 	return (
 		<div className="CompanyMain">
@@ -56,4 +56,4 @@ const CompanyResults = (props) => {
 	)
 }
 
-export default CompanyResults;
+export default CompanySearch;
