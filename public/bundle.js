@@ -1081,7 +1081,10 @@ var App = function (_React$Component) {
       var _this2 = this;
 
       setTimeout(function () {
-        console.log(_this2.state);
+        console.log("\nCurrent State:");
+        for (var i in _this2.state) {
+          console.log("\t" + i + ": " + _this2.state[i]);
+        }
       }, 1000);
     }
   }, {
@@ -1103,7 +1106,6 @@ var App = function (_React$Component) {
           currentView: ''
         });
       }
-      this.printState();
     }
   }, {
     key: 'amCompany',
@@ -1113,7 +1115,6 @@ var App = function (_React$Component) {
         isCompany: true,
         currentView: 'companylogin'
       });
-      this.printState();
     }
   }, {
     key: 'amTester',
@@ -1123,7 +1124,6 @@ var App = function (_React$Component) {
         isCompany: false,
         currentView: 'testerlogin'
       });
-      this.printState();
     }
   }, {
     key: 'search',
@@ -1145,11 +1145,11 @@ var App = function (_React$Component) {
           currentView: ''
         });
       }
-      this.printState();
     }
   }, {
     key: 'render',
     value: function render() {
+      this.printState();
       return _react2.default.createElement(
         'div',
         null,
@@ -29693,7 +29693,8 @@ var TestMain = function TestMain(props) {
 			_react2.default.createElement(
 				"button",
 				{
-					className: "btn btn-primary btn-block btn-large"
+					className: "btn btn-primary btn-block btn-large",
+					onClick: props.search
 				},
 				"Search for Security Testers"
 			)
@@ -29772,13 +29773,13 @@ var CompanySearch = function CompanySearch(props) {
 		{ className: "CompanyMain" },
 		_react2.default.createElement(
 			"div",
-			{ "class": "nav" },
+			{ className: "nav" },
 			_react2.default.createElement(
 				"ul",
 				null,
 				_react2.default.createElement(
 					"li",
-					{ "class": "New Search" },
+					{ className: "New Search" },
 					_react2.default.createElement(
 						"a",
 						{ href: "#" },
@@ -29787,7 +29788,7 @@ var CompanySearch = function CompanySearch(props) {
 				),
 				_react2.default.createElement(
 					"li",
-					{ "class": "Favorites" },
+					{ className: "Favorites" },
 					_react2.default.createElement(
 						"a",
 						{ href: "#" },
@@ -29796,7 +29797,7 @@ var CompanySearch = function CompanySearch(props) {
 				),
 				_react2.default.createElement(
 					"li",
-					{ "class": "Profile" },
+					{ className: "Profile" },
 					_react2.default.createElement(
 						"a",
 						{ href: "#" },
@@ -29815,34 +29816,68 @@ var CompanySearch = function CompanySearch(props) {
 			{ id: "testerFilter" },
 			_react2.default.createElement(
 				"div",
-				{ "class": "profile" },
+				{ className: "profile" },
 				_react2.default.createElement(
 					"span",
-					{ "class": "heading" },
-					"Minimum Rating: "
+					{ className: "heading" },
+					"User Rating: "
 				),
-				_react2.default.createElement("span", { "class": "fa fa-star checked" }),
-				_react2.default.createElement("span", { "class": "fa fa-star checked" }),
-				_react2.default.createElement("span", { "class": "fa fa-star checked" }),
-				_react2.default.createElement("span", { "class": "fa fa-star checked" }),
-				_react2.default.createElement("span", { "class": "fa fa-star" }),
+				_react2.default.createElement("span", { className: "fa fa-star checked" }),
+				_react2.default.createElement("span", { className: "fa fa-star checked" }),
+				_react2.default.createElement("span", { className: "fa fa-star checked" }),
+				_react2.default.createElement("span", { className: "fa fa-star checked" }),
+				_react2.default.createElement("span", { className: "fa fa-star" }),
 				_react2.default.createElement(
 					"p",
 					null,
-					"Minimum Years Experience: 15"
+					"Experience (years): 15"
 				),
 				_react2.default.createElement(
 					"p",
 					null,
 					"Experience (systems): "
 				),
-				"Drop down list to select systems?",
+				_react2.default.createElement(
+					"div",
+					{ className: "skills" },
+					_react2.default.createElement(
+						"ul",
+						null,
+						_react2.default.createElement(
+							"li",
+							null,
+							"Windows"
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							"Linux"
+						)
+					)
+				),
 				_react2.default.createElement(
 					"p",
 					null,
 					"Certifications: "
 				),
-				"Drop down list to select minimum certifications?",
+				_react2.default.createElement(
+					"div",
+					{ className: "skills" },
+					_react2.default.createElement(
+						"ul",
+						null,
+						_react2.default.createElement(
+							"li",
+							null,
+							"CISSP"
+						),
+						_react2.default.createElement(
+							"li",
+							null,
+							"CISA"
+						)
+					)
+				),
 				_react2.default.createElement(
 					"a",
 					null,
@@ -29888,13 +29923,13 @@ var TesterSearch = function TesterSearch(props) {
 		{ className: "CompanyMain" },
 		_react2.default.createElement(
 			"div",
-			{ "class": "nav" },
+			{ className: "nav" },
 			_react2.default.createElement(
 				"ul",
 				null,
 				_react2.default.createElement(
 					"li",
-					{ "class": "New Search" },
+					{ className: "New Search" },
 					_react2.default.createElement(
 						"a",
 						{ href: "#" },
@@ -29903,7 +29938,7 @@ var TesterSearch = function TesterSearch(props) {
 				),
 				_react2.default.createElement(
 					"li",
-					{ "class": "Favorites" },
+					{ className: "Favorites" },
 					_react2.default.createElement(
 						"a",
 						{ href: "#" },
@@ -29912,7 +29947,7 @@ var TesterSearch = function TesterSearch(props) {
 				),
 				_react2.default.createElement(
 					"li",
-					{ "class": "Profile" },
+					{ className: "Profile" },
 					_react2.default.createElement(
 						"a",
 						{ href: "#" },
@@ -29931,17 +29966,17 @@ var TesterSearch = function TesterSearch(props) {
 			{ id: "testerFilter" },
 			_react2.default.createElement(
 				"div",
-				{ "class": "profile" },
+				{ className: "profile" },
 				_react2.default.createElement(
 					"span",
-					{ "class": "heading" },
+					{ className: "heading" },
 					"User Rating: "
 				),
-				_react2.default.createElement("span", { "class": "fa fa-star checked" }),
-				_react2.default.createElement("span", { "class": "fa fa-star checked" }),
-				_react2.default.createElement("span", { "class": "fa fa-star checked" }),
-				_react2.default.createElement("span", { "class": "fa fa-star checked" }),
-				_react2.default.createElement("span", { "class": "fa fa-star" }),
+				_react2.default.createElement("span", { className: "fa fa-star checked" }),
+				_react2.default.createElement("span", { className: "fa fa-star checked" }),
+				_react2.default.createElement("span", { className: "fa fa-star checked" }),
+				_react2.default.createElement("span", { className: "fa fa-star checked" }),
+				_react2.default.createElement("span", { className: "fa fa-star" }),
 				_react2.default.createElement(
 					"p",
 					null,
@@ -29954,7 +29989,7 @@ var TesterSearch = function TesterSearch(props) {
 				),
 				_react2.default.createElement(
 					"div",
-					{ "class": "skills" },
+					{ className: "skills" },
 					_react2.default.createElement(
 						"ul",
 						null,
@@ -29977,7 +30012,7 @@ var TesterSearch = function TesterSearch(props) {
 				),
 				_react2.default.createElement(
 					"div",
-					{ "class": "skills" },
+					{ className: "skills" },
 					_react2.default.createElement(
 						"ul",
 						null,

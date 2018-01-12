@@ -65,7 +65,10 @@ class App extends React.Component {
   // }
   printState() {
     setTimeout(() => {
-      console.log(this.state);
+      console.log("\nCurrent State:");
+      for (var i in this.state) {
+        console.log("\t" + i + ": " + this.state[i]);
+      }
     }, 1000);
   }
 
@@ -88,7 +91,6 @@ class App extends React.Component {
         currentView: ''
       });  
     }
-    this.printState();
   }
 
   amCompany() {
@@ -97,7 +99,6 @@ class App extends React.Component {
       isCompany: true,
       currentView: 'companylogin'
     });
-    this.printState();
   }
 
   amTester() {
@@ -106,7 +107,6 @@ class App extends React.Component {
       isCompany: false,
       currentView: 'testerlogin'
     });
-    this.printState();
   }
 
   search(){
@@ -129,10 +129,10 @@ class App extends React.Component {
         currentView: ''
       });  
     }
-    this.printState();
   }
 
   render () {
+      this.printState();
       return (
         <div>
           {
