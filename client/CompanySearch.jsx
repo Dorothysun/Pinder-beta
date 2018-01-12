@@ -11,7 +11,7 @@ const CompanySearch = (props) => {
 					<li className="Profile"><a href="#">Profile</a></li>
 				</ul>
 			</div>
-			<h1>Company Name</h1>
+			<h1>Search Filters</h1>
 			<div id="testerFilter">
 				<div className="profile">
 					<span className="heading">User Rating: </span>
@@ -37,20 +37,8 @@ const CompanySearch = (props) => {
 					</div>
 					<a>Writing Sample</a> <br />
 					<a>Reviews</a> <br />
-					<label>Offer: </label>
 					</div>
-  				<input placeholder="Offer" /> <br />
-				
-				<button 
-					className="btn btn-primary btn-block btn-large"
-					>
-					Make Offer
-				</button>
-				<button 
-					className="btn btn-primary btn-block btn-large"
-					>
-					Not Interested
-				</button>
+  				
 			</div>
 		</div>
 	)
