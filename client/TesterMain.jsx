@@ -21,6 +21,7 @@ const TestMain = (props) => {
 				</form>
 				<button 
 					className="btn btn-primary btn-block btn-large"
+					onClick={props.search}
 					>
 					Search for Security Testers
 				</button>
