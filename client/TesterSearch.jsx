@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TesterResults = (props) => {
+const TesterSearch = (props) => {
 
 	return (
 		<div className="CompanyMain">
@@ -56,4 +56,4 @@ const TesterResults = (props) => {
 	)
 }
 
-export default TesterResults;
+export default TesterSearch;
