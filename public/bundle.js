@@ -1712,57 +1712,58 @@ var App = function (_React$Component) {
     _this.state = {
       isCompany: false,
       currentView: '',
-      prevView: ''
+      prevView: '',
+      results: null
     };
     _this.loginButton = _this.loginButton.bind(_this);
     _this.amCompany = _this.amCompany.bind(_this);
     _this.amTester = _this.amTester.bind(_this);
     _this.search = _this.search.bind(_this);
     _this.printState = _this.printState.bind(_this);
+    _this.getTestersFromDB = _this.getTestersFromDB.bind(_this);
+    _this.getCompaniesFromDB = _this.getCompaniesFromDB.bind(_this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
     return _this;
   }
 
-  // retrieveUsers () {
-  //   axios.get('/api/users')
-  //   .then(res => {
-  //     const users = res.data;
-  //     this.setState({
-  //       users: users
-  //     })
-  //   })
-  //   .catch(err => {
-  //     console.error(err);
-  //   })
-  // }
-
-  // addRandomUser () {
-  //   axios.post('/api/users', {
-  //     name: chance.name(),
-  //     password: chance.word()
-  //   })
-  //   .then(res => {
-  //     const users = res.data;
-  //     this.setState({
-  //       users: users
-  //     })
-  //   })
-  //   .catch(err => {
-  //     console.error(err);
-  //   })
-  // }
-
-
   _createClass(App, [{
+    key: 'getTestersFromDB',
+    value: function getTestersFromDB() {
+      var _this2 = this;
+
+      _axios2.default.get('/data/testers').then(function (res) {
+        var data = res.data;
+        _this2.setState({
+          results: res.data
+        });
+      }).catch(function (err) {
+        console.error(err);
+      });
+    }
+  }, {
+    key: 'getCompaniesFromDB',
+    value: function getCompaniesFromDB() {
+      var _this3 = this;
+
+      _axios2.default.get('/data/testers').then(function (res) {
+        var data = res.data;
+        _this3.setState({
+          results: res.data
+        });
+      }).catch(function (err) {
+        console.error(err);
+      });
+    }
+  }, {
     key: 'printState',
     value: function printState() {
-      var _this2 = this;
+      var _this4 = this;
 
       setTimeout(function () {
         console.log("\nCurrent State:");
-        for (var i in _this2.state) {
-          console.log("\t" + i + ": " + _this2.state[i]);
+        for (var i in _this4.state) {
+          console.log("\t" + i + ": " + _this4.state[i]);
         }
       }, 1000);
     }

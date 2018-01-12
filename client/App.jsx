@@ -24,45 +24,46 @@ class App extends React.Component {
     this.state = {
       isCompany: false,
       currentView: '',
-      prevView: ''
+      prevView: '',
+      results: null
     };
     this.loginButton = this.loginButton.bind(this);
     this.amCompany = this.amCompany.bind(this);
     this.amTester = this.amTester.bind(this);
     this.search = this.search.bind(this);
     this.printState = this.printState.bind(this);
+    this.getTestersFromDB = this.getTestersFromDB.bind(this);
+    this.getCompaniesFromDB = this.getCompaniesFromDB.bind(this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
   }
 
-  // retrieveUsers () {
-  //   axios.get('/api/users')
-  //   .then(res => {
-  //     const users = res.data;
-  //     this.setState({
-  //       users: users
-  //     })
-  //   })
-  //   .catch(err => {
-  //     console.error(err);
-  //   })
-  // }
+  getTestersFromDB () {
+    axios.get('/data/testers')
+    .then(res => {
+      const data = res.data;
+      this.setState({
+        results: res.data
+      })
+    })
+    .catch(err => {
+      console.error(err);
+    })
+  }
+  
+  getCompaniesFromDB () {
+    axios.get('/data/testers')
+    .then(res => {
+      const data = res.data;
+      this.setState({
+        results: res.data
+      })
+    })
+    .catch(err => {
+      console.error(err);
+    })
+  }
 
-  // addRandomUser () {
-  //   axios.post('/api/users', {
-  //     name: chance.name(),
-  //     password: chance.word()
-  //   })
-  //   .then(res => {
-  //     const users = res.data;
-  //     this.setState({
-  //       users: users
-  //     })
-  //   })
-  //   .catch(err => {
-  //     console.error(err);
-  //   })
-  // }
   printState() {
     setTimeout(() => {
       console.log("\nCurrent State:");
