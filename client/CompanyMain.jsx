@@ -19,7 +19,6 @@ const CompanyMain = (props) => {
 					Years Experience
 					Certifications
 				Previously Used Testers
-				Recommended Testers
 			</div>
 		</div>
 	)
