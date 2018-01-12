@@ -11,19 +11,15 @@ const CompanyMain = (props) => {
 					<li className="Profile"><a href="#">Profile</a></li>
 				</ul>
 			</div>
-			<h1>Company Name</h1>
+			<h1>Company Profile</h1>
 			<div id="testerFilter">
-				<form>
-					<input placeholder="Minimum Rating" /> <br />
-					<input placeholder="Years Experience" /> <br />
-					<input placeholder="System Experience" /> <br />
-					<input placeholder="Certifications" />
-				</form>
-				<button 
-					className="btn btn-primary btn-block btn-large"
-					>
-					Search for Security Testers
-				</button>
+				Company Rating
+				Company Systems Used
+				Company Minimum Qualifications
+					Years Experience
+					Certifications
+				Previously Used Testers
+				Recommended Testers
 			</div>
 		</div>
 	)
