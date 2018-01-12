@@ -12,13 +12,40 @@ const CompanyMain = (props) => {
 				</ul>
 			</div>
 			<h1>Company Profile</h1>
-			<div id="testerFilter">
-				Company Rating
-				Company Systems Used
-				Company Minimum Qualifications
-					Years Experience
-					Certifications
-				Previously Used Testers
+			<div id="companyProfile" align="left">
+				<table className="table">
+				<tbody>
+					<tr>
+						<td>Company Rating </td>
+						<td><span className="fa fa-star checked"></span>
+						 	<span className="fa fa-star checked"></span>
+			 				<span className="fa fa-star checked"></span>
+							<span className="fa fa-star checked"></span>  </td>
+					</tr>
+					<tr>
+						<td>Company Systems Used </td>
+						<td><ul>
+							<li>Windows</li>
+							<li>Linux</li>
+							</ul></td>
+					</tr>
+					<tr>
+						<td>Company Minimum Qualifications</td>
+					</tr>
+					<tr>
+						<td>Years Experience </td>
+						<td>5 </td>
+					</tr>
+					<tr>
+						<td>Certifications </td>
+						<td>5 </td>
+					</tr>
+					<tr>
+						<td>Previously Used Testers </td>
+						<td>Result </td>
+					</tr>
+				</tbody>
+				</table>
 			</div>
 		</div>
 	)
