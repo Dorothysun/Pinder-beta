@@ -64,6 +64,7 @@ class App extends React.Component {
   // }
 
   loginButton() {
+    console.log("this.state.currentView"+this.state.currentView);
     if (this.state.currentView === 'companylogin') {
       this.setState({
         prevView: this.state.currentView,
@@ -101,6 +102,7 @@ class App extends React.Component {
   }
 
   search(){
+    console.log("this.state.currentView"+this.state.currentView);    
     if (this.state.currentView === 'companymain') {
       this.setState({
         prevView: this.state.currentView,
