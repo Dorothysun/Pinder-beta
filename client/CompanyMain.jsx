@@ -11,8 +11,9 @@ const CompanyMain = (props) => {
 					<li className="Profile"><a href="#">Profile</a></li>
 				</ul>
 			</div>
-			<h1>Company Name</h1>
+			<h1>Company Profile</h1>
 			<div id="testerFilter">
+<<<<<<< HEAD
 				<form>
 					<input placeholder="Minimum Rating" /> <br />
 					<input placeholder="Years Experience" /> <br />
@@ -24,6 +25,14 @@ const CompanyMain = (props) => {
 					onClick={props.search}>
 					Search for Security Testers
 				</button>
+=======
+				Company Rating
+				Company Systems Used
+				Company Minimum Qualifications
+					Years Experience
+					Certifications
+				Previously Used Testers
+>>>>>>> de64794adcc873f512f035b9495a410db96584ab
 			</div>
 		</div>
 	)

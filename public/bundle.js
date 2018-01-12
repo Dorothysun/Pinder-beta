@@ -29496,32 +29496,12 @@ var CompanyMain = function CompanyMain(props) {
 		_react2.default.createElement(
 			"h1",
 			null,
-			"Company Name"
+			"Company Profile"
 		),
 		_react2.default.createElement(
 			"div",
 			{ id: "testerFilter" },
-			_react2.default.createElement(
-				"form",
-				null,
-				_react2.default.createElement("input", { placeholder: "Minimum Rating" }),
-				" ",
-				_react2.default.createElement("br", null),
-				_react2.default.createElement("input", { placeholder: "Years Experience" }),
-				" ",
-				_react2.default.createElement("br", null),
-				_react2.default.createElement("input", { placeholder: "System Experience" }),
-				" ",
-				_react2.default.createElement("br", null),
-				_react2.default.createElement("input", { placeholder: "Certifications" })
-			),
-			_react2.default.createElement(
-				"button",
-				{
-					className: "btn btn-primary btn-block btn-large"
-				},
-				"Search for Security Testers"
-			)
+			"Company Rating Company Systems Used Company Minimum Qualifications Years Experience Certifications Previously Used Testers Recommended Testers"
 		)
 	);
 };
