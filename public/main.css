@@ -15,7 +15,7 @@ body {
 }
 .nav li {
   font-family: 'Oswald', sans-serif;
-  font-size: 0.6em;
+  font-size: 12px;
   line-height: 40px;
   display:inline-block;
   height: 40px;
@@ -72,15 +72,13 @@ body {
   */
 }
 
-.loginDiv, .CompanyMain {
+.loginDiv, .CompanyMain{
     margin: auto;
     margin-top: 10%;
-    width: 40%;
     height: 40%;
     padding: 10px;
     text-align: center;
     color: white;
-    font-size: 1vw;
     vertical-align: middle;
     display: inline-block;
 }
@@ -239,4 +237,31 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
 .profile {
   margin-bottom: 10px;
+}
+
+#companyProfile{
+  font-size: 13px;
+  margin: 0 auto;
+  width: 200%;  
+}
+
+#companyProfile #head {
+  float: left;
+}
+
+#companyProfile #result {
+  float: right;
+}
+
+#companyProfile ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.result {
+  text-align: center;
+}
+
+.NewSearch, .Favorites, .Profile {
+  font-size: 13px;
 }

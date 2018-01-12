@@ -11,25 +11,41 @@ const CompanyMain = (props) => {
 					<li className="Profile"><a href="#">Profile</a></li>
 				</ul>
 			</div>
-			<h1>Company Profile</h1>
-			<div id="testerFilter">
-				<form>
-					<input placeholder="Minimum Rating" /> <br />
-					<input placeholder="Years Experience" /> <br />
-					<input placeholder="System Experience" /> <br />
-					<input placeholder="Certifications" />
-				</form>
-				<button 
-					className="btn btn-primary btn-block btn-large"
-					onClick={props.search}>
-					Search for Security Testers
-				</button>
-				Company Rating
-				Company Systems Used
-				Company Minimum Qualifications
-					Years Experience
-					Certifications
-				Previously Used Testers
+			<h2>Company Profile</h2>
+			<div id="companyProfile" align="left">
+				<table className="table">
+				<tbody>
+					<tr>
+						<td>Company Rating </td>
+						<td className="result"><span className="fa fa-star checked"></span>
+						 	<span className="fa fa-star checked"></span>
+			 				<span className="fa fa-star checked"></span>
+							<span className="fa fa-star checked"></span>  </td>
+					</tr>
+					<tr>
+						<td>Company Systems Used </td>
+						<td className="result"><ul>
+							<li>Windows</li>
+							<li>Linux</li>
+							</ul></td>
+					</tr>
+					<tr>
+						<td>Company Minimum Qualifications</td>
+					</tr>
+					<tr>
+						<td>Years Experience </td>
+						<td className="result">5 </td>
+					</tr>
+					<tr>
+						<td>Certifications </td>
+						<td className="result">5 </td>
+					</tr>
+					<tr>
+						<td>Previously Used Testers </td>
+						<td className="result">Result </td>
+					</tr>
+				</tbody>
+				</table>
 			</div>
 		</div>
 	)
