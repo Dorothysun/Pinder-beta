@@ -1,0 +1,39 @@
+{
+   "companies" : [
+		  {
+			"name" : "A",
+			"systems used": "",
+			"qualifications" : "",
+			"rating": "",
+			"reviews": ""
+		  },
+		  {
+			"name" : "B",
+			"systems used": "",
+			"qualifications" : "",
+			"rating": "",
+			"reviews": ""
+		  },
+		  {
+			"name" : "C",
+			"systems used": "",
+			"qualifications" : "",
+			"rating": "",
+			"reviews": ""
+		  },
+		  {
+			"name" : "D",
+			"systems used": "",
+			"qualifications" : "",
+			"rating": "",
+			"reviews": ""
+		  },
+		  {
+			"name" : "E",
+			"systems used": "",
+			"qualifications" : "",
+			"rating": "",
+			"reviews": ""
+		  }
+	       ]
+}
