@@ -30,6 +30,7 @@ class App extends React.Component {
     this.amCompany = this.amCompany.bind(this);
     this.amTester = this.amTester.bind(this);
     this.search = this.search.bind(this);
+    this.printState = this.printState.bind(this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
   }
@@ -62,9 +63,13 @@ class App extends React.Component {
   //     console.error(err);
   //   })
   // }
+  printState() {
+    setTimeout(() => {
+      console.log(this.state);
+    }, 1000);
+  }
 
   loginButton() {
-    console.log("this.state.currentView"+this.state.currentView);
     if (this.state.currentView === 'companylogin') {
       this.setState({
         prevView: this.state.currentView,
@@ -83,6 +88,7 @@ class App extends React.Component {
         currentView: ''
       });  
     }
+    this.printState();
   }
 
   amCompany() {
@@ -91,6 +97,7 @@ class App extends React.Component {
       isCompany: true,
       currentView: 'companylogin'
     });
+    this.printState();
   }
 
   amTester() {
@@ -99,6 +106,7 @@ class App extends React.Component {
       isCompany: false,
       currentView: 'testerlogin'
     });
+    this.printState();
   }
 
   search(){
@@ -120,7 +128,8 @@ class App extends React.Component {
         prevView: '',
         currentView: ''
       });  
-    }  
+    }
+    this.printState();
   }
 
   render () {
