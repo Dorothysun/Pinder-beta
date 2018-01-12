@@ -5,11 +5,9 @@ const CompanyMain = (props) => {
 	return (
 		<div className="CompanyMain">
 			<div className="nav">
-				<ul>
-					<li className="New Search"><a href="#">Search</a></li>
-					<li className="Favorites"><a href="#">Favorites</a></li>
-					<li className="Profile"><a href="#">Profile</a></li>
-				</ul>
+				<li className="New Search"><a href="#">Search</a></li>
+				<li className="Favorites"><a href="#">Favorites</a></li>
+				<li className="Profile"><a href="#">Profile</a></li>
 			</div>
 			<h2>Company Profile</h2>
 			<div id="companyProfile" align="left">

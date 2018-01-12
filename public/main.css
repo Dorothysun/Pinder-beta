@@ -1,25 +1,19 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 /* @import url(https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css) */
-body {
-  margin: 0;
-  padding: 0;
-  background: #ccc;
-}
- 
-.nav ul {
-  list-style: none;
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
   background-color: #444;
-  text-align: center;
-  padding: 2px;
-  margin: 0;
 }
+
 .nav li {
-  font-family: 'Oswald', sans-serif;
+  font-family: system-ui;
   font-size: 12px;
   line-height: 40px;
   display:inline-block;
   height: 40px;
-  border-bottom: 1px solid #888;
+  /* border-bottom: 1px solid #888; */
 }
  
 .nav a {
@@ -30,7 +24,7 @@ body {
 }
  
 .nav a:hover {
-  background-color: #005f5f;
+  background-color: #A8A8A8;
 }
  
 .nav a.active {
@@ -84,7 +78,7 @@ body {
 }
 
 .CompanyMain {
-  zoom: 150%;
+  /* zoom: 150%; */
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);

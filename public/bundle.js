@@ -13645,34 +13645,30 @@ var CompanyMain = function CompanyMain(props) {
 			"div",
 			{ className: "nav" },
 			_react2.default.createElement(
-				"ul",
-				null,
+				"li",
+				{ className: "New Search" },
 				_react2.default.createElement(
-					"li",
-					{ className: "New Search" },
-					_react2.default.createElement(
-						"a",
-						{ href: "#" },
-						"Search"
-					)
-				),
+					"a",
+					{ href: "#" },
+					"Search"
+				)
+			),
+			_react2.default.createElement(
+				"li",
+				{ className: "Favorites" },
 				_react2.default.createElement(
-					"li",
-					{ className: "Favorites" },
-					_react2.default.createElement(
-						"a",
-						{ href: "#" },
-						"Favorites"
-					)
-				),
+					"a",
+					{ href: "#" },
+					"Favorites"
+				)
+			),
+			_react2.default.createElement(
+				"li",
+				{ className: "Profile" },
 				_react2.default.createElement(
-					"li",
-					{ className: "Profile" },
-					_react2.default.createElement(
-						"a",
-						{ href: "#" },
-						"Profile"
-					)
+					"a",
+					{ href: "#" },
+					"Profile"
 				)
 			)
 		),
