@@ -1038,6 +1038,8 @@ var App = function (_React$Component) {
     _this.loginButton = _this.loginButton.bind(_this);
     _this.amCompany = _this.amCompany.bind(_this);
     _this.amTester = _this.amTester.bind(_this);
+    _this.search = _this.search.bind(_this);
+    _this.printState = _this.printState.bind(_this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
     return _this;
@@ -1072,7 +1074,17 @@ var App = function (_React$Component) {
   //   })
   // }
 
+
   _createClass(App, [{
+    key: 'printState',
+    value: function printState() {
+      var _this2 = this;
+
+      setTimeout(function () {
+        console.log(_this2.state);
+      }, 1000);
+    }
+  }, {
     key: 'loginButton',
     value: function loginButton() {
       if (this.state.currentView === 'companylogin') {
@@ -1091,6 +1103,7 @@ var App = function (_React$Component) {
           currentView: ''
         });
       }
+      this.printState();
     }
   }, {
     key: 'amCompany',
@@ -1100,6 +1113,7 @@ var App = function (_React$Component) {
         isCompany: true,
         currentView: 'companylogin'
       });
+      this.printState();
     }
   }, {
     key: 'amTester',
@@ -1109,6 +1123,29 @@ var App = function (_React$Component) {
         isCompany: false,
         currentView: 'testerlogin'
       });
+      this.printState();
+    }
+  }, {
+    key: 'search',
+    value: function search() {
+      console.log("this.state.currentView" + this.state.currentView);
+      if (this.state.currentView === 'companymain') {
+        this.setState({
+          prevView: this.state.currentView,
+          currentView: 'companysearch'
+        });
+      } else if (this.state.currentView === 'testermain') {
+        this.setState({
+          prevView: this.state.currentView,
+          currentView: 'testersearch'
+        });
+      } else {
+        this.setState({
+          prevView: '',
+          currentView: ''
+        });
+      }
+      this.printState();
     }
   }, {
     key: 'render',
@@ -1116,7 +1153,7 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        this.state.currentView == 'companylogin' ? _react2.default.createElement(_CompanyLogin2.default, { loginButton: this.loginButton }) : this.state.currentView == 'testerlogin' ? _react2.default.createElement(_TesterLogin2.default, { loginButton: this.loginButton }) : this.state.currentView == 'companymain' ? _react2.default.createElement(_CompanyMain2.default, null) : this.state.currentView == 'testermain' ? _react2.default.createElement(_TesterMain2.default, null) : this.state.currentView == 'companysearch' ? _react2.default.createElement(_CompanySearch2.default, null) : this.state.currentView == 'testersearch' ? _react2.default.createElement(_TesterSearch2.default, null) : _react2.default.createElement(_WhatAreYou2.default, { amTester: this.amTester, amCompany: this.amCompany })
+        this.state.currentView == 'companylogin' ? _react2.default.createElement(_CompanyLogin2.default, { loginButton: this.loginButton }) : this.state.currentView == 'testerlogin' ? _react2.default.createElement(_TesterLogin2.default, { loginButton: this.loginButton }) : this.state.currentView == 'companymain' ? _react2.default.createElement(_CompanyMain2.default, { search: this.search }) : this.state.currentView == 'testermain' ? _react2.default.createElement(_TesterMain2.default, { search: this.search }) : this.state.currentView == 'companysearch' ? _react2.default.createElement(_CompanySearch2.default, null) : this.state.currentView == 'testersearch' ? _react2.default.createElement(_TesterSearch2.default, null) : _react2.default.createElement(_WhatAreYou2.default, { amTester: this.amTester, amCompany: this.amCompany })
       );
     }
   }]);
@@ -29501,7 +29538,28 @@ var CompanyMain = function CompanyMain(props) {
 		_react2.default.createElement(
 			"div",
 			{ id: "testerFilter" },
-			"Company Rating Company Systems Used Company Minimum Qualifications Years Experience Certifications Previously Used Testers Recommended Testers"
+			_react2.default.createElement(
+				"form",
+				null,
+				_react2.default.createElement("input", { placeholder: "Minimum Rating" }),
+				" ",
+				_react2.default.createElement("br", null),
+				_react2.default.createElement("input", { placeholder: "Years Experience" }),
+				" ",
+				_react2.default.createElement("br", null),
+				_react2.default.createElement("input", { placeholder: "System Experience" }),
+				" ",
+				_react2.default.createElement("br", null),
+				_react2.default.createElement("input", { placeholder: "Certifications" })
+			),
+			_react2.default.createElement(
+				"button",
+				{
+					className: "btn btn-primary btn-block btn-large",
+					onClick: props.search },
+				"Search for Security Testers"
+			),
+			"Company Rating Company Systems Used Company Minimum Qualifications Years Experience Certifications Previously Used Testers"
 		)
 	);
 };
@@ -29707,7 +29765,7 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var CompanyResults = function CompanyResults(props) {
+var CompanySearch = function CompanySearch(props) {
 
 	return _react2.default.createElement(
 		"div",
@@ -29750,7 +29808,7 @@ var CompanyResults = function CompanyResults(props) {
 		_react2.default.createElement(
 			"h1",
 			null,
-			"Company Name"
+			"Search Filters"
 		),
 		_react2.default.createElement(
 			"div",
@@ -29761,7 +29819,7 @@ var CompanyResults = function CompanyResults(props) {
 				_react2.default.createElement(
 					"span",
 					{ "class": "heading" },
-					"User Rating: "
+					"Minimum Rating: "
 				),
 				_react2.default.createElement("span", { "class": "fa fa-star checked" }),
 				_react2.default.createElement("span", { "class": "fa fa-star checked" }),
@@ -29771,54 +29829,20 @@ var CompanyResults = function CompanyResults(props) {
 				_react2.default.createElement(
 					"p",
 					null,
-					"Experience (years): 15"
+					"Minimum Years Experience: 15"
 				),
 				_react2.default.createElement(
 					"p",
 					null,
 					"Experience (systems): "
 				),
-				_react2.default.createElement(
-					"div",
-					{ "class": "skills" },
-					_react2.default.createElement(
-						"ul",
-						null,
-						_react2.default.createElement(
-							"li",
-							null,
-							"Windows"
-						),
-						_react2.default.createElement(
-							"li",
-							null,
-							"Linux"
-						)
-					)
-				),
+				"Drop down list to select systems?",
 				_react2.default.createElement(
 					"p",
 					null,
 					"Certifications: "
 				),
-				_react2.default.createElement(
-					"div",
-					{ "class": "skills" },
-					_react2.default.createElement(
-						"ul",
-						null,
-						_react2.default.createElement(
-							"li",
-							null,
-							"CISSP"
-						),
-						_react2.default.createElement(
-							"li",
-							null,
-							"CISA"
-						)
-					)
-				),
+				"Drop down list to select minimum certifications?",
 				_react2.default.createElement(
 					"a",
 					null,
@@ -29832,35 +29856,13 @@ var CompanyResults = function CompanyResults(props) {
 					"Reviews"
 				),
 				" ",
-				_react2.default.createElement("br", null),
-				_react2.default.createElement(
-					"label",
-					null,
-					"Offer: "
-				)
-			),
-			_react2.default.createElement("input", { placeholder: "Offer" }),
-			" ",
-			_react2.default.createElement("br", null),
-			_react2.default.createElement(
-				"button",
-				{
-					className: "btn btn-primary btn-block btn-large"
-				},
-				"Make Offer"
-			),
-			_react2.default.createElement(
-				"button",
-				{
-					className: "btn btn-primary btn-block btn-large"
-				},
-				"Not Interested"
+				_react2.default.createElement("br", null)
 			)
 		)
 	);
 };
 
-exports.default = CompanyResults;
+exports.default = CompanySearch;
 
 /***/ }),
 /* 65 */
@@ -29879,7 +29881,7 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var TesterResults = function TesterResults(props) {
+var TesterSearch = function TesterSearch(props) {
 
 	return _react2.default.createElement(
 		"div",
@@ -30032,7 +30034,7 @@ var TesterResults = function TesterResults(props) {
 	);
 };
 
-exports.default = TesterResults;
+exports.default = TesterSearch;
 
 /***/ }),
 /* 66 */

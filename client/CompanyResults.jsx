@@ -1,35 +1,35 @@
 import React from 'react';
 
-const TesterSearch = (props) => {
+const CompanyResults = (props) => {
 
 	return (
-		<div className="CompanyMain">
-			<div className="nav">
+		<div className="CompanyResults">
+			<div class="nav">
 				<ul>
-					<li className="New Search"><a href="#">Search</a></li>
-					<li className="Favorites"><a href="#">Favorites</a></li>
-					<li className="Profile"><a href="#">Profile</a></li>
+					<li class="New Search"><a href="#">Search</a></li>
+					<li class="Favorites"><a href="#">Favorites</a></li>
+					<li class="Profile"><a href="#">Profile</a></li>
 				</ul>
 			</div>
 			<h1>Company Name</h1>
 			<div id="testerFilter">
-				<div className="profile">
-					<span className="heading">User Rating: </span>
-					<span className="fa fa-star checked"></span>
-					<span className="fa fa-star checked"></span>
-					<span className="fa fa-star checked"></span>
-					<span className="fa fa-star checked"></span>
-					<span className="fa fa-star"></span>
+				<div class="profile">
+					<span class="heading">User Rating: </span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
 					<p>Experience (years): 15</p>
 					<p>Experience (systems): </p>
-					<div className="skills">
+					<div class="skills">
 						<ul>
 							<li>Windows</li>
 							<li>Linux</li>
 						</ul>
 					</div>
 					<p>Certifications: </p>
-					<div className="skills">										
+					<div class="skills">										
 						<ul>
 							<li>CISSP</li>
 							<li>CISA</li>
@@ -56,5 +56,4 @@ const TesterSearch = (props) => {
 	)
 }
 
-
-export default TesterSearch;
+export default CompanyResults;

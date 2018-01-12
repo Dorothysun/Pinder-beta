@@ -29,6 +29,8 @@ class App extends React.Component {
     this.loginButton = this.loginButton.bind(this);
     this.amCompany = this.amCompany.bind(this);
     this.amTester = this.amTester.bind(this);
+    this.search = this.search.bind(this);
+    this.printState = this.printState.bind(this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
   }
@@ -61,6 +63,11 @@ class App extends React.Component {
   //     console.error(err);
   //   })
   // }
+  printState() {
+    setTimeout(() => {
+      console.log(this.state);
+    }, 1000);
+  }
 
   loginButton() {
     if (this.state.currentView === 'companylogin') {
@@ -81,6 +88,7 @@ class App extends React.Component {
         currentView: ''
       });  
     }
+    this.printState();
   }
 
   amCompany() {
@@ -89,6 +97,7 @@ class App extends React.Component {
       isCompany: true,
       currentView: 'companylogin'
     });
+    this.printState();
   }
 
   amTester() {
@@ -97,6 +106,30 @@ class App extends React.Component {
       isCompany: false,
       currentView: 'testerlogin'
     });
+    this.printState();
+  }
+
+  search(){
+    console.log("this.state.currentView"+this.state.currentView);    
+    if (this.state.currentView === 'companymain') {
+      this.setState({
+        prevView: this.state.currentView,
+        currentView: 'companysearch'
+      });  
+    }
+    else if (this.state.currentView === 'testermain') {
+      this.setState({
+        prevView: this.state.currentView,
+        currentView: 'testersearch'
+      });  
+    }
+    else {
+      this.setState({
+        prevView: '',
+        currentView: ''
+      });  
+    }
+    this.printState();
   }
 
   render () {
@@ -108,9 +141,9 @@ class App extends React.Component {
             : (this.state.currentView == 'testerlogin')
             ? <TesterLogin loginButton={this.loginButton} />
             : (this.state.currentView == 'companymain')
-            ? <CompanyMain />
+            ? <CompanyMain search ={this.search}/>
             : (this.state.currentView == 'testermain')
-            ? <TesterMain />
+            ? <TesterMain search ={this.search}/>
             : (this.state.currentView == 'companysearch')
             ? <CompanySearch />
             : (this.state.currentView == 'testersearch')
