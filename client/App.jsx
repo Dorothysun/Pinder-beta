@@ -2,13 +2,18 @@ import React from 'react';
 import axios from 'axios';
 import Chance from 'chance';
 
-import CompanyMain from './CompanyMain.jsx';
-import TesterMain from './TesterMain.jsx';
-import CompanyLogin from './CompanyLogin.jsx';
-import TesterLogin from './TesterLogin.jsx';
-import CompanySearch from './CompanySearch.jsx';
-import TesterSearch from './TesterSearch.jsx';
 import WhatAreYou from './WhatAreYou.jsx';
+
+import CompanyMain from './CompanyMain.jsx';
+import CompanyLogin from './CompanyLogin.jsx';
+import CompanySearch from './CompanySearch.jsx';
+
+import TesterMain from './TesterMain.jsx';
+import TesterLogin from './TesterLogin.jsx';
+import TesterSearch from './TesterSearch.jsx';
+
+// import TesterData from '../data/';
+// import CompanyData from '../data/';
 
 const chance = new Chance();
 

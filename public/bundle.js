@@ -981,33 +981,33 @@ var _chance = __webpack_require__(54);
 
 var _chance2 = _interopRequireDefault(_chance);
 
+var _WhatAreYou = __webpack_require__(66);
+
+var _WhatAreYou2 = _interopRequireDefault(_WhatAreYou);
+
 var _CompanyMain = __webpack_require__(60);
 
 var _CompanyMain2 = _interopRequireDefault(_CompanyMain);
-
-var _TesterMain = __webpack_require__(62);
-
-var _TesterMain2 = _interopRequireDefault(_TesterMain);
 
 var _CompanyLogin = __webpack_require__(61);
 
 var _CompanyLogin2 = _interopRequireDefault(_CompanyLogin);
 
-var _TesterLogin = __webpack_require__(63);
-
-var _TesterLogin2 = _interopRequireDefault(_TesterLogin);
-
 var _CompanySearch = __webpack_require__(64);
 
 var _CompanySearch2 = _interopRequireDefault(_CompanySearch);
 
+var _TesterMain = __webpack_require__(62);
+
+var _TesterMain2 = _interopRequireDefault(_TesterMain);
+
+var _TesterLogin = __webpack_require__(63);
+
+var _TesterLogin2 = _interopRequireDefault(_TesterLogin);
+
 var _TesterSearch = __webpack_require__(65);
 
 var _TesterSearch2 = _interopRequireDefault(_TesterSearch);
-
-var _WhatAreYou = __webpack_require__(66);
-
-var _WhatAreYou2 = _interopRequireDefault(_WhatAreYou);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1016,6 +1016,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// import TesterData from '../data/';
+// import CompanyData from '../data/';
 
 var chance = new _chance2.default();
 
