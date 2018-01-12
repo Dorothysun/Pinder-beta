@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 app.use(volleyball); // logging middleware
 app.use(bodyParser.json()); // body parsing middleware
 
-app.use('/api', require('./api')); // api routes
+app.use('/data', require('../data')); // api routes
 
 // app.use('/company', require('./routes/company'));
 // app.use('/tester', require('./routes/tester'));

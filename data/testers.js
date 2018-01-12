@@ -1,4 +1,6 @@
-{
+var router = require('express').Router();
+
+var testers = [{
   "testers" : [
 		  {
 		     "name": "John",
@@ -46,5 +48,17 @@
 		     "rating": "5/5",
 		     "reviews": []
  		  }
-                ]
-}
+	]
+}]
+
+router.get('/', function (req, res, next) {
+  res.json(testers);
+});
+
+// router.post('/', function (req, res, next) {
+//   // assuming req.body is well formed
+//   users.push(req.body);
+//   res.status(201).json(users);
+// });
+
+module.exports = router;
