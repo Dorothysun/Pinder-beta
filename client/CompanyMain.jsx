@@ -11,20 +11,20 @@ const CompanyMain = (props) => {
 					<li className="Profile"><a href="#">Profile</a></li>
 				</ul>
 			</div>
-			<h1>Company Profile</h1>
+			<h2>Company Profile</h2>
 			<div id="companyProfile" align="left">
 				<table className="table">
 				<tbody>
 					<tr>
 						<td>Company Rating </td>
-						<td><span className="fa fa-star checked"></span>
+						<td className="result"><span className="fa fa-star checked"></span>
 						 	<span className="fa fa-star checked"></span>
 			 				<span className="fa fa-star checked"></span>
 							<span className="fa fa-star checked"></span>  </td>
 					</tr>
 					<tr>
 						<td>Company Systems Used </td>
-						<td><ul>
+						<td className="result"><ul>
 							<li>Windows</li>
 							<li>Linux</li>
 							</ul></td>
@@ -34,15 +34,15 @@ const CompanyMain = (props) => {
 					</tr>
 					<tr>
 						<td>Years Experience </td>
-						<td>5 </td>
+						<td className="result">5 </td>
 					</tr>
 					<tr>
 						<td>Certifications </td>
-						<td>5 </td>
+						<td className="result">5 </td>
 					</tr>
 					<tr>
 						<td>Previously Used Testers </td>
-						<td>Result </td>
+						<td className="result">Result </td>
 					</tr>
 				</tbody>
 				</table>

@@ -15,7 +15,7 @@ body {
 }
 .nav li {
   font-family: 'Oswald', sans-serif;
-  font-size: 0.6em;
+  font-size: 12px;
   line-height: 40px;
   display:inline-block;
   height: 40px;
@@ -72,28 +72,15 @@ body {
   */
 }
 
-.loginDiv{
+.loginDiv, .CompanyMain{
     margin: auto;
     margin-top: 10%;
     height: 40%;
     padding: 10px;
     text-align: center;
     color: white;
-    font-size: 1vw;
     vertical-align: middle;
     display: inline-block;
-}
-
-.CompanyMain {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 40%;
-  padding: 10px;
-  color: white;
-  font-size: 1vw;
-  vertical-align: middle;
-  display: inline-block;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -253,7 +240,7 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 }
 
 #companyProfile{
-  font-size: 20px;
+  font-size: 13px;
   margin: 0 auto;
   width: 200%;  
 }
@@ -269,4 +256,12 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 #companyProfile ul {
   padding: 0;
   list-style-type: none;
+}
+
+.result {
+  text-align: center;
+}
+
+.NewSearch, .Favorites, .Profile {
+  font-size: 13px;
 }
