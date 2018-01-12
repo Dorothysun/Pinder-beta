@@ -63,11 +63,24 @@ class App extends React.Component {
   // }
 
   loginButton() {
-    this.setState({
-      prevView: this.state.currentView,
-      currentView: 'main'
-    });
-    console.log(this.state);
+    if (this.state.currentView === 'companylogin') {
+      this.setState({
+        prevView: this.state.currentView,
+        currentView: 'companymain'
+      });  
+    }
+    else if (this.state.currentView === 'testerlogin') {
+      this.setState({
+        prevView: this.state.currentView,
+        currentView: 'testermain'
+      });  
+    }
+    else {
+      this.setState({
+        prevView: '',
+        currentView: ''
+      });  
+    }
   }
 
   amCompany() {
@@ -76,7 +89,6 @@ class App extends React.Component {
       isCompany: true,
       currentView: 'companylogin'
     });
-    console.log(this.state);
   }
 
   amTester() {
@@ -85,7 +97,6 @@ class App extends React.Component {
       isCompany: false,
       currentView: 'testerlogin'
     });
-    console.log(this.state);
   }
 
   render () {
@@ -93,9 +104,9 @@ class App extends React.Component {
         <div>
           {
             (this.state.currentView == 'companylogin')
-            ? <CompanyLogin />
+            ? <CompanyLogin loginButton={this.loginButton} />
             : (this.state.currentView == 'testerlogin')
-            ? <TesterLogin />
+            ? <TesterLogin loginButton={this.loginButton} />
             : (this.state.currentView == 'companymain')
             ? <CompanyMain />
             : (this.state.currentView == 'testermain')

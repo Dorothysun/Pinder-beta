@@ -1075,11 +1075,22 @@ var App = function (_React$Component) {
   _createClass(App, [{
     key: 'loginButton',
     value: function loginButton() {
-      this.setState({
-        prevView: this.state.currentView,
-        currentView: 'main'
-      });
-      console.log(this.state);
+      if (this.state.currentView === 'companylogin') {
+        this.setState({
+          prevView: this.state.currentView,
+          currentView: 'companymain'
+        });
+      } else if (this.state.currentView === 'testerlogin') {
+        this.setState({
+          prevView: this.state.currentView,
+          currentView: 'testermain'
+        });
+      } else {
+        this.setState({
+          prevView: '',
+          currentView: ''
+        });
+      }
     }
   }, {
     key: 'amCompany',
@@ -1089,7 +1100,6 @@ var App = function (_React$Component) {
         isCompany: true,
         currentView: 'companylogin'
       });
-      console.log(this.state);
     }
   }, {
     key: 'amTester',
@@ -1099,7 +1109,6 @@ var App = function (_React$Component) {
         isCompany: false,
         currentView: 'testerlogin'
       });
-      console.log(this.state);
     }
   }, {
     key: 'render',
@@ -1107,7 +1116,7 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        this.state.currentView == 'companylogin' ? _react2.default.createElement(_CompanyLogin2.default, null) : this.state.currentView == 'testerlogin' ? _react2.default.createElement(_TesterLogin2.default, null) : this.state.currentView == 'companymain' ? _react2.default.createElement(_CompanyMain2.default, null) : this.state.currentView == 'testermain' ? _react2.default.createElement(_TesterMain2.default, null) : this.state.currentView == 'companysearch' ? _react2.default.createElement(_CompanySearch2.default, null) : this.state.currentView == 'testersearch' ? _react2.default.createElement(_TesterSearch2.default, null) : _react2.default.createElement(_WhatAreYou2.default, { amTester: this.amTester, amCompany: this.amCompany })
+        this.state.currentView == 'companylogin' ? _react2.default.createElement(_CompanyLogin2.default, { loginButton: this.loginButton }) : this.state.currentView == 'testerlogin' ? _react2.default.createElement(_TesterLogin2.default, { loginButton: this.loginButton }) : this.state.currentView == 'companymain' ? _react2.default.createElement(_CompanyMain2.default, null) : this.state.currentView == 'testermain' ? _react2.default.createElement(_TesterMain2.default, null) : this.state.currentView == 'companysearch' ? _react2.default.createElement(_CompanySearch2.default, null) : this.state.currentView == 'testersearch' ? _react2.default.createElement(_TesterSearch2.default, null) : _react2.default.createElement(_WhatAreYou2.default, { amTester: this.amTester, amCompany: this.amCompany })
       );
     }
   }]);
