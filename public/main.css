@@ -83,6 +83,10 @@ body {
     display: inline-block;
 }
 
+.CompanyMain {
+  zoom: 150%;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 .btn { 
     display: inline-block;
@@ -240,7 +244,7 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 }
 
 #companyProfile{
-  font-size: 13px;
+  font-size: 12px;
   margin: 0 auto;
   width: 200%;  
 }
@@ -256,6 +260,12 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 #companyProfile ul {
   padding: 0;
   list-style-type: none;
+  margin-top: -3px;
+}
+
+#systems {
+  text-align: left;
+  padding-left: 1em;
 }
 
 .result {
@@ -264,4 +274,17 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
 
 .NewSearch, .Favorites, .Profile {
   font-size: 13px;
+}
+
+tr {
+  margin-bottom: 4px;
+}
+
+.head, .headsub {
+  font-weight: bold;
+}
+
+.headsub {
+  padding-top: -3px;
+  padding-left: 1em;
 }

@@ -16,32 +16,34 @@ const CompanyMain = (props) => {
 				<table className="table">
 				<tbody>
 					<tr>
-						<td>Company Rating </td>
+						<td className="head">Company Rating </td>
 						<td className="result"><span className="fa fa-star checked"></span>
 						 	<span className="fa fa-star checked"></span>
 			 				<span className="fa fa-star checked"></span>
 							<span className="fa fa-star checked"></span>  </td>
 					</tr>
 					<tr>
-						<td>Company Systems Used </td>
-						<td className="result"><ul>
+						<td className="head">Company Systems Used </td>
+					</tr>
+					<tr>
+						<td id="systems"><ul>
 							<li>Windows</li>
 							<li>Linux</li>
 							</ul></td>
 					</tr>
 					<tr>
-						<td>Company Minimum Qualifications</td>
+						<td className="head">Company Minimum Qualifications</td>
 					</tr>
 					<tr>
-						<td>Years Experience </td>
+						<td className="headsub">Years Experience </td>
 						<td className="result">5 </td>
 					</tr>
 					<tr>
-						<td>Certifications </td>
+						<td className="headsub">Certifications </td>
 						<td className="result">5 </td>
 					</tr>
 					<tr>
-						<td>Previously Used Testers </td>
+						<td className="head">Previously Used Testers </td>
 						<td className="result">Result </td>
 					</tr>
 				</tbody>
