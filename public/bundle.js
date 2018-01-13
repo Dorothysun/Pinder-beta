@@ -13598,26 +13598,140 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var WhatAreYou = function WhatAreYou(props) {
 
 	return _react2.default.createElement(
-		"div",
-		{ className: "CompanyMain" },
+		"section",
+		{ className: "hero is-fullheight is-default is-bold" },
 		_react2.default.createElement(
-			"button",
-			{
-				className: "btn btn-primary btn-block btn-large",
-				onClick: props.amCompany },
-			"Company"
+			"div",
+			{ className: "hero-head" },
+			_react2.default.createElement(
+				"nav",
+				{ className: "navbar" },
+				_react2.default.createElement(
+					"div",
+					{ className: "container" },
+					_react2.default.createElement(
+						"div",
+						{ className: "navbar-brand" },
+						_react2.default.createElement(
+							"a",
+							{ className: "navbar-item title", href: "../" },
+							"Pinder"
+						),
+						_react2.default.createElement(
+							"span",
+							{ className: "navbar-burger burger", "data-target": "navbarMenu" },
+							_react2.default.createElement("span", null),
+							_react2.default.createElement("span", null),
+							_react2.default.createElement("span", null)
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ id: "navbarMenu", className: "navbar-menu" },
+						_react2.default.createElement(
+							"div",
+							{ className: "navbar-end" },
+							_react2.default.createElement(
+								"a",
+								{ className: "navbar-item" },
+								"Home"
+							),
+							_react2.default.createElement(
+								"a",
+								{ className: "navbar-item" },
+								"Examples"
+							),
+							_react2.default.createElement(
+								"a",
+								{ className: "navbar-item" },
+								"Features"
+							),
+							_react2.default.createElement(
+								"a",
+								{ className: "navbar-item" },
+								"Team"
+							),
+							_react2.default.createElement(
+								"a",
+								{ className: "navbar-item" },
+								"Help"
+							)
+						)
+					)
+				)
+			)
 		),
 		_react2.default.createElement(
-			"button",
-			{
-				className: "btn btn-primary btn-block btn-large",
-				onClick: props.amTester },
-			"Tester"
-		)
+			"div",
+			{ className: "hero-body" },
+			_react2.default.createElement(
+				"div",
+				{ className: "container has-text-centered" },
+				_react2.default.createElement(
+					"div",
+					{ className: "columns is-vcentered" },
+					_react2.default.createElement(
+						"div",
+						{ className: "column is-5" },
+						_react2.default.createElement(
+							"figure",
+							{ className: "image is-4by3" },
+							_react2.default.createElement("img", { src: "http://placehold.it/800x600", alt: "Description" })
+						)
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "column is-6 is-offset-1" },
+						_react2.default.createElement(
+							"h1",
+							{ className: "title is-2" },
+							"Find the best date"
+						),
+						_react2.default.createElement(
+							"h2",
+							{ className: "subtitle is-4" },
+							"Today"
+						),
+						_react2.default.createElement("br", null),
+						_react2.default.createElement(
+							"p",
+							{ className: "has-text-centered" },
+							_react2.default.createElement(
+								"a",
+								{ className: "button is-medium is-info is-outlined",
+									onClick: props.amCompany },
+								"Company"
+							),
+							_react2.default.createElement(
+								"a",
+								{ className: "button is-medium is-info is-outlined",
+									onClick: props.amTester },
+								"Tester"
+							)
+						)
+					)
+				)
+			)
+		),
+		_react2.default.createElement("div", { className: "hero-foot" })
 	);
 };
 
 exports.default = WhatAreYou;
+
+
+{/* <div classNameName="CompanyMain">
+ <button 
+ classNameName="btn btn-primary btn-block btn-large"
+ onClick={props.amCompany}>
+ Company
+ </button>
+ <button 
+ classNameName="btn btn-primary btn-block btn-large"
+ onClick={props.amTester}>
+ Tester
+ </button>
+ </div> */}
 
 /***/ }),
 /* 52 */
