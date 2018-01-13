@@ -13928,30 +13928,111 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var CompanyLogin = function CompanyLogin(props) {
 
 	return _react2.default.createElement(
-		"div",
-		{ className: "loginDiv" },
-		_react2.default.createElement(
-			"h1",
-			null,
-			"Login"
-		),
+		"section",
+		{ className: "hero is-success is-fullheight" },
 		_react2.default.createElement(
 			"div",
-			{ id: "loginForm" },
-			_react2.default.createElement("input", { placeholder: "Username" }),
-			_react2.default.createElement("input", { placeholder: "Password" }),
+			{ className: "hero-body" },
 			_react2.default.createElement(
-				"button",
-				{
-					className: "btn btn-primary btn-block btn-large",
-					onClick: props.loginButton },
-				"Login"
+				"div",
+				{ className: "container has-text-centered" },
+				_react2.default.createElement(
+					"div",
+					{ className: "column is-4 is-offset-4" },
+					_react2.default.createElement(
+						"h3",
+						{ className: "title has-text-grey" },
+						"Welcome Company"
+					),
+					_react2.default.createElement(
+						"p",
+						{ className: "subtitle has-text-grey" },
+						"Please login to proceed."
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "box" },
+						_react2.default.createElement(
+							"form",
+							null,
+							_react2.default.createElement(
+								"div",
+								{ className: "field" },
+								_react2.default.createElement(
+									"div",
+									{ className: "control" },
+									_react2.default.createElement("input", { className: "input is-large", type: "email", placeholder: "Your Email", autofocus: "" })
+								)
+							),
+							_react2.default.createElement(
+								"div",
+								{ className: "field" },
+								_react2.default.createElement(
+									"div",
+									{ className: "control" },
+									_react2.default.createElement("input", { className: "input is-large", type: "password", placeholder: "Your Password" })
+								)
+							),
+							_react2.default.createElement(
+								"div",
+								{ className: "field" },
+								_react2.default.createElement(
+									"label",
+									{ className: "checkbox" },
+									_react2.default.createElement("input", { type: "checkbox" }),
+									"Remember me"
+								)
+							),
+							_react2.default.createElement(
+								"a",
+								{ className: "button is-block is-info is-large",
+									onClick: props.loginButton },
+								"Login"
+							)
+						)
+					),
+					_react2.default.createElement(
+						"p",
+						{ className: "has-text-grey" },
+						_react2.default.createElement(
+							"a",
+							{ href: "../" },
+							"Sign Up"
+						),
+						" \xA0\xB7\xA0",
+						_react2.default.createElement(
+							"a",
+							{ href: "../" },
+							"Forgot Password"
+						),
+						" \xA0\xB7\xA0",
+						_react2.default.createElement(
+							"a",
+							{ href: "../" },
+							"Need Help?"
+						)
+					)
+				)
 			)
 		)
 	);
 };
 
 exports.default = CompanyLogin;
+
+
+{/* <div className="loginDiv">
+ <h1>Login</h1>
+ <div id="loginForm">
+ <input placeholder='Username' />
+ <input placeholder='Password' />
+ <button 
+ 	className="btn btn-primary btn-block btn-large"
+ 	onClick={props.loginButton}>
+ 	Login
+ </button>
+ </div>
+ </div> */}
 
 /***/ }),
 /* 54 */
@@ -14216,24 +14297,91 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var TesterLogin = function TesterLogin(props) {
 
 	return _react2.default.createElement(
-		"div",
-		{ className: "loginDiv" },
-		_react2.default.createElement(
-			"h1",
-			null,
-			"Login"
-		),
+		"section",
+		{ className: "hero is-success is-fullheight" },
 		_react2.default.createElement(
 			"div",
-			{ id: "loginForm" },
-			_react2.default.createElement("input", { placeholder: "Username" }),
-			_react2.default.createElement("input", { placeholder: "Password" }),
+			{ className: "hero-body" },
 			_react2.default.createElement(
-				"button",
-				{
-					className: "btn btn-primary btn-block btn-large",
-					onClick: props.loginButton },
-				"Login"
+				"div",
+				{ className: "container has-text-centered" },
+				_react2.default.createElement(
+					"div",
+					{ className: "column is-4 is-offset-4" },
+					_react2.default.createElement(
+						"h3",
+						{ className: "title has-text-grey" },
+						"Welcome Tester"
+					),
+					_react2.default.createElement(
+						"p",
+						{ className: "subtitle has-text-grey" },
+						"Please login to proceed."
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "box" },
+						_react2.default.createElement(
+							"form",
+							null,
+							_react2.default.createElement(
+								"div",
+								{ className: "field" },
+								_react2.default.createElement(
+									"div",
+									{ className: "control" },
+									_react2.default.createElement("input", { className: "input is-large", type: "email", placeholder: "Your Email", autofocus: "" })
+								)
+							),
+							_react2.default.createElement(
+								"div",
+								{ className: "field" },
+								_react2.default.createElement(
+									"div",
+									{ className: "control" },
+									_react2.default.createElement("input", { className: "input is-large", type: "password", placeholder: "Your Password" })
+								)
+							),
+							_react2.default.createElement(
+								"div",
+								{ className: "field" },
+								_react2.default.createElement(
+									"label",
+									{ className: "checkbox" },
+									_react2.default.createElement("input", { type: "checkbox" }),
+									"Remember me"
+								)
+							),
+							_react2.default.createElement(
+								"a",
+								{ className: "button is-block is-info is-large",
+									onClick: props.loginButton },
+								"Login"
+							)
+						)
+					),
+					_react2.default.createElement(
+						"p",
+						{ className: "has-text-grey" },
+						_react2.default.createElement(
+							"a",
+							{ href: "../" },
+							"Sign Up"
+						),
+						" \xA0\xB7\xA0",
+						_react2.default.createElement(
+							"a",
+							{ href: "../" },
+							"Forgot Password"
+						),
+						" \xA0\xB7\xA0",
+						_react2.default.createElement(
+							"a",
+							{ href: "../" },
+							"Need Help?"
+						)
+					)
+				)
 			)
 		)
 	);
