@@ -16,8 +16,8 @@ const CompanyMain = (props) => {
                                     General
                                  </p>
                                  <ul class="menu-list">
-                                    <li><a>Dashboard</a></li>
-                                    <li><a>Customers</a></li>
+                                    <li><a>Profile</a></li>
+                                    <li><a>History</a></li>
                                  </ul>
                                  <p class="menu-label">
                                     Administration

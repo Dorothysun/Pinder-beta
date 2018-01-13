@@ -7,10 +7,14 @@ import WhatAreYou from './WhatAreYou.jsx';
 import CompanyMain from './CompanyMain.jsx';
 import CompanyLogin from './CompanyLogin.jsx';
 import CompanySearch from './CompanySearch.jsx';
+import CompanyResults from './CompanyResults.jsx';
+
 
 import TesterMain from './TesterMain.jsx';
 import TesterLogin from './TesterLogin.jsx';
 import TesterSearch from './TesterSearch.jsx';
+// import TesterResults from './TesterResults.jsx';
+
 
 // import TesterData from '../data/';
 // import CompanyData from '../data/';
@@ -34,6 +38,7 @@ class App extends React.Component {
     this.printState = this.printState.bind(this);
     this.getTestersFromDB = this.getTestersFromDB.bind(this);
     this.getCompaniesFromDB = this.getCompaniesFromDB.bind(this);
+    // this.showResults = this.showResults.bind(this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
   }
@@ -146,7 +151,7 @@ class App extends React.Component {
             : (this.state.currentView == 'testermain')
             ? <TesterMain search ={this.search}/>
             : (this.state.currentView == 'companysearch')
-            ? <CompanySearch />
+            ? <CompanyResults />
             : (this.state.currentView == 'testersearch')
             ? <TesterSearch />
             : <WhatAreYou amTester={this.amTester} amCompany={this.amCompany} />

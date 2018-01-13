@@ -45,7 +45,8 @@ const WhatAreYou = (props) => {
 				<div className="columns is-vcentered">
 				<div className="column is-5">
 					<figure className="image is-4by3">
-					<img src="http://placehold.it/800x600" alt="Description" />
+					{/* <img src="http://placehold.it/800x600" alt="Description" /> */}
+					<img id="logo" src="../img/front.png" alt="Logo" />					
 					</figure>
 				</div>
 				<div className="column is-6 is-offset-1">
