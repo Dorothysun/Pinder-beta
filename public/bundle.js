@@ -1729,6 +1729,8 @@ var App = function (_React$Component) {
     _this.printState = _this.printState.bind(_this);
     _this.getTestersFromDB = _this.getTestersFromDB.bind(_this);
     _this.getCompaniesFromDB = _this.getCompaniesFromDB.bind(_this);
+    _this.goHome = _this.goHome.bind(_this);
+    _this.backButton = _this.backButton.bind(_this);
     // this.showResults = this.showResults.bind(this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
@@ -1736,6 +1738,23 @@ var App = function (_React$Component) {
   }
 
   _createClass(App, [{
+    key: 'backButton',
+    value: function backButton() {
+      var temp = this.state.prevView;
+      this.setState({
+        prevView: this.state.currentView,
+        currentView: temp
+      });
+    }
+  }, {
+    key: 'goHome',
+    value: function goHome() {
+      this.setState({
+        prevView: this.state.currentView,
+        currentView: ''
+      });
+    }
+  }, {
     key: 'getTestersFromDB',
     value: function getTestersFromDB() {
       var _this2 = this;
