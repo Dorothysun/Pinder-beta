@@ -7,7 +7,7 @@ const CompanyMain = (props) => {
 			<div className="navbar-brand">
 					<a className="navbar-item title" href="../">
 						{/* <img id="logo" src="../img/logo.png" alt="Logo" /> */}
-						Pinder
+						DxT
 					</a>
 			</div>
 		<section class="section">

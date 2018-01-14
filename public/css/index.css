@@ -3,8 +3,8 @@ html, body {
     background: #F0F2F4;
   }
   .card {
-    margin-bottom: 3rem;
-    height: 120%
+    margin-bottom: 4rem;
+    height: 100%
   }
   .content-wrapper {
     margin-top: 3rem;
@@ -14,20 +14,15 @@ html, body {
     font-weight: bold;
     color: #666;
   }
-  .card-header-title {
-    display: block;
-  }
+  
   .card-content p {
     margin-bottom: 2rem;
   }
   
   .card-content{
-    height: 78.5%;
+    height: 86%;
   }
   
-  #header{
-    height: 10px;
-  }
 
 .section {
     padding: 1.5rem 1.5rem;
