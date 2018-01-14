@@ -18759,11 +18759,6 @@ var CompanyMain = function CompanyMain(props) {
 									'aside',
 									{ 'class': 'menu' },
 									_react2.default.createElement(
-										'p',
-										{ 'class': 'menu-label' },
-										'General'
-									),
-									_react2.default.createElement(
 										'ul',
 										{ 'class': 'menu-list' },
 										_react2.default.createElement(
@@ -18771,8 +18766,17 @@ var CompanyMain = function CompanyMain(props) {
 											null,
 											_react2.default.createElement(
 												'a',
+												{ 'class': 'is-active' },
+												'Company Profile'
+											)
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												'a',
 												null,
-												'Profile'
+												'Tester Search'
 											)
 										),
 										_react2.default.createElement(
@@ -18783,63 +18787,14 @@ var CompanyMain = function CompanyMain(props) {
 												null,
 												'Search History'
 											)
-										)
-									),
-									_react2.default.createElement(
-										'p',
-										{ 'class': 'menu-label' },
-										'Administration'
-									),
-									_react2.default.createElement(
-										'ul',
-										{ 'class': 'menu-list' },
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												'a',
-												null,
-												'Team Settings'
-											)
 										),
 										_react2.default.createElement(
 											'li',
 											null,
 											_react2.default.createElement(
 												'a',
-												{ 'class': 'is-active' },
-												'Search for Tester'
-											),
-											_react2.default.createElement(
-												'ul',
 												null,
-												_react2.default.createElement(
-													'li',
-													null,
-													_react2.default.createElement(
-														'a',
-														null,
-														'Members'
-													)
-												),
-												_react2.default.createElement(
-													'li',
-													null,
-													_react2.default.createElement(
-														'a',
-														null,
-														'Plugins'
-													)
-												),
-												_react2.default.createElement(
-													'li',
-													null,
-													_react2.default.createElement(
-														'a',
-														null,
-														'Add a member'
-													)
-												)
+												'Previously Used Testers'
 											)
 										),
 										_react2.default.createElement(
@@ -18848,61 +18803,7 @@ var CompanyMain = function CompanyMain(props) {
 											_react2.default.createElement(
 												'a',
 												null,
-												'Invitations'
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												'a',
-												null,
-												'Cloud Storage Environment Settings'
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												'a',
-												null,
-												'Authentication'
-											)
-										)
-									),
-									_react2.default.createElement(
-										'p',
-										{ 'class': 'menu-label' },
-										'Transactions'
-									),
-									_react2.default.createElement(
-										'ul',
-										{ 'class': 'menu-list' },
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												'a',
-												null,
-												'Payments'
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												'a',
-												null,
-												'Transfers'
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												'a',
-												null,
-												'Balance'
+												'Messages'
 											)
 										)
 									)

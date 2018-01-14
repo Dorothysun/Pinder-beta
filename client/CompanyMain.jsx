@@ -24,37 +24,12 @@ const CompanyMain = (props) => {
                         <div class="columns">
                            <div class="column is-half">
                               <aside class="menu">
-                                 <p class="menu-label">
-                                    General
-                                 </p>
                                  <ul class="menu-list">
-                                    <li><a>Profile</a></li>
+                                    <li><a class='is-active'>Company Profile</a></li>
+                                    <li><a>Tester Search</a></li>
                                     <li><a>Search History</a></li>
-                                 </ul>
-                                 <p class="menu-label">
-                                    Administration
-                                 </p>
-                                 <ul class="menu-list">
-                                    <li><a>Team Settings</a></li>
-                                    <li>
-                                       <a class="is-active">Search for Tester</a>
-                                       <ul>
-                                          <li><a>Members</a></li>
-                                          <li><a>Plugins</a></li>
-                                          <li><a>Add a member</a></li>
-                                       </ul>
-                                    </li>
-                                    <li><a>Invitations</a></li>
-                                    <li><a>Cloud Storage Environment Settings</a></li>
-                                    <li><a>Authentication</a></li>
-                                 </ul>
-                                 <p class="menu-label">
-                                    Transactions
-                                 </p>
-                                 <ul class="menu-list">
-                                    <li><a>Payments</a></li>
-                                    <li><a>Transfers</a></li>
-                                    <li><a>Balance</a></li>
+                                    <li><a>Previously Used Testers</a></li>
+                                    <li><a>Messages</a></li>
                                  </ul>
                               </aside>
                            </div>
@@ -63,46 +38,6 @@ const CompanyMain = (props) => {
                                  <p class="panel-heading">
 								 	Search for Tester
                                  </p>
-                                 {/* <a class="panel-block is-active">
-                                 <span class="panel-icon">
-                                 <i class="fas fa-book"></i>
-                                 </span>
-                                 bulma
-                                 </a>
-                                 <a class="panel-block">
-                                 <span class="panel-icon">
-                                 <i class="fas fa-book"></i>
-                                 </span>
-                                 marksheet
-                                 </a>
-                                 <a class="panel-block">
-                                 <span class="panel-icon">
-                                 <i class="fas fa-book"></i>
-                                 </span>
-                                 minireset.css
-                                 </a>
-                                 <a class="panel-block">
-                                 <span class="panel-icon">
-                                 <i class="fas fa-book"></i>
-                                 </span>
-                                 jgthms.github.io
-                                 </a>
-                                 <a class="panel-block">
-                                 <span class="panel-icon">
-                                 <i class="fas fa-code-branch"></i>
-                                 </span>
-                                 daniellowtw/infBoard
-                                 </a>
-                                 <a class="panel-block">
-                                 <span class="panel-icon">
-                                 <i class="fas fa-code-branch"></i>
-                                 </span>
-                                 mojs
-                                 </a>
-                                 <label class="panel-block">
-                                 <input type="checkbox" />
-                                 Remember me
-								 </label> */}
 								 <table className="table" />
 									<tbody>
 										<tr>
