@@ -1,44 +1,45 @@
 html, body {
-    font-family: 'Open Sans', serif;
-    background: #F0F2F4;
-  }
-  .card {
-    margin-bottom: 4rem;
-    height: 100%
-  }
-  .content-wrapper {
-    margin-top: 3rem;
-  }
-  .card-footer-item {
-    font-size: 12px;
-    font-weight: bold;
-    color: #666;
-  }
-  
-  .card-content p {
-    margin-bottom: 2rem;
-  }
-  
-  .card-content{
-    height: 86%;
-  }
-  
+  font-family: 'Open Sans', serif;
+  background: #F0F2F4;
+}
+.card {
+  margin-bottom: 4rem;
+  height: 60%
+}
+.content-wrapper {
+  margin-top: 3rem;
+}
+.card-footer-item {
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+}
+
+.card-content p {
+  margin-bottom: 2rem;
+}
+
+.card-content{
+  height: 88%;
+  font-size:110%;
+}
+
 
 .section {
-    padding: 1.5rem 1.5rem;
+  padding: 1.5rem 1.5rem;
 }
-  
+
 .card{
-    background-color:#f2f2f2;
+  background-color:#f2f2f2;
 }
 .card:hover{
-    background-color:white;
+  background-color:white;
 }
 
 .yes:hover{
-    background-color:#b2d8b2;
+  background-color:#b2d8b2;
 }
 
 .no:hover{
-    background-color:#fd7c6e;    
+  background-color:#fd7c6e;    
 }
