@@ -15,11 +15,6 @@ const CompanyResults = (props) => {
 			<div className="column is-4">
 
 				<div className="card">
-				<header className="card-header">
-					<p className="card-header-title">
-					<span>Admin <small>(Light)</small></span>
-					</p>
-				</header>
 				<div className="card-content">
 				</div>
 				<footer className="card-footer">
@@ -29,11 +24,6 @@ const CompanyResults = (props) => {
 				</div>
 
 				<div className="card">
-				<header className="card-header">
-					<p className="card-header-title">
-					<span>Forum</span>
-					</p>
-				</header>
 				<div className="card-content">
 				</div>
 				<footer className="card-footer">
@@ -45,13 +35,6 @@ const CompanyResults = (props) => {
 
 			<div className="column is-4">
 				<div className="card">
-				<header className="card-header">
-					<p className="card-header-title">
-					<span>Blog</span>
-					<span className="is-pulled-right">
-					</span>
-					</p>
-				</header>
 				<div className="card-content">
 				</div>
 				<footer className="card-footer">
@@ -60,13 +43,6 @@ const CompanyResults = (props) => {
 				</footer>
 				</div>
 				<div className="card">
-				<header className="card-header">
-					<p className="card-header-title">
-					<span>Hero</span>
-					<span className="is-pulled-right">
-					</span>
-					</p>
-				</header>
 				<div className="card-content">
 				</div>
 				<footer className="card-footer">
@@ -79,13 +55,6 @@ const CompanyResults = (props) => {
 
 			<div className="column is-4">
 				<div className="card">
-				<header className="card-header">
-					<p className="card-header-title">
-					<span>Cover</span>
-					<span className="is-pulled-right">
-					</span>
-					</p>
-				</header>
 				<div className="card-content">
 					{/* <figure className="image">
 					<img src="images/cover.png" alt="Cover template screenshot">
@@ -98,13 +67,6 @@ const CompanyResults = (props) => {
 				</div>
 
 				<div className="card">
-				<header className="card-header">
-					<p className="card-header-title">
-					<span>Inbox</span>
-					<span className="is-pulled-right">
-					</span>
-					</p>
-				</header>
 				<div className="card-content">
 					{/* <figure className="image">
 					<img src="images/inbox.png" alt="Inbox template screenshot" />

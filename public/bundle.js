@@ -14459,24 +14459,6 @@ var CompanyResults = function CompanyResults(props) {
 				_react2.default.createElement(
 					"div",
 					{ className: "card" },
-					_react2.default.createElement(
-						"header",
-						{ className: "card-header" },
-						_react2.default.createElement(
-							"p",
-							{ className: "card-header-title" },
-							_react2.default.createElement(
-								"span",
-								null,
-								"Admin ",
-								_react2.default.createElement(
-									"small",
-									null,
-									"(Light)"
-								)
-							)
-						)
-					),
 					_react2.default.createElement("div", { className: "card-content" }),
 					_react2.default.createElement(
 						"footer",
@@ -14496,19 +14478,6 @@ var CompanyResults = function CompanyResults(props) {
 				_react2.default.createElement(
 					"div",
 					{ className: "card" },
-					_react2.default.createElement(
-						"header",
-						{ className: "card-header" },
-						_react2.default.createElement(
-							"p",
-							{ className: "card-header-title" },
-							_react2.default.createElement(
-								"span",
-								null,
-								"Forum"
-							)
-						)
-					),
 					_react2.default.createElement("div", { className: "card-content" }),
 					_react2.default.createElement(
 						"footer",
@@ -14532,20 +14501,6 @@ var CompanyResults = function CompanyResults(props) {
 				_react2.default.createElement(
 					"div",
 					{ className: "card" },
-					_react2.default.createElement(
-						"header",
-						{ className: "card-header" },
-						_react2.default.createElement(
-							"p",
-							{ className: "card-header-title" },
-							_react2.default.createElement(
-								"span",
-								null,
-								"Blog"
-							),
-							_react2.default.createElement("span", { className: "is-pulled-right" })
-						)
-					),
 					_react2.default.createElement("div", { className: "card-content" }),
 					_react2.default.createElement(
 						"footer",
@@ -14565,20 +14520,6 @@ var CompanyResults = function CompanyResults(props) {
 				_react2.default.createElement(
 					"div",
 					{ className: "card" },
-					_react2.default.createElement(
-						"header",
-						{ className: "card-header" },
-						_react2.default.createElement(
-							"p",
-							{ className: "card-header-title" },
-							_react2.default.createElement(
-								"span",
-								null,
-								"Hero"
-							),
-							_react2.default.createElement("span", { className: "is-pulled-right" })
-						)
-					),
 					_react2.default.createElement("div", { className: "card-content" }),
 					_react2.default.createElement(
 						"footer",
@@ -14602,20 +14543,6 @@ var CompanyResults = function CompanyResults(props) {
 				_react2.default.createElement(
 					"div",
 					{ className: "card" },
-					_react2.default.createElement(
-						"header",
-						{ className: "card-header" },
-						_react2.default.createElement(
-							"p",
-							{ className: "card-header-title" },
-							_react2.default.createElement(
-								"span",
-								null,
-								"Cover"
-							),
-							_react2.default.createElement("span", { className: "is-pulled-right" })
-						)
-					),
 					_react2.default.createElement("div", { className: "card-content" }),
 					_react2.default.createElement(
 						"footer",
@@ -14635,20 +14562,6 @@ var CompanyResults = function CompanyResults(props) {
 				_react2.default.createElement(
 					"div",
 					{ className: "card" },
-					_react2.default.createElement(
-						"header",
-						{ className: "card-header" },
-						_react2.default.createElement(
-							"p",
-							{ className: "card-header-title" },
-							_react2.default.createElement(
-								"span",
-								null,
-								"Inbox"
-							),
-							_react2.default.createElement("span", { className: "is-pulled-right" })
-						)
-					),
 					_react2.default.createElement("div", { className: "card-content" }),
 					_react2.default.createElement(
 						"footer",
