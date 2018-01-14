@@ -1682,18 +1682,6 @@ var _CompanyResults = __webpack_require__(55);
 
 var _CompanyResults2 = _interopRequireDefault(_CompanyResults);
 
-var _TesterMain = __webpack_require__(56);
-
-var _TesterMain2 = _interopRequireDefault(_TesterMain);
-
-var _TesterLogin = __webpack_require__(57);
-
-var _TesterLogin2 = _interopRequireDefault(_TesterLogin);
-
-var _TesterSearch = __webpack_require__(58);
-
-var _TesterSearch2 = _interopRequireDefault(_TesterSearch);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1703,8 +1691,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // import TesterResults from './TesterResults.jsx';
-
-
 // import TesterData from '../data/';
 // import CompanyData from '../data/';
 
@@ -1728,75 +1714,68 @@ var App = function (_React$Component) {
     _this.amCompany = _this.amCompany.bind(_this);
     _this.amTester = _this.amTester.bind(_this);
     _this.search = _this.search.bind(_this);
-    _this.printState = _this.printState.bind(_this);
-    _this.getTestersFromDB = _this.getTestersFromDB.bind(_this);
-    _this.getCompaniesFromDB = _this.getCompaniesFromDB.bind(_this);
-    _this.goHome = _this.goHome.bind(_this);
-    _this.backButton = _this.backButton.bind(_this);
+    // this.printState = this.printState.bind(this);
+    // this.getTestersFromDB = this.getTestersFromDB.bind(this);
+    // this.getCompaniesFromDB = this.getCompaniesFromDB.bind(this);
+    // this.goHome = this.goHome.bind(this);
+    // this.backButton = this.backButton.bind(this);
     // this.showResults = this.showResults.bind(this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
     return _this;
   }
 
+  // backButton() {
+  //   let temp = this.state.prevView;
+  //   this.setState({
+  //     prevView: this.state.currentView,
+  //     currentView: temp
+  //   });  
+  // }
+
+  // goHome() {
+  //   this.setState({
+  //     prevView: this.state.currentView,
+  //     currentView: ''
+  //   });  
+  // }
+
+  // getTestersFromDB () {
+  //   axios.get('/data/testers')
+  //   .then(res => {
+  //     const data = res.data;
+  //     this.setState({
+  //       results: res.data
+  //     })
+  //   })
+  //   .catch(err => {
+  //     console.error(err);
+  //   })
+  // }
+
+  // getCompaniesFromDB () {
+  //   axios.get('/data/testers')
+  //   .then(res => {
+  //     const data = res.data;
+  //     this.setState({
+  //       results: res.data
+  //     })
+  //   })
+  //   .catch(err => {
+  //     console.error(err);
+  //   })
+  // }
+
+  // printState() {
+  //   setTimeout(() => {
+  //     console.log("\nCurrent State:");
+  //     for (var i in this.state) {
+  //       console.log("\t" + i + ": " + this.state[i]);
+  //     }
+  //   }, 1000);
+  // }
+
   _createClass(App, [{
-    key: 'backButton',
-    value: function backButton() {
-      var temp = this.state.prevView;
-      this.setState({
-        prevView: this.state.currentView,
-        currentView: temp
-      });
-    }
-  }, {
-    key: 'goHome',
-    value: function goHome() {
-      this.setState({
-        prevView: this.state.currentView,
-        currentView: ''
-      });
-    }
-  }, {
-    key: 'getTestersFromDB',
-    value: function getTestersFromDB() {
-      var _this2 = this;
-
-      _axios2.default.get('/data/testers').then(function (res) {
-        var data = res.data;
-        _this2.setState({
-          results: res.data
-        });
-      }).catch(function (err) {
-        console.error(err);
-      });
-    }
-  }, {
-    key: 'getCompaniesFromDB',
-    value: function getCompaniesFromDB() {
-      var _this3 = this;
-
-      _axios2.default.get('/data/testers').then(function (res) {
-        var data = res.data;
-        _this3.setState({
-          results: res.data
-        });
-      }).catch(function (err) {
-        console.error(err);
-      });
-    }
-  }, {
-    key: 'printState',
-    value: function printState() {
-      var _this4 = this;
-
-      setTimeout(function () {
-        console.log("\nCurrent State:");
-        for (var i in _this4.state) {
-          console.log("\t" + i + ": " + _this4.state[i]);
-        }
-      }, 1000);
-    }
-  }, {
     key: 'loginButton',
     value: function loginButton() {
       if (this.state.currentView === 'companylogin') {
@@ -1858,9 +1837,8 @@ var App = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      var _this5 = this;
+      var _this2 = this;
 
-      this.printState();
       return _react2.default.createElement(
         _reactRouterDom.BrowserRouter,
         null,
@@ -1872,11 +1850,11 @@ var App = function (_React$Component) {
             null,
             _react2.default.createElement(_reactRouterDom.Route, { path: '/companylogin',
               component: function component() {
-                return _react2.default.createElement(_CompanyLogin2.default, { loginButton: _this5.loginButton });
+                return _react2.default.createElement(_CompanyLogin2.default, { loginButton: _this2.loginButton });
               } }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/companymain',
               component: function component() {
-                return _react2.default.createElement(_CompanyMain2.default, { search: _this5.search });
+                return _react2.default.createElement(_CompanyMain2.default, { search: _this2.search });
               } }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/companyresults',
               component: function component() {
@@ -14943,24 +14921,9 @@ var CompanyResults = function CompanyResults(props) {
 exports.default = CompanyResults;
 
 /***/ }),
-/* 56 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/Dorothy/Documents/Pinder-beta/client/TesterMain.jsx'");
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/Dorothy/Documents/Pinder-beta/client/TesterLogin.jsx'");
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/Dorothy/Documents/Pinder-beta/client/TesterSearch.jsx'");
-
-/***/ }),
+/* 56 */,
+/* 57 */,
+/* 58 */,
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 

@@ -13,13 +13,7 @@ import CompanySearch from './CompanySearch.jsx';
 import CompanyResults from './CompanyResults.jsx';
 
 
-import TesterMain from './TesterMain.jsx';
-import TesterLogin from './TesterLogin.jsx';
-import TesterSearch from './TesterSearch.jsx';
-
 // import TesterResults from './TesterResults.jsx';
-
-
 // import TesterData from '../data/';
 // import CompanyData from '../data/';
 
@@ -39,65 +33,65 @@ class App extends React.Component {
     this.amCompany = this.amCompany.bind(this);
     this.amTester = this.amTester.bind(this);
     this.search = this.search.bind(this);
-    this.printState = this.printState.bind(this);
-    this.getTestersFromDB = this.getTestersFromDB.bind(this);
-    this.getCompaniesFromDB = this.getCompaniesFromDB.bind(this);
-    this.goHome = this.goHome.bind(this);
-    this.backButton = this.backButton.bind(this);
+    // this.printState = this.printState.bind(this);
+    // this.getTestersFromDB = this.getTestersFromDB.bind(this);
+    // this.getCompaniesFromDB = this.getCompaniesFromDB.bind(this);
+    // this.goHome = this.goHome.bind(this);
+    // this.backButton = this.backButton.bind(this);
     // this.showResults = this.showResults.bind(this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
   }
 
-  backButton() {
-    let temp = this.state.prevView;
-    this.setState({
-      prevView: this.state.currentView,
-      currentView: temp
-    });  
-  }
+  // backButton() {
+  //   let temp = this.state.prevView;
+  //   this.setState({
+  //     prevView: this.state.currentView,
+  //     currentView: temp
+  //   });  
+  // }
 
-  goHome() {
-    this.setState({
-      prevView: this.state.currentView,
-      currentView: ''
-    });  
-  }
+  // goHome() {
+  //   this.setState({
+  //     prevView: this.state.currentView,
+  //     currentView: ''
+  //   });  
+  // }
 
-  getTestersFromDB () {
-    axios.get('/data/testers')
-    .then(res => {
-      const data = res.data;
-      this.setState({
-        results: res.data
-      })
-    })
-    .catch(err => {
-      console.error(err);
-    })
-  }
+  // getTestersFromDB () {
+  //   axios.get('/data/testers')
+  //   .then(res => {
+  //     const data = res.data;
+  //     this.setState({
+  //       results: res.data
+  //     })
+  //   })
+  //   .catch(err => {
+  //     console.error(err);
+  //   })
+  // }
   
-  getCompaniesFromDB () {
-    axios.get('/data/testers')
-    .then(res => {
-      const data = res.data;
-      this.setState({
-        results: res.data
-      })
-    })
-    .catch(err => {
-      console.error(err);
-    })
-  }
+  // getCompaniesFromDB () {
+  //   axios.get('/data/testers')
+  //   .then(res => {
+  //     const data = res.data;
+  //     this.setState({
+  //       results: res.data
+  //     })
+  //   })
+  //   .catch(err => {
+  //     console.error(err);
+  //   })
+  // }
 
-  printState() {
-    setTimeout(() => {
-      console.log("\nCurrent State:");
-      for (var i in this.state) {
-        console.log("\t" + i + ": " + this.state[i]);
-      }
-    }, 1000);
-  }
+  // printState() {
+  //   setTimeout(() => {
+  //     console.log("\nCurrent State:");
+  //     for (var i in this.state) {
+  //       console.log("\t" + i + ": " + this.state[i]);
+  //     }
+  //   }, 1000);
+  // }
 
   loginButton() {
     if (this.state.currentView === 'companylogin') {
@@ -159,7 +153,6 @@ class App extends React.Component {
   }
 
   render () {
-      this.printState();
       return (
         <BrowserRouter>
         <div> 
