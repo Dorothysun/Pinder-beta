@@ -8,7 +8,7 @@ const WhatAreYou = (props) => {
 			<nav className="navbar">
 			<div className="container">
 				<div className="navbar-brand">
-					<a className="navbar-item title" href="../">
+					<a className="navbar-item" href="../">
 						<img id= "icon" src="../img/icon.png" alt="Logo" />
 					</a>
 					<span className="navbar-burger burger" data-target="navbarMenu">

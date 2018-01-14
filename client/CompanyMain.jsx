@@ -3,7 +3,7 @@ import React from 'react';
 const CompanyMain = (props) => {
 
 	return (
-		<div>
+		<div className="container">
 			<div className="navbar-brand">
 				<a className="navbar-item title" href="../">
 					<img id="icon" src="../img/icon.png" alt="Logo" />
@@ -14,7 +14,7 @@ const CompanyMain = (props) => {
 					<span></span>
 				</span>
 			</div>
-		<section class="section is-medium">
+		<section class="section">
                <div class="container">
                   <div class="columns">
                      <div class="column is-1">

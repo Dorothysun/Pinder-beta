@@ -13622,7 +13622,7 @@ var WhatAreYou = function WhatAreYou(props) {
 						{ className: "navbar-brand" },
 						_react2.default.createElement(
 							"a",
-							{ className: "navbar-item title", href: "../" },
+							{ className: "navbar-item", href: "../" },
 							_react2.default.createElement("img", { id: "icon", src: "../img/icon.png", alt: "Logo" })
 						),
 						_react2.default.createElement(
@@ -13762,7 +13762,7 @@ var CompanyMain = function CompanyMain(props) {
 
 	return _react2.default.createElement(
 		"div",
-		null,
+		{ className: "container" },
 		_react2.default.createElement(
 			"div",
 			{ className: "navbar-brand" },
@@ -13781,7 +13781,7 @@ var CompanyMain = function CompanyMain(props) {
 		),
 		_react2.default.createElement(
 			"section",
-			{ "class": "section is-medium" },
+			{ "class": "section" },
 			_react2.default.createElement(
 				"div",
 				{ "class": "container" },
