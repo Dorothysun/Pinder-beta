@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+
 
 const CompanyLogin = (props) => {
 
@@ -28,8 +30,10 @@ const CompanyLogin = (props) => {
 						Remember me
 						</label>
 					</div>
-					<a className="button is-block is-info is-large"
-					onClick={props.loginButton}>Login</a>
+					<Link className="button is-block is-info is-large"
+						to="/companymain">
+						Company
+					</Link>
 					</form>
 				</div>
 				<p className="has-text-grey">

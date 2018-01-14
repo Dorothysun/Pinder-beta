@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const CompanyMain = (props) => {
 
@@ -28,7 +29,7 @@ const CompanyMain = (props) => {
                                  </p>
                                  <ul class="menu-list">
                                     <li><a>Profile</a></li>
-                                    <li><a>History</a></li>
+                                    <li><a>Search History</a></li>
                                  </ul>
                                  <p class="menu-label">
                                     Administration
@@ -137,10 +138,14 @@ const CompanyMain = (props) => {
 										</tr>
 									</tbody>
                                  <div class="panel-block">
-                                    <button class="button is-link is-outlined is-fullwidth"
-									onClick={props.search}>
+                                    <Link class="button is-link is-outlined is-fullwidth"
+									to="/companyresults">
                                     Search
-                                    </button>
+                                    </Link>
+									{/* <Link className="button is-block is-info is-large"
+										to="/companymain">
+										Company
+									</Link> */}
                                  </div>
                               </nav>
                            </div>

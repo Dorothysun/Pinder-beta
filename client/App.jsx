@@ -1,4 +1,7 @@
 import React from 'react';
+import { BrowserRouter,Route, Switch } from 'react-router-dom';
+
+
 import axios from 'axios';
 import Chance from 'chance';
 
@@ -13,6 +16,7 @@ import CompanyResults from './CompanyResults.jsx';
 import TesterMain from './TesterMain.jsx';
 import TesterLogin from './TesterLogin.jsx';
 import TesterSearch from './TesterSearch.jsx';
+
 // import TesterResults from './TesterResults.jsx';
 
 
@@ -157,23 +161,23 @@ class App extends React.Component {
   render () {
       this.printState();
       return (
-        <div>
-          {
-            (this.state.currentView == 'companylogin')
-            ? <CompanyLogin loginButton={this.loginButton} />
-            : (this.state.currentView == 'testerlogin')
-            ? <TesterLogin loginButton={this.loginButton} />
-            : (this.state.currentView == 'companymain')
-            ? <CompanyMain search ={this.search}/>
-            : (this.state.currentView == 'testermain')
-            ? <TesterMain search ={this.search}/>
-            : (this.state.currentView == 'companysearch')
-            ? <CompanyResults />
-            : (this.state.currentView == 'testersearch')
-            ? <TesterSearch />
-            : <WhatAreYou amTester={this.amTester} amCompany={this.amCompany} />
-          }
-      </div>
+        <BrowserRouter>
+        <div> 
+            <Switch>
+              <Route path='/companylogin' 
+                  component={() => 
+                    <CompanyLogin loginButton={this.loginButton} />} />
+              <Route path='/companymain' 
+                  component={() => 
+                    <CompanyMain search={this.search} />} />
+              <Route path='/companyresults' 
+                  component={() => 
+                    <CompanyResults />} />
+
+              <Route exact path='/' component={WhatAreYou} />
+            </Switch>
+        </div>
+        </BrowserRouter>
       )
   }
 }

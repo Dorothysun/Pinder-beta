@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const WhatAreYou = (props) => {
 
@@ -57,10 +58,10 @@ const WhatAreYou = (props) => {
 					</h2>
 					<br />
 					<p className="has-text-centered">
-					<a className="button is-medium is-info is-outlined"
-						onClick={props.amCompany}>
+					<Link className="button is-medium is-info is-outlined"
+						to="/companylogin">
 						Company
-					</a>
+					</Link>
 					<a className="button is-medium is-info is-outlined"
 						onClick={props.amTester}>
 						Tester
