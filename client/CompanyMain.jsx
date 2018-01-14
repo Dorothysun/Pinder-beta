@@ -5,12 +5,16 @@ const CompanyMain = (props) => {
 	return (
 		<div>
 			<div className="navbar-brand">
-					<a className="navbar-item title" href="../">
-						{/* <img id="logo" src="../img/logo.png" alt="Logo" /> */}
-						Pinder
-					</a>
+				<a className="navbar-item title" href="../">
+					<img id="icon" src="../img/icon.png" alt="Logo" />
+				</a>
+				<span className="navbar-burger burger" data-target="navbarMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
 			</div>
-		<section class="section">
+		<section class="section is-medium">
                <div class="container">
                   <div class="columns">
                      <div class="column is-1">
@@ -202,3 +206,10 @@ export default CompanyMain;
 				</table>
 			</div>
 		</div> */}
+
+	// 	<div className="navbar-brand">
+	// 	<a className="navbar-item title" href="../">
+	// 		{/* <img id="logo" src="../img/logo.png" alt="Logo" /> */}
+	// 		Pinder
+	// 	</a>
+	// </div>

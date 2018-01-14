@@ -3,13 +3,13 @@ import React from 'react';
 const WhatAreYou = (props) => {
 
 	return (
-		<section className="hero is-fullheight is-default is-bold">
+		<section id="background" className="hero is-fullheight is-default is-bold">
 		<div className="hero-head">
 			<nav className="navbar">
 			<div className="container">
 				<div className="navbar-brand">
 					<a className="navbar-item title" href="../">
-						<img src="../img/icon.png" alt="Logo" />
+						<img id= "icon" src="../img/icon.png" alt="Logo" />
 					</a>
 					<span className="navbar-burger burger" data-target="navbarMenu">
 						<span></span>

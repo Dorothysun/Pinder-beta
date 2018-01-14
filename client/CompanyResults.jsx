@@ -3,11 +3,15 @@ import React from 'react';
 const CompanyResults = (props) => {
 
 	return (
-		<div className="container content-wrapper">
-		    <div class="hero-body" id="header">
-    		</div>	
-			<div className="columns">
-
+		<div className="container">
+			<div className="navbar-brand">
+				<a className="navbar-item title" href="../">
+					<img id="icon" src="../img/icon.png" alt="Logo" />
+				</a>
+			</div>
+		    {/* <div class="hero-body" id="header">
+    		</div>	 */}
+			<div className="columns content-wrapper">
 			<div className="column is-4">
 
 				<div className="card">
@@ -19,8 +23,8 @@ const CompanyResults = (props) => {
 				<div className="card-content">
 				</div>
 				<footer className="card-footer">
-					<a href="templates/admin.html" className="card-footer-item yes">Interested</a>
-					<a href="https://github.com/dansup/bulma-templates/blob/master/templates/admin.html" className="card-footer-item no">Not Interested</a>
+					<a className="card-footer-item yes">Interested</a>
+					<a className="card-footer-item no">Not Interested</a>
 				</footer>
 				</div>
 
@@ -33,8 +37,8 @@ const CompanyResults = (props) => {
 				<div className="card-content">
 				</div>
 				<footer className="card-footer">
-					<a href="templates/forum.html" className="card-footer-item yes">Interested</a>
-					<a href="https://github.com/dansup/bulma-templates/blob/master/templates/forum.html" className="card-footer-item no">Not Interested</a>
+					<a className="card-footer-item yes">Interested</a>
+					<a className="card-footer-item no">Not Interested</a>
 				</footer>
 				</div>
 			</div>
@@ -51,8 +55,8 @@ const CompanyResults = (props) => {
 				<div className="card-content">
 				</div>
 				<footer className="card-footer">
-					<a href="templates/blog.html" className="card-footer-item yes">Interested</a>
-					<a href="https://github.com/dansup/bulma-templates/blob/master/templates/blog.html" className="card-footer-item no">Not Interested</a>
+					<a className="card-footer-item yes">Interested</a>
+					<a className="card-footer-item no">Not Interested</a>
 				</footer>
 				</div>
 				<div className="card">
@@ -66,8 +70,8 @@ const CompanyResults = (props) => {
 				<div className="card-content">
 				</div>
 				<footer className="card-footer">
-					<a href="templates/hero.html" className="card-footer-item yes">Interested</a>
-					<a href="https://github.com/dansup/bulma-templates/blob/master/templates/hero.html" className="card-footer-item no">Not Interested</a>
+					<a className="card-footer-item yes">Interested</a>
+					<a className="card-footer-item no">Not Interested</a>
 				</footer>
 				</div>
 			</div>
@@ -88,8 +92,8 @@ const CompanyResults = (props) => {
 					</figure> */}
 				</div>
 				<footer className="card-footer">
-					<a href="templates/cover.html" className="card-footer-item yes">Interested</a>
-					<a href="https://github.com/dansup/bulma-templates/blob/master/templates/cover.html" className="card-footer-item no">Not Interested</a>
+					<a className="card-footer-item yes">Interested</a>
+					<a className="card-footer-item no">Not Interested</a>
 				</footer>
 				</div>
 
@@ -107,8 +111,8 @@ const CompanyResults = (props) => {
 					</figure> */}
 				</div>
 				<footer className="card-footer">
-					<a href="templates/inbox.html" className="card-footer-item yes">Interested</a>
-					<a href="https://github.com/dansup/bulma-templates/blob/master/templates/inbox.html" className="card-footer-item no">Not Interested</a>
+					<a className="card-footer-item yes">Interested</a>
+					<a className="card-footer-item no">Not Interested</a>
 				</footer>
 				</div>
 

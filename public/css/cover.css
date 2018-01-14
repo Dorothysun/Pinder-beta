@@ -9,3 +9,7 @@ html,body {
 .section .is-medium {
   padding-top: 5rem;
 }
+
+#background{
+  background-color:"red";
+}
