@@ -38,9 +38,26 @@ class App extends React.Component {
     this.printState = this.printState.bind(this);
     this.getTestersFromDB = this.getTestersFromDB.bind(this);
     this.getCompaniesFromDB = this.getCompaniesFromDB.bind(this);
+    this.goHome = this.goHome.bind(this);
+    this.backButton = this.backButton.bind(this);
     // this.showResults = this.showResults.bind(this);
     // this.retrieveUsers = this.retrieveUsers.bind(this);
     // this.addRandomUser = this.addRandomUser.bind(this);
+  }
+
+  backButton() {
+    let temp = this.state.prevView;
+    this.setState({
+      prevView: this.state.currentView,
+      currentView: temp
+    });  
+  }
+
+  goHome() {
+    this.setState({
+      prevView: this.state.currentView,
+      currentView: ''
+    });  
   }
 
   getTestersFromDB () {
