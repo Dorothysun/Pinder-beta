@@ -13623,7 +13623,7 @@ var WhatAreYou = function WhatAreYou(props) {
 						_react2.default.createElement(
 							"a",
 							{ className: "navbar-item title", href: "../" },
-							"Pinder"
+							_react2.default.createElement("img", { src: "../img/icon.png", alt: "Logo" })
 						),
 						_react2.default.createElement(
 							"span",
@@ -13761,301 +13761,314 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var CompanyMain = function CompanyMain(props) {
 
   return _react2.default.createElement(
-    "section",
-    { "class": "section is-medium" },
+    "div",
+    null,
     _react2.default.createElement(
       "div",
-      { "class": "container" },
+      { className: "navbar-brand" },
+      _react2.default.createElement(
+        "a",
+        { className: "navbar-item title", href: "../" },
+        "Pinder"
+      )
+    ),
+    _react2.default.createElement(
+      "section",
+      { "class": "section" },
       _react2.default.createElement(
         "div",
-        { "class": "columns" },
-        _react2.default.createElement("div", { "class": "column is-1" }),
+        { "class": "container" },
         _react2.default.createElement(
           "div",
-          { "class": "column is-7" },
+          { "class": "columns" },
+          _react2.default.createElement("div", { "class": "column is-1" }),
           _react2.default.createElement(
             "div",
-            { "class": "columns" },
+            { "class": "column is-7" },
             _react2.default.createElement(
               "div",
-              { "class": "column is-half" },
+              { "class": "columns" },
               _react2.default.createElement(
-                "aside",
-                { "class": "menu" },
+                "div",
+                { "class": "column is-half" },
                 _react2.default.createElement(
-                  "p",
-                  { "class": "menu-label" },
-                  "General"
-                ),
-                _react2.default.createElement(
-                  "ul",
-                  { "class": "menu-list" },
+                  "aside",
+                  { "class": "menu" },
                   _react2.default.createElement(
-                    "li",
-                    null,
-                    _react2.default.createElement(
-                      "a",
-                      null,
-                      "Profile"
-                    )
+                    "p",
+                    { "class": "menu-label" },
+                    "General"
                   ),
                   _react2.default.createElement(
-                    "li",
-                    null,
+                    "ul",
+                    { "class": "menu-list" },
                     _react2.default.createElement(
-                      "a",
+                      "li",
                       null,
-                      "History"
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  "p",
-                  { "class": "menu-label" },
-                  "Administration"
-                ),
-                _react2.default.createElement(
-                  "ul",
-                  { "class": "menu-list" },
-                  _react2.default.createElement(
-                    "li",
-                    null,
-                    _react2.default.createElement(
-                      "a",
-                      null,
-                      "Team Settings"
-                    )
-                  ),
-                  _react2.default.createElement(
-                    "li",
-                    null,
-                    _react2.default.createElement(
-                      "a",
-                      { "class": "is-active" },
-                      "Search for Tester"
+                      _react2.default.createElement(
+                        "a",
+                        null,
+                        "Profile"
+                      )
                     ),
                     _react2.default.createElement(
-                      "ul",
+                      "li",
                       null,
                       _react2.default.createElement(
-                        "li",
+                        "a",
                         null,
-                        _react2.default.createElement(
-                          "a",
-                          null,
-                          "Members"
-                        )
-                      ),
-                      _react2.default.createElement(
-                        "li",
-                        null,
-                        _react2.default.createElement(
-                          "a",
-                          null,
-                          "Plugins"
-                        )
-                      ),
-                      _react2.default.createElement(
-                        "li",
-                        null,
-                        _react2.default.createElement(
-                          "a",
-                          null,
-                          "Add a member"
-                        )
+                        "History"
                       )
                     )
                   ),
                   _react2.default.createElement(
-                    "li",
-                    null,
-                    _react2.default.createElement(
-                      "a",
-                      null,
-                      "Invitations"
-                    )
+                    "p",
+                    { "class": "menu-label" },
+                    "Administration"
                   ),
                   _react2.default.createElement(
-                    "li",
-                    null,
+                    "ul",
+                    { "class": "menu-list" },
                     _react2.default.createElement(
-                      "a",
+                      "li",
                       null,
-                      "Cloud Storage Environment Settings"
-                    )
-                  ),
-                  _react2.default.createElement(
-                    "li",
-                    null,
-                    _react2.default.createElement(
-                      "a",
-                      null,
-                      "Authentication"
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  "p",
-                  { "class": "menu-label" },
-                  "Transactions"
-                ),
-                _react2.default.createElement(
-                  "ul",
-                  { "class": "menu-list" },
-                  _react2.default.createElement(
-                    "li",
-                    null,
-                    _react2.default.createElement(
-                      "a",
-                      null,
-                      "Payments"
-                    )
-                  ),
-                  _react2.default.createElement(
-                    "li",
-                    null,
-                    _react2.default.createElement(
-                      "a",
-                      null,
-                      "Transfers"
-                    )
-                  ),
-                  _react2.default.createElement(
-                    "li",
-                    null,
-                    _react2.default.createElement(
-                      "a",
-                      null,
-                      "Balance"
-                    )
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              "div",
-              { "class": "column is-half" },
-              _react2.default.createElement(
-                "nav",
-                { "class": "panel" },
-                _react2.default.createElement(
-                  "p",
-                  { "class": "panel-heading" },
-                  "Search for Tester"
-                ),
-                _react2.default.createElement("table", { className: "table" }),
-                _react2.default.createElement(
-                  "tbody",
-                  null,
-                  _react2.default.createElement(
-                    "tr",
-                    null,
-                    _react2.default.createElement(
-                      "td",
-                      { className: "head" },
-                      "Company Rating "
+                      _react2.default.createElement(
+                        "a",
+                        null,
+                        "Team Settings"
+                      )
                     ),
                     _react2.default.createElement(
-                      "td",
-                      { className: "result" },
-                      _react2.default.createElement("span", { className: "fa fa-star checked" }),
-                      _react2.default.createElement("span", { className: "fa fa-star checked" }),
-                      _react2.default.createElement("span", { className: "fa fa-star checked" }),
-                      _react2.default.createElement("span", { className: "fa fa-star checked" }),
-                      "  "
-                    )
-                  ),
-                  _react2.default.createElement(
-                    "tr",
-                    null,
-                    _react2.default.createElement(
-                      "td",
-                      { className: "head" },
-                      "Company Systems Used "
-                    )
-                  ),
-                  _react2.default.createElement(
-                    "tr",
-                    null,
-                    _react2.default.createElement(
-                      "td",
-                      { id: "systems" },
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        { "class": "is-active" },
+                        "Search for Tester"
+                      ),
                       _react2.default.createElement(
                         "ul",
                         null,
                         _react2.default.createElement(
                           "li",
                           null,
-                          "Windows"
+                          _react2.default.createElement(
+                            "a",
+                            null,
+                            "Members"
+                          )
                         ),
                         _react2.default.createElement(
                           "li",
                           null,
-                          "Linux"
+                          _react2.default.createElement(
+                            "a",
+                            null,
+                            "Plugins"
+                          )
+                        ),
+                        _react2.default.createElement(
+                          "li",
+                          null,
+                          _react2.default.createElement(
+                            "a",
+                            null,
+                            "Add a member"
+                          )
                         )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        null,
+                        "Invitations"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        null,
+                        "Cloud Storage Environment Settings"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        null,
+                        "Authentication"
                       )
                     )
                   ),
                   _react2.default.createElement(
-                    "tr",
-                    null,
-                    _react2.default.createElement(
-                      "td",
-                      { className: "head" },
-                      "Company Minimum Qualifications"
-                    )
+                    "p",
+                    { "class": "menu-label" },
+                    "Transactions"
                   ),
                   _react2.default.createElement(
-                    "tr",
-                    null,
+                    "ul",
+                    { "class": "menu-list" },
                     _react2.default.createElement(
-                      "td",
-                      { className: "headsub" },
-                      "Years Experience "
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        null,
+                        "Payments"
+                      )
                     ),
                     _react2.default.createElement(
-                      "td",
-                      { className: "result" },
-                      "5 "
-                    )
-                  ),
-                  _react2.default.createElement(
-                    "tr",
-                    null,
-                    _react2.default.createElement(
-                      "td",
-                      { className: "headsub" },
-                      "Certifications "
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        null,
+                        "Transfers"
+                      )
                     ),
                     _react2.default.createElement(
-                      "td",
-                      { className: "result" },
-                      "5 "
-                    )
-                  ),
-                  _react2.default.createElement(
-                    "tr",
-                    null,
-                    _react2.default.createElement(
-                      "td",
-                      { className: "head" },
-                      "Previously Used Testers "
-                    ),
-                    _react2.default.createElement(
-                      "td",
-                      { className: "result" },
-                      "Result "
+                      "li",
+                      null,
+                      _react2.default.createElement(
+                        "a",
+                        null,
+                        "Balance"
+                      )
                     )
                   )
-                ),
+                )
+              ),
+              _react2.default.createElement(
+                "div",
+                { "class": "column is-half" },
                 _react2.default.createElement(
-                  "div",
-                  { "class": "panel-block" },
+                  "nav",
+                  { "class": "panel" },
                   _react2.default.createElement(
-                    "button",
-                    { "class": "button is-link is-outlined is-fullwidth",
-                      onClick: props.search },
-                    "Search"
+                    "p",
+                    { "class": "panel-heading" },
+                    "Search for Tester"
+                  ),
+                  _react2.default.createElement("table", { className: "table" }),
+                  _react2.default.createElement(
+                    "tbody",
+                    null,
+                    _react2.default.createElement(
+                      "tr",
+                      null,
+                      _react2.default.createElement(
+                        "td",
+                        { className: "head" },
+                        "Company Rating "
+                      ),
+                      _react2.default.createElement(
+                        "td",
+                        { className: "result" },
+                        _react2.default.createElement("span", { className: "fa fa-star checked" }),
+                        _react2.default.createElement("span", { className: "fa fa-star checked" }),
+                        _react2.default.createElement("span", { className: "fa fa-star checked" }),
+                        _react2.default.createElement("span", { className: "fa fa-star checked" }),
+                        "  "
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "tr",
+                      null,
+                      _react2.default.createElement(
+                        "td",
+                        { className: "head" },
+                        "Company Systems Used "
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "tr",
+                      null,
+                      _react2.default.createElement(
+                        "td",
+                        { id: "systems" },
+                        _react2.default.createElement(
+                          "ul",
+                          null,
+                          _react2.default.createElement(
+                            "li",
+                            null,
+                            "Windows"
+                          ),
+                          _react2.default.createElement(
+                            "li",
+                            null,
+                            "Linux"
+                          )
+                        )
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "tr",
+                      null,
+                      _react2.default.createElement(
+                        "td",
+                        { className: "head" },
+                        "Company Minimum Qualifications"
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "tr",
+                      null,
+                      _react2.default.createElement(
+                        "td",
+                        { className: "headsub" },
+                        "Years Experience "
+                      ),
+                      _react2.default.createElement(
+                        "td",
+                        { className: "result" },
+                        "5 "
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "tr",
+                      null,
+                      _react2.default.createElement(
+                        "td",
+                        { className: "headsub" },
+                        "Certifications "
+                      ),
+                      _react2.default.createElement(
+                        "td",
+                        { className: "result" },
+                        "5 "
+                      )
+                    ),
+                    _react2.default.createElement(
+                      "tr",
+                      null,
+                      _react2.default.createElement(
+                        "td",
+                        { className: "head" },
+                        "Previously Used Testers "
+                      ),
+                      _react2.default.createElement(
+                        "td",
+                        { className: "result" },
+                        "Result "
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    "div",
+                    { "class": "panel-block" },
+                    _react2.default.createElement(
+                      "button",
+                      { "class": "button is-link is-outlined is-fullwidth",
+                        onClick: props.search },
+                      "Search"
+                    )
                   )
                 )
               )
@@ -14439,25 +14452,6 @@ var CompanyResults = function CompanyResults(props) {
 									null,
 									"(Light)"
 								)
-							),
-							_react2.default.createElement(
-								"span",
-								{ className: "is-pulled-right" },
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"v0.6.0"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"Desktop"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-danger" },
-									"WIP"
-								)
 							)
 						)
 					),
@@ -14467,13 +14461,13 @@ var CompanyResults = function CompanyResults(props) {
 						{ className: "card-footer" },
 						_react2.default.createElement(
 							"a",
-							{ href: "templates/admin.html", className: "card-footer-item" },
-							"Preview"
+							{ href: "templates/admin.html", className: "card-footer-item yes" },
+							"Interested"
 						),
 						_react2.default.createElement(
 							"a",
-							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/admin.html", className: "card-footer-item" },
-							"Source Code"
+							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/admin.html", className: "card-footer-item no" },
+							"Not Interested"
 						)
 					)
 				),
@@ -14490,25 +14484,6 @@ var CompanyResults = function CompanyResults(props) {
 								"span",
 								null,
 								"Forum"
-							),
-							_react2.default.createElement(
-								"span",
-								{ className: "is-pulled-right" },
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"v0.6.0"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"Desktop"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"Mobile"
-								)
 							)
 						)
 					),
@@ -14518,13 +14493,13 @@ var CompanyResults = function CompanyResults(props) {
 						{ className: "card-footer" },
 						_react2.default.createElement(
 							"a",
-							{ href: "templates/forum.html", className: "card-footer-item" },
-							"Preview"
+							{ href: "templates/forum.html", className: "card-footer-item yes" },
+							"Interested"
 						),
 						_react2.default.createElement(
 							"a",
-							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/forum.html", className: "card-footer-item" },
-							"Source Code"
+							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/forum.html", className: "card-footer-item no" },
+							"Not Interested"
 						)
 					)
 				)
@@ -14546,25 +14521,7 @@ var CompanyResults = function CompanyResults(props) {
 								null,
 								"Blog"
 							),
-							_react2.default.createElement(
-								"span",
-								{ className: "is-pulled-right" },
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"v0.6.0"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"Desktop"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-danger" },
-									"WIP"
-								)
-							)
+							_react2.default.createElement("span", { className: "is-pulled-right" })
 						)
 					),
 					_react2.default.createElement("div", { className: "card-content" }),
@@ -14573,13 +14530,13 @@ var CompanyResults = function CompanyResults(props) {
 						{ className: "card-footer" },
 						_react2.default.createElement(
 							"a",
-							{ href: "templates/blog.html", className: "card-footer-item" },
-							"Preview"
+							{ href: "templates/blog.html", className: "card-footer-item yes" },
+							"Interested"
 						),
 						_react2.default.createElement(
 							"a",
-							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/blog.html", className: "card-footer-item" },
-							"Source Code"
+							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/blog.html", className: "card-footer-item no" },
+							"Not Interested"
 						)
 					)
 				),
@@ -14597,25 +14554,7 @@ var CompanyResults = function CompanyResults(props) {
 								null,
 								"Hero"
 							),
-							_react2.default.createElement(
-								"span",
-								{ className: "is-pulled-right" },
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"v0.6.0"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"Desktop"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"Mobile"
-								)
-							)
+							_react2.default.createElement("span", { className: "is-pulled-right" })
 						)
 					),
 					_react2.default.createElement("div", { className: "card-content" }),
@@ -14624,13 +14563,13 @@ var CompanyResults = function CompanyResults(props) {
 						{ className: "card-footer" },
 						_react2.default.createElement(
 							"a",
-							{ href: "templates/hero.html", className: "card-footer-item" },
-							"Preview"
+							{ href: "templates/hero.html", className: "card-footer-item yes" },
+							"Interested"
 						),
 						_react2.default.createElement(
 							"a",
-							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/hero.html", className: "card-footer-item" },
-							"Source Code"
+							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/hero.html", className: "card-footer-item no" },
+							"Not Interested"
 						)
 					)
 				)
@@ -14652,25 +14591,7 @@ var CompanyResults = function CompanyResults(props) {
 								null,
 								"Cover"
 							),
-							_react2.default.createElement(
-								"span",
-								{ className: "is-pulled-right" },
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"v0.6.0"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"Desktop"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"Mobile"
-								)
-							)
+							_react2.default.createElement("span", { className: "is-pulled-right" })
 						)
 					),
 					_react2.default.createElement("div", { className: "card-content" }),
@@ -14679,13 +14600,13 @@ var CompanyResults = function CompanyResults(props) {
 						{ className: "card-footer" },
 						_react2.default.createElement(
 							"a",
-							{ href: "templates/cover.html", className: "card-footer-item" },
-							"Preview"
+							{ href: "templates/cover.html", className: "card-footer-item yes" },
+							"Interested"
 						),
 						_react2.default.createElement(
 							"a",
-							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/cover.html", className: "card-footer-item" },
-							"Source Code"
+							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/cover.html", className: "card-footer-item no" },
+							"Not Interested"
 						)
 					)
 				),
@@ -14703,25 +14624,7 @@ var CompanyResults = function CompanyResults(props) {
 								null,
 								"Inbox"
 							),
-							_react2.default.createElement(
-								"span",
-								{ className: "is-pulled-right" },
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"v0.6.0"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"Desktop"
-								),
-								_react2.default.createElement(
-									"span",
-									{ className: "tag is-default" },
-									"Mobile"
-								)
-							)
+							_react2.default.createElement("span", { className: "is-pulled-right" })
 						)
 					),
 					_react2.default.createElement("div", { className: "card-content" }),
@@ -14730,13 +14633,13 @@ var CompanyResults = function CompanyResults(props) {
 						{ className: "card-footer" },
 						_react2.default.createElement(
 							"a",
-							{ href: "templates/inbox.html", className: "card-footer-item" },
-							"Preview"
+							{ href: "templates/inbox.html", className: "card-footer-item yes" },
+							"Interested"
 						),
 						_react2.default.createElement(
 							"a",
-							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/inbox.html", className: "card-footer-item" },
-							"Source Code"
+							{ href: "https://github.com/dansup/bulma-templates/blob/master/templates/inbox.html", className: "card-footer-item no" },
+							"Not Interested"
 						)
 					)
 				)
@@ -14746,58 +14649,6 @@ var CompanyResults = function CompanyResults(props) {
 };
 
 exports.default = CompanyResults;
-
-
-{/* <div className="CompanyResults">
- <div className="nav">
- 	<ul>
- 		<li className="New Search"><a href="#">Search</a></li>
- 		<li className="Favorites"><a href="#">Favorites</a></li>
- 		<li className="Profile"><a href="#">Profile</a></li>
- 	</ul>
- </div>
- <h1>Company Name</h1>
- <div id="testerFilter">
- 	<div className="profile">
- 		<span className="heading">User Rating: </span>
- 		<span className="fa fa-star checked"></span>
- 		<span className="fa fa-star checked"></span>
- 		<span className="fa fa-star checked"></span>
- 		<span className="fa fa-star checked"></span>
- 		<span className="fa fa-star"></span>
- 		<p>Experience (years): 15</p>
- 		<p>Experience (systems): </p>
- 		<div className="skills">
- 			<ul>
- 				<li>Windows</li>
- 				<li>Linux</li>
- 			</ul>
- 		</div>
- 		<p>Certifications: </p>
- 		<div className="skills">										
- 			<ul>
- 				<li>CISSP</li>
- 				<li>CISA</li>
- 			</ul>
- 		</div>
- 		<a>Writing Sample</a> <br />
- 		<a>Reviews</a> <br />
- 		<label>Offer: </label>
- 		</div>
- 			<input placeholder="Offer" /> <br />
- 	
- 	<button 
- 		className="btn btn-primary btn-block btn-large"
- 		>
- 		Make Offer
- 	</button>
- 	<button 
- 		className="btn btn-primary btn-block btn-large"
- 		>
- 		Not Interested
- 	</button>
- </div>
- </div> */}
 
 /***/ }),
 /* 56 */

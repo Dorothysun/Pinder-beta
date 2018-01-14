@@ -9,8 +9,7 @@ const WhatAreYou = (props) => {
 			<div className="container">
 				<div className="navbar-brand">
 					<a className="navbar-item title" href="../">
-						{/* <img id="logo" src="../img/logo.png" alt="Logo" /> */}
-						Pinder
+						<img src="../img/icon.png" alt="Logo" />
 					</a>
 					<span className="navbar-burger burger" data-target="navbarMenu">
 						<span></span>

@@ -3,7 +3,14 @@ import React from 'react';
 const CompanyMain = (props) => {
 
 	return (
-		<section class="section is-medium">
+		<div>
+			<div className="navbar-brand">
+					<a className="navbar-item title" href="../">
+						{/* <img id="logo" src="../img/logo.png" alt="Logo" /> */}
+						Pinder
+					</a>
+			</div>
+		<section class="section">
                <div class="container">
                   <div class="columns">
                      <div class="column is-1">
@@ -140,6 +147,7 @@ const CompanyMain = (props) => {
             </div> */}
          </div>
       </section>
+	  </div>
 	)
 }
 

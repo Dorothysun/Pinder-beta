@@ -33,3 +33,17 @@ html, body {
     padding: 1.5rem 1.5rem;
 }
   
+.card{
+    background-color:#f2f2f2;
+}
+.card:hover{
+    background-color:white;
+}
+
+.yes:hover{
+    background-color:#b2d8b2;
+}
+
+.no:hover{
+    background-color:#fd7c6e;    
+}
