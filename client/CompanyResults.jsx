@@ -212,6 +212,7 @@ const CompanyResults = (props) => {
 
 	return (
 		<div className="container content-wrapper">
+		<img id= "icon" src="../img/icon3.png" alt="Logo" height = "200" width = "80" />
 		    <div className="hero-body" id="header">
 		    </div>	
 			
