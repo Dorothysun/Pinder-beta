@@ -211,19 +211,31 @@ class Card extends React.Component {
 const CompanyResults = (props) => {
 
 	return (
-		<div className="container content-wrapper">
-		<div className="navbar-brand">
-					<a className="navbar-item title" href="../">
-						<img id= "icon" src="../img/icon3.png" alt="Logo" height = "200" width = "80" />
-					</a>
-					<span className="navbar-burger burger" data-target="navbarMenu">
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-				</div>
-		    <div className="hero-body" id="header">
-		    </div>	
+		<div className="container">
+			<div className="navbar-brand">
+				<a className="navbar-item title" href="../">
+					<img id="icon" src="../img/icon3.png" alt="Logo" height = "200" width = "80"/>
+				</a>
+				<span className="navbar-burger burger" data-target="navbarMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</div>
+			<div id="navbarMenu" className="navbar-menu">
+			<div className="navbar-end">
+				<a className="navbar-item"><font color="white">Home</font>
+				</a>
+				<a className="navbar-item"><font color="white">Examples</font>
+				</a>
+				<a className="navbar-item"><font color="white">Features</font>
+				</a>
+				<a className="navbar-item"><font color="white">Team</font>
+				</a>
+				<a className="navbar-item"><font color="white">Help</font>
+				</a>
+			</div>
+			</div>
 			
 			<div className="columns">
 				<div className="column is-4">
