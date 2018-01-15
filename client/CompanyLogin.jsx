@@ -30,6 +30,7 @@ const CompanyLogin = (props) => {
 						Remember me
 						</label>
 					</div>
+
 					<Link className="button is-block is-info is-large"
 						to="/companymain">
 						Company

@@ -8,12 +8,38 @@
   <link rel="stylesheet" type="text/css" media="screen" href="css/cover.css" /> 
   <link rel="stylesheet" type="text/css" media="screen" href="css/login.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" /> 
-   
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://wikiki.github.io/css/documentation.css?v=201801141121">
+
+  <link rel="canonical" href="https://wikiki.github.io/elements/pageloader/">
+  <link rel="alternate" type="application/rss+xml" title="Bulma-Extensions" href="https://wikiki.github.io/feed.xml">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://wikiki.github.io/favicons/apple-touch-icon.png?v=201701041855">
+  <link rel="icon" type="image/png" href="https://wikiki.github.io/favicons/favicon-32x32.png?v=201701041855" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://wikiki.github.io/favicons/favicon-16x16.png?v=201701041855" sizes="16x16">
+  <link rel="manifest" href="https://wikiki.github.io/favicons/manifest.json?v=201701041855">
+  <link rel="mask-icon" href="https://wikiki.github.io/favicons/safari-pinned-tab.svg?v=201701041855" color="#00d1b2">
+  <link rel="shortcut icon" href="https://wikiki.github.io/favicons/favicon.ico?v=201701041855">
   
   <script async type="text/javascript" src="bulma.js"></script>   
   <script src="bundle.js" defer></script>
 </head>
 <body>
+  <div class="pageloader"><span class="title">Pageloader</span></div></div>
   <section id='root'></section>
+
+  <script>
+      // var $button = Array.prototype.slice.call(document.querySelectorAll('#showPageloader'), 0);
+      var $pageloader = Array.prototype.slice.call(document.querySelectorAll('.pageloader'), 0);
+        $pageloader[0].classList.toggle('is-active');
+        var pageloaderTimeout = setTimeout( function() {
+          $pageloader[0].classList.toggle('is-active');
+          clearTimeout( pageloaderTimeout );
+        }, 3000 );
+  </script>
+
+<script src="https://wikiki.github.io/vendor/clipboard-1.7.1.min.js"></script>
+<script src="https://wikiki.github.io/js/main.js?v=201801141121"></script>
+      
 </body>
 </html>
