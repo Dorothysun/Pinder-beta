@@ -64,3 +64,10 @@ body #background {
 #margin_bottom{
     margin-bottom: 2rem;
 }
+
+.card-footer-item .yes{
+    margin-right: solid 1px black;
+}
+.card-footer-item:not(:last-child) {
+    border-right: 1px solid black;
+}
