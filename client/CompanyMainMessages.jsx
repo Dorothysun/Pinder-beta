@@ -48,7 +48,7 @@ const CompanyMain = (props) => {
 										</Link>
 									</li>
                                     <li>
-	                                    <Link className="is-active"
+	                                    <Link className=""
 											to="/companysearch"
 											>
 											Search for Testers
@@ -88,12 +88,12 @@ const CompanyMain = (props) => {
 								 <tr><th valign = "top"> You: </th><td> Hey! I'm interested in hiring you for our app. </td></tr>
                                  <tr> <th width = "28%" valign = "top"> User 42892: </th><td> Cool! What's it do tho </td> </tr>
                                  <tr><th valign = "top"> You: </th> <td> We connect Pen Testers and Companies. Kind of like what we're trying to do right now! </td> </tr>
-                                 <tr> <th valign = "top"> User 42892: </th><td> OMG that joke was so lame not interested thank you {"\n\n\n"} </td> </tr>
+                                 <tr> <th valign = "top"> User 42892: </th><td> OMG that joke was so lame not interested thank you </td> </tr>
 								 </tbody>
 								 <br/>
 								 <br/>
 								 <form>
-                                 <input type = "text" style={{width: 320}} placeholder = "Enter Message" />
+                                 <input type = "text" style={{width: 380}} placeholder = "Enter Message" />
                                  </form>
                                  <div class="panel-block">
                                     <Link class="button is-link is-outlined is-fullwidth"

@@ -72,7 +72,13 @@ const CompanyMain = (props) => {
 											<th>Date Matched</th>
 										</tr>
 										<tr>
-											<td className="head"><a>&emsp;User 42892</a></td>
+											<td className="head"><a>&emsp;
+											<Link className=""
+											to="/companymessages"
+											>
+											User 42892
+											</Link>
+											</a></td>
 											<td className="result">
 												Jan 1, 2018 07:23 PM
 											</td>
