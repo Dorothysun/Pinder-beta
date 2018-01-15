@@ -1,21 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-var starinput = (<div class="stars">
-<form action="">
-  <input class="star star-5" id="star-5-2" type="radio" name="star"/>
-  <label class="star star-5" for="star-5-2"></label>
-  <input class="star star-4" id="star-4-2" type="radio" name="star"/>
-  <label class="star star-4" for="star-4-2"></label>
-  <input class="star star-3" id="star-3-2" type="radio" name="star"/>
-  <label class="star star-3" for="star-3-2"></label>
-  <input class="star star-2" id="star-2-2" type="radio" name="star"/>
-  <label class="star star-2" for="star-2-2"></label>
-  <input class="star star-1" id="star-1-2" type="radio" name="star"/>
-  <label class="star star-1" for="star-1-2"></label>
-</form>
-</div>);
-
 const CompanyMain = (props) => {
 
 	return (
@@ -56,7 +41,7 @@ const CompanyMain = (props) => {
                                     </li>
                                     <li>
                                     	<Link className=""
-											to="/companyprevioustesters"
+											to="/companymain"
 											>
 											Previously Used Testers
 										</Link>
@@ -78,50 +63,70 @@ const CompanyMain = (props) => {
                                  </ul>
                               </aside>
                            </div>
-                           <div class="column is-half">
-                              <nav class="panel">
-                                 <p class="panel-heading">
-								 	Search for Tester
-                                 </p>
-								 <table className="table" />
+                           <div class="">
+                              <nav class="">
+								 <table className="table" width="100%">
 									<tbody>
 										<tr>
-											<strong><td className="head">Rating </td></strong>
-											<td className="result">{starinput} </td>
+											<th className="head"><strong>Matched Users</strong></th>
+											<th>Date Matched</th>
 										</tr>
 										<tr>
-										<strong><td className="head">Systems Used </td></strong>
-										</tr>
-										<tr>
-											<td id="systems">
-											<form>
-											&emsp;<input type="checkbox" name="system" value="Windows"/> Windows<br/>
-											&emsp;<input type="checkbox" name="system" value="Linux"/> Linux<br/>
-											&emsp;<input type="checkbox" name="system" value="Linux"/> Unix<br/>
-											&emsp;<input type="checkbox" name="system" value="Mac"/> Cisco Hardware<br/>
-											&emsp;<input type="checkbox" name="system" value="Other"/> McAfee Firewall<br/>
-											&emsp;<input type="checkbox" name="system" value="Other"/><input type="text" placeholder="Other System" /> <br/>
-											</form>
+											<td className="head"><a>&emsp;User 42892</a></td>
+											<td className="result">
+												Jan 1, 2018 07:23 PM
 											</td>
-										</tr><br/>
-										<tr>
-											<strong><td className="head" colspan="3">Minimum Qualifications</td></strong>
 										</tr>
 										<tr>
-											<strong><td className="headsub">Years Experience </td></strong>
-											<td className="result"><input type="text"/> </td>
+											<td className="head"><a>&emsp;User 82747</a></td>
+											<td className="result">
+												Jan 8, 2018 01:03 PM
+											</td>
 										</tr>
 										<tr>
-											<strong><td className="headsub">Certifications </td></strong>
-											<td className="result"><input type="text"/> </td>
+											<td className="head"><a>&emsp;User 74802</a></td>
+											<td className="result">
+												Jan 12, 2018 01:27 PM
+											</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 12849</a></td>
+											<td className="result">
+												Jan 14, 2018 05:16 PM
+											</td>
+										</tr>
+										<tr>
+										<td className="head"><a>&emsp;User 32472</a></td>
+											<td className="result">
+												Jan 14, 2018 05:23 PM
+											</td>
+										</tr>
+																				<tr>
+											<td className="head"><a>&emsp;User 82747</a></td>
+											<td className="result">
+												Jan 14, 2018 05:43 PM
+											</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 13578</a></td>
+											<td className="result">
+												Jan 15, 2018 02:12 PM
+											</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 75382</a></td>
+											<td className="result">
+												Jan 15, 2018 02:50 PM
+											</td>
+										</tr>
+										<tr>
+										<td className="head"><a>&emsp;User 42764</a></td>
+											<td className="result">
+												Jan 15, 2018 04:17 PM
+											</td>
 										</tr>
 									</tbody>
-                                 <div class="panel-block">
-                                    <Link class="button is-link is-outlined is-fullwidth"
-									to="/companyresults">
-                                    Search
-                                    </Link>
-                                 </div>
+									</table>
                               </nav>
                            </div>
                         </div>
