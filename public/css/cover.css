@@ -51,3 +51,13 @@ html,body {
   box-shadow: 0 15px 50px rgba(0,0,0,0.2);
   
   }
+
+#navbarMenu {
+  background-color: black;
+}
+
+
+
+#navbarMenu2 {
+  background-color:rgba(0, 0, 0, 0.05);
+}

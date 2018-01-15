@@ -30,6 +30,20 @@ const CompanyMain = (props) => {
 					<span></span>
 				</span>
 			</div>
+			<div id="navbarMenu" className="navbar-menu">
+				<div className="navbar-end">
+					<a className="navbar-item"><font color="white">Home</font>
+					</a>
+					<a className="navbar-item"><font color="white">Examples</font>
+					</a>
+					<a className="navbar-item"><font color="white">Features</font>
+					</a>
+					<a className="navbar-item"><font color="white">Team</font>
+					</a>
+					<a className="navbar-item"><font color="white">Help</font>
+					</a>
+				</div>
+			</div>
 		<section class="section">
                <div class="container">
                   <div class="columns">

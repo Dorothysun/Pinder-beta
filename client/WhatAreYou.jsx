@@ -45,9 +45,9 @@ const WhatAreYou = (props) => {
 					</figure>
 				</div>
 				<div className="column is-6 is-offset-1">
-					<h1 className="subtitle is-4 font-color">
-					Join the finest Security Testing network
-					</h1>
+					<h2 className="subtitle is-3 font-color">
+					Join the Finest Security Testing Network
+					</h2>
 					<br/>
 					{/*
 					<h2 className="subtitle is-4 font-color">
