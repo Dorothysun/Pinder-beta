@@ -115,10 +115,10 @@ class Card extends React.Component {
 	}
 
 	isInterested(evt) {
-		this.setState({flipped: true});
+		this.setState({flipped: false});
 	}
 	notInterested(evt) {
-		this.setState({flipped: true});
+		this.setState({flipped: false});
 	}
 
 	render() {
