@@ -9,19 +9,19 @@ const CompanyLogin = (props) => {
 			<div className="hero-body">
 			<div className="container has-text-centered">
 				<div className="column is-4 is-offset-4">
-				<h3 id="margin_bottom" className="title has-text-grey">Welcome Company</h3>
+				<h3 id="margin_bottom" className="title has-text-grey">Welcome!</h3>
 				<p className="subtitle has-text-grey">Please login to proceed.</p>
 				<div className="box">
 					<form>
 						<div className="field">
 							<div className="control">
-							<input className="input is-large" type="email" placeholder="Your Email" autofocus="" />
+							<input className="input is-large" type="email" value="aaron@theimpactfellowship.com" autofocus="" />
 						</div>
 					</div>
 
 					<div className="field">
 						<div className="control">
-						<input className="input is-large" type="password" placeholder="Your Password" />
+						<input className="input is-large" type="password" value="Your Password" />
 						</div>
 					</div>
 					<div className="field">
@@ -33,7 +33,7 @@ const CompanyLogin = (props) => {
 
 					<Link className="button is-block is-info is-large"
 						to="/companymain">
-						Company
+						Login
 					</Link>
 					</form>
 				</div>
