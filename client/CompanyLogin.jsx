@@ -9,7 +9,7 @@ const CompanyLogin = (props) => {
 			<div className="hero-body">
 			<div className="container has-text-centered">
 				<div className="column is-4 is-offset-4">
-				<h3 className="title has-text-grey">Welcome Company</h3>
+				<h3 id="margin_bottom" className="title has-text-grey">Welcome Company</h3>
 				<p className="subtitle has-text-grey">Please login to proceed.</p>
 				<div className="box">
 					<form>
