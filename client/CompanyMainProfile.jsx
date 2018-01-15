@@ -80,9 +80,9 @@ const CompanyMain = (props) => {
                            <div class="column is-half">
                               <nav class="panel">
                                  <p class="">
-								 	Company Information
+								 	<strong>Company Information</strong>
                                  </p>
-								 <table className="table">
+								 <table className="table" width="100%">
 									<tbody>
 										<tr>
 											<td className="head">Rating </td>
@@ -125,40 +125,64 @@ const CompanyMain = (props) => {
 										</tr>
 									</tbody>
 								</table>
-								<table className="table">
+								<p class="">
+								 	<strong>Systems Used</strong>
+                                </p>
+								<table className="table" width="100%">
 									<tbody>
 										<tr>
-											<td className="head">Company Systems Used </td>
+											<td className="result">&emsp;Debian Linux<br />
+																&emsp;Windows Server 2012<br />
+																&emsp;McAfee Firewall 315-C1-P<br />
+																&emsp;Cisco SG300 Switches<br />
+																</td>
 										</tr>
+									</tbody>
+								</table>
+								<table className="table" width="100%">
+									<tbody>
 										<tr>
-											<td id="systems"><ul>
-												<li>Windows</li>
-												<li>Linux</li>
-												</ul></td>
+											<td className="result">
+												<button>Add System</button>
+											</td>
+											<td className="result">
+												<input></input>
+											</td>
 										</tr>
-										<tr>
-											<td className="head">Company Minimum Qualifications</td>
-										</tr>
+									</tbody>
+								</table>
+								<p class="">
+								 	<strong>Minimum Tester Qualifications</strong>
+                                </p>
+                                <table className="table" width="100%">
+									<tbody>
 										<tr>
 											<td className="headsub">Years Experience </td>
 											<td className="result">5 </td>
 										</tr>
 										<tr>
 											<td className="headsub">Certifications </td>
-											<td className="result">5 </td>
 										</tr>
 										<tr>
-											<td className="head">Previously Used Testers </td>
-											<td className="result">Result </td>
+										<td className="result">&emsp;CISSP<br />
+																&emsp;SSCP<br />
+																&emsp;OSCP<br />
+																</td>
 										</tr>
 									</tbody>
 								</table>
-                                 <div class="panel-block">
-                                    <Link class="button is-link is-outlined is-fullwidth"
-									to="/companyresults">
-                                    Search
-                                    </Link>
-                                 </div>
+																<table className="table" width="100%">
+									<tbody>
+										<tr>
+											<td className="result">
+												<button>Add Cetification</button>
+											</td>
+											<td className="result">
+												<input></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
                               </nav>
                            </div>
                         </div>
