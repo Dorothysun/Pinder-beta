@@ -45,12 +45,15 @@ const WhatAreYou = (props) => {
 					</figure>
 				</div>
 				<div className="column is-6 is-offset-1">
-					<h1 className="title is-2 font-color">
-					Find the best date
+					<h1 className="subtitle is-4 font-color">
+					Join the finest Security Testing network
 					</h1>
+					<br/>
+					{/*
 					<h2 className="subtitle is-4 font-color">
 					Today					
 					</h2>
+					*/}
 					<br />
 					<p className="has-text-centered">
 					<Link className="button is-medium is-info is-outlined"
