@@ -48,7 +48,7 @@ const CompanyMain = (props) => {
 										</Link>
 									</li>
                                     <li>
-	                                    <Link className="is-active"
+	                                    <Link className=""
 											to="/companysearch"
 											>
 											Search for Testers
@@ -69,8 +69,8 @@ const CompanyMain = (props) => {
 										</Link>
                                     </li>
                                     <li>
-                                    	<Link className=""
-											to="/companymain"
+                                    	<Link className="is-active"
+											to="/companymatches"
 											>
 											Matches
 										</Link>

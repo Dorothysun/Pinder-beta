@@ -48,7 +48,7 @@ const CompanyMain = (props) => {
 										</Link>
 									</li>
                                     <li>
-	                                    <Link className="is-active"
+	                                    <Link className=""
 											to="/companysearch"
 											>
 											Search for Testers

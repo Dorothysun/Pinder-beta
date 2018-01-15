@@ -55,7 +55,7 @@ const CompanyMain = (props) => {
                                     </li>
                                     <li>
                                     	<Link className=""
-											to="/companymain"
+											to="/companymatches"
 											>
 											Matches
 										</Link>
