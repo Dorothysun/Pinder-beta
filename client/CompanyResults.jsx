@@ -128,7 +128,7 @@ class Card extends React.Component {
 					className={`card-content equipment-card ${this.state.flipped ? 'flipped' : 'not-flipped'}`} 
 					style={{position: 'relative'}}>
 					<div className="card-front card-face">
-						<table height="50%" width="75%">
+						<table height="89%" width="89%">
 							<tr>
 								<th width="40%"> Rating </th>
 								<td width="50%">{stars()}</td>
