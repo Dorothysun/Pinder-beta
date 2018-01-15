@@ -1,6 +1,21 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+var starinput = (<div class="stars">
+<form action="">
+  <input class="star star-5" id="star-5-2" type="radio" name="star"/>
+  <label class="star star-5" for="star-5-2"></label>
+  <input class="star star-4" id="star-4-2" type="radio" name="star"/>
+  <label class="star star-4" for="star-4-2"></label>
+  <input class="star star-3" id="star-3-2" type="radio" name="star"/>
+  <label class="star star-3" for="star-3-2"></label>
+  <input class="star star-2" id="star-2-2" type="radio" name="star"/>
+  <label class="star star-2" for="star-2-2"></label>
+  <input class="star star-1" id="star-1-2" type="radio" name="star"/>
+  <label class="star star-1" for="star-1-2"></label>
+</form>
+</div>);
+
 const CompanyMain = (props) => {
 
 	return (
@@ -85,35 +100,32 @@ const CompanyMain = (props) => {
 								 <table className="table" />
 									<tbody>
 										<tr>
-											<td className="head">Company Rating </td>
-											<td className="result"><span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>  </td>
+											<strong><td className="head">Rating </td></strong>
+											<td className="result">{starinput} </td>
 										</tr>
 										<tr>
-											<td className="head">Company Systems Used </td>
+										<strong><td className="head">Systems Used </td></strong>
 										</tr>
 										<tr>
-											<td id="systems"><ul>
-												<li>Windows</li>
-												<li>Linux</li>
-												</ul></td>
+											<td id="systems">
+											<form>
+											&emsp;<input type="checkbox" name="system" value="Windows"/> Windows<br/>
+											&emsp;<input type="checkbox" name="system" value="Linux"/> Linux<br/>
+											&emsp;<input type="checkbox" name="system" value="Mac"/> Mac<br/>
+											&emsp;<input type="checkbox" name="system" value="Other"/> Other<br/>
+											</form>
+											</td>
+										</tr><br/>
+										<tr>
+											<strong><td className="head" colspan="3">Minimum Qualifications</td></strong>
 										</tr>
 										<tr>
-											<td className="head">Company Minimum Qualifications</td>
+											<strong><td className="headsub">Years Experience </td></strong>
+											<td className="result"><input type="text"/> </td>
 										</tr>
 										<tr>
-											<td className="headsub">Years Experience </td>
-											<td className="result">5 </td>
-										</tr>
-										<tr>
-											<td className="headsub">Certifications </td>
-											<td className="result">5 </td>
-										</tr>
-										<tr>
-											<td className="head">Previously Used Testers </td>
-											<td className="result">Result </td>
+											<strong><td className="headsub">Certifications </td></strong>
+											<td className="result"><input type="text"/> </td>
 										</tr>
 									</tbody>
                                  <div class="panel-block">
