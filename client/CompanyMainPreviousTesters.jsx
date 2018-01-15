@@ -83,8 +83,9 @@ const CompanyMain = (props) => {
 								 <table className="table" width="100%">
 									<tbody>
 										<tr>
-											<th className="head"><strong>Previously Used Testers</strong></th>
+											<th className="head"><strong>Previous Testers</strong></th>
 											<th>Rating</th>
+											<th>Date</th>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 42892</a></td>
@@ -95,6 +96,7 @@ const CompanyMain = (props) => {
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star-half checked"></span>
 											</td>
+											<td className="result"> 2018-01</td>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 82747</a></td>
@@ -104,6 +106,7 @@ const CompanyMain = (props) => {
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star-half checked"></span>
 											</td>
+											<td className="result"> 2017-11</td>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 74802</a></td>
@@ -112,6 +115,7 @@ const CompanyMain = (props) => {
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star checked"></span>
 											</td>
+											<td className="result"> 2017-07</td>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 12849</a></td>
@@ -120,6 +124,7 @@ const CompanyMain = (props) => {
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star-half checked"></span>
 											</td>
+											<td className="result"> 2017-04</td>
 										</tr>
 										<tr>
 										<td className="head"><a>&emsp;User 32472</a></td>
@@ -129,6 +134,7 @@ const CompanyMain = (props) => {
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star checked"></span>
 											</td>
+											<td className="result"> 2017-02</td>
 										</tr>
 																				<tr>
 											<td className="head"><a>&emsp;User 82747</a></td>
@@ -138,6 +144,7 @@ const CompanyMain = (props) => {
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star checked"></span>
 											</td>
+											<td className="result"> 2017-02</td>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 13578</a></td>
@@ -148,6 +155,7 @@ const CompanyMain = (props) => {
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star checked"></span>
 											</td>
+											<td className="result"> 2016-12 </td>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 75382</a></td>
@@ -155,6 +163,7 @@ const CompanyMain = (props) => {
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star-half checked"></span>
 											</td>
+											<td className="result"> 2016-11 </td>
 										</tr>
 										<tr>
 										<td className="head"><a>&emsp;User 42764</a></td>
@@ -164,6 +173,7 @@ const CompanyMain = (props) => {
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star-half checked"></span>
 											</td>
+											<td className="result"> 2016-09 </td>
 										</tr>
 									</tbody>
 									</table>
