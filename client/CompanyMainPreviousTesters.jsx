@@ -56,7 +56,7 @@ const CompanyMain = (props) => {
                                     </li>
                                     <li>
                                     	<Link className="is-active"
-											to="/companymain"
+											to="/companyprevioustesters"
 											>
 											Previously Used Testers
 										</Link>
