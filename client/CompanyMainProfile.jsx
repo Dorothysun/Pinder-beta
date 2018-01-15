@@ -43,13 +43,6 @@ const CompanyMain = (props) => {
                                     	<Link className=""
 											to="/companymain"
 											>
-											Search History
-										</Link>
-                                    </li>
-                                    <li>
-                                    	<Link className=""
-											to="/companymain"
-											>
 											Previously Used Testers
 										</Link>
 									</li>
@@ -65,13 +58,6 @@ const CompanyMain = (props) => {
 											to="/companymain"
 											>
 											Matches
-										</Link>
-                                    </li>
-                                    <li>
-                                    	<Link className=""
-											to="/companymain"
-											>
-											Messages
 										</Link>
                                     </li>
                                  </ul>
@@ -143,10 +129,10 @@ const CompanyMain = (props) => {
 									<tbody>
 										<tr>
 											<td className="result">
-												<button>Add System</button>
+												<input></input>
 											</td>
 											<td className="result">
-												<input></input>
+												<button>Add System</button>
 											</td>
 										</tr>
 									</tbody>
@@ -175,10 +161,10 @@ const CompanyMain = (props) => {
 									<tbody>
 										<tr>
 											<td className="result">
-												<button>Add Cetification</button>
+												<input></input>
 											</td>
 											<td className="result">
-												<input></input>
+												<button>Add Cetification</button>
 											</td>
 										</tr>
 									</tbody>

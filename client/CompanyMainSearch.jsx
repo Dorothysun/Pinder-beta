@@ -58,13 +58,6 @@ const CompanyMain = (props) => {
                                     	<Link className=""
 											to="/companymain"
 											>
-											Search History
-										</Link>
-                                    </li>
-                                    <li>
-                                    	<Link className=""
-											to="/companymain"
-											>
 											Previously Used Testers
 										</Link>
 									</li>
@@ -80,13 +73,6 @@ const CompanyMain = (props) => {
 											to="/companymain"
 											>
 											Matches
-										</Link>
-                                    </li>
-                                    <li>
-                                    	<Link className=""
-											to="/companymain"
-											>
-											Messages
 										</Link>
                                     </li>
                                  </ul>
@@ -111,8 +97,10 @@ const CompanyMain = (props) => {
 											<form>
 											&emsp;<input type="checkbox" name="system" value="Windows"/> Windows<br/>
 											&emsp;<input type="checkbox" name="system" value="Linux"/> Linux<br/>
-											&emsp;<input type="checkbox" name="system" value="Mac"/> Mac<br/>
-											&emsp;<input type="checkbox" name="system" value="Other"/> Other<br/>
+											&emsp;<input type="checkbox" name="system" value="Linux"/> Unix<br/>
+											&emsp;<input type="checkbox" name="system" value="Mac"/> Cisco Hardware<br/>
+											&emsp;<input type="checkbox" name="system" value="Other"/> McAfee Firewall<br/>
+											&emsp;<input type="checkbox" name="system" value="Other"/><input type="text" placeholder="Other System" /> <br/>
 											</form>
 											</td>
 										</tr><br/>
