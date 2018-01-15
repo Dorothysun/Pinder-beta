@@ -1,3 +1,8 @@
+a.navbar-item:hover {
+  background-color: #209cee;
+  color:black;
+}
+
 html, body {
   font-family: 'Open Sans', serif;
   background: #F0F2F4;
@@ -80,10 +85,7 @@ label.star:before {
   font-family: FontAwesome;
 }
 
-a.navbar-item:hover {
-    background-color: #E1E1EA;
-    color: black;
-}
+
 
 .navbar .container {
     padding: 20px;
