@@ -1,6 +1,96 @@
 import React from 'react';
 var star = <span className="fa fa-star checked"></span>;
 
+function stars () {
+	let num = Math.round(Math.random() * 4) + 1;
+	console.log(num);
+	if (num === 1)
+		return (<div>
+					<span className="fa fa-star checked"></span>
+				</div>);
+	if (num === 2) 
+		return (<div>
+					<span className="fa fa-star checked"></span>
+					<span className="fa fa-star checked"></span>
+				</div>);
+	if (num === 3) 
+		return (<div>
+					<span className="fa fa-star checked"></span>
+					<span className="fa fa-star checked"></span>
+					<span className="fa fa-star checked"></span>
+				</div>);
+	if (num === 4) 
+		return (<div>
+					<span className="fa fa-star checked"></span>
+					<span className="fa fa-star checked"></span>
+					<span className="fa fa-star checked"></span>
+					<span className="fa fa-star checked"></span>
+				</div>);
+	if (num === 5) 
+		return (<div>
+					<span className="fa fa-star checked"></span>
+					<span className="fa fa-star checked"></span>
+					<span className="fa fa-star checked"></span>
+					<span className="fa fa-star checked"></span>
+					<span className="fa fa-star checked"></span>
+				</div>);
+}
+
+function getYearsExp() {
+	return (Math.round((Math.random() * 20) + 1));
+}
+
+var certs = [ 
+	'CISSP', 'SSCP', 'CAP', 'CSSLP', 'CCFP', 'CCSP', 
+	'HCISPP', 'CASP', 'CSA+', 'Security+', 'OSCP', 
+	'OSWP', 'OSCE', 'OSEE', 'OSWE', 'CISA', 'CISM', 
+	'CRISC', 'GISF', 'GSEC', 'GISP', 'GCFE', 'GPPA', 
+	'GCIA', 'GCIH', 'GCUX', 'GCWN', 'GCED', 'GPEN', 
+	'GWAPT', 'GSLC', 'GCPM', 'GSSP-NET', 'GSSP-JAVA', 
+	'GSNA', 'GCFA', 'GLEG', 'GAWN', 'GXPN', 'GREM', 
+	'GSE', 'CEH', 'ECSA', 'LPT', 'CHFI', 'ECIH', 'ENSA', 
+	'CCISO', 'EDRP', 'ECVP', 'ECES', 'ECCSP', 'EITCA/IS', 
+	'CCNA Security', 'CCNP Security', 'CCIE Security', 
+	'CCNA CyberOps', 'CIPP', 'CIPM', 'CIPT', 'eJPT', 
+	'eCPPT Gol', 'eWP', 'eCRE', 'eMAPT', 'eNDP'
+];
+
+function getCerts() {
+	let numCerts = Math.round((Math.random() * 4) + 1);
+	let ret = [];
+	for (let i = 0; i < numCerts; i++) {
+		let cert = certs[Math.round(Math.random() * certs.length)];
+		while (ret.includes(cert))
+			cert = certs[Math.round(Math.random() * certs.length)];
+		ret.push(cert);
+	}
+	return ret.join(', ');
+}
+
+var skills = [ 
+	'Denial-of-Service', 'Backdoor', 'Direct-Access Attacks', 'Spoofing',
+	'Tampering', 'Privilege Escalation', 'Phishing', 'Spear Phishing',
+	'Clickjacking', 'Social Engineering', 'XSS', 'Session Hijacking',
+	'Password Hash Cracking', 'SQL Injection'
+];
+
+function getSkills() {
+	let numSkills = Math.round((Math.random() * 4) + 2);
+	let ret = [];
+	for (let i = 0; i < numSkills; i++) {
+		let skill = skills[Math.round(Math.random() * skills.length)];
+		while (ret.includes(skill))
+			skill = skills[Math.round(Math.random() * skills.length)];
+		ret.push(skill);
+	}
+	return ret.join(', ');
+}
+
+var systems = [ 
+	'linux', 'unix', 'Windows Server 2008/2012', 'CISCO Switches',
+	'McAfee Firewalls', 'Sonic Wall Firewalls', 'Sophos Firewalls',
+	'Catalyst Switches'
+];
 
 class Card extends React.Component {
 	constructor(props) {
@@ -23,33 +113,70 @@ class Card extends React.Component {
 	render() {
 		return (
 			<div className="card">
-				<div className={`card-content equipment-card ${this.state.flipped ? 'flipped' : 'not-flipped'}`} style={{position: 'relative'}}>
+				<div 
+					className={`card-content equipment-card ${this.state.flipped ? 'flipped' : 'not-flipped'}`} 
+					style={{position: 'relative'}}>
 					<div className="card-front card-face">
-						<strong>Experience:</strong> {this.props.experience} years<br />
-						<strong>Skills:</strong> SQLi, XSS<br />
-						<strong>Certifications:</strong> CISSP, CEH<br />
-						<strong>Writing sample:</strong> <a>writingsample.doc</a><br />
-						<strong>Rating:</strong>  {star}{star}{star}<br />
-						<strong>Reviews:</strong> No reviews
+						<table width="75%">
+							<tr>
+								<th width="40%"> Rating </th>
+								<td width="50%">{stars()}</td>
+							</tr>
+							<tr>
+								<th> Experience </th>
+								<td> {getYearsExp()} Years</td>
+							</tr>
+							<tr>
+								<th> Skills </th>
+								<td> {getSkills()}</td>
+							</tr>
+							<tr>
+								<th> Certifications </th>
+								<td> {getCerts()}</td>
+							</tr>
+							<tr>
+								<th> Writing Sample </th>
+								<td><a>View Writing Sample</a></td>
+							</tr>
+							<tr>
+								<th> Reviews </th>
+								<td><a>Read Reviews</a></td>
+							</tr>
+						</table>
 					</div>
 
 					<div className="card-back card-face">
-						<strong>Experience:</strong> 2000000 years<br />
-						<strong>Skills:</strong> SQLi, XSS<br />
-						<strong>Certifications:</strong> CISSP, CEH<br />
-						<strong>Writing sample:</strong> <a>writingsample.doc</a><br />
-						<strong>Rating:</strong>  {star}{star}{star}<br />
-						<strong>Reviews:</strong> No reviews
+						<table width="75%">
+							<tr>
+								<th width="40%"> Rating </th>
+								<td width="50%">{stars()}</td>
+							</tr>
+							<tr>
+								<th> Experience </th>
+								<td> {getYearsExp()} Years</td>
+							</tr>
+							<tr>
+								<th> Skills </th>
+								<td> {getSkills()}</td>
+							</tr>
+							<tr>
+								<th> Certifications </th>
+								<td> {getCerts()}</td>
+							</tr>
+							<tr>
+								<th> Writing Sample </th>
+								<td><a>View Writing Sample</a></td>
+							</tr>
+							<tr>
+								<th> Reviews </th>
+								<td><a>Read Reviews</a></td>
+							</tr>
+						</table>
 					</div>
 
-					<div style={{color:"transparent", backfaceVisibility: 'hidden'}}>
-						<strong>Experience:</strong> {this.props.experience} years<br />
-						<strong>Skills:</strong> SQLi, XSS<br />
-						<strong>Certifications:</strong> CISSP, CEH<br />
-						<strong>Writing sample:</strong> <a>writingsample.doc</a><br />
-						<strong>Rating:</strong>  {star}{star}{star}<br />
-						<strong>Reviews:</strong> No reviews
-					</div>
+					<br /> <br /> <br />
+					<br /> <br /> <br />
+					<br /> <br /> <br />
 				</div>
 
 				<footer className="card-footer">
@@ -66,161 +193,21 @@ const CompanyResults = (props) => {
 	return (
 		<div className="container content-wrapper">
 		    <div className="hero-body" id="header">
-    		</div>	
+		    </div>	
+			
 			<div className="columns">
-
-			<div className="column is-4">
-				<Card
-					experience={23}
-					skills="SQLi, XSS"
-				/>
-				<Card
-					experience="2 years"
-					skills="SQLi, XSS"
-				/>
-			</div>
-				{/*
-				<Card
-					experience="2 years"
-					skills="SQLi, XSS"
-					
-				/>
-				
-				<div className="card ">
-					<div className="card-content equipment-card" style={{position: 'relative'}}>
-						<div className="card-front card-face">
-							<strong>Experience:</strong> 2 years<br />
-							<strong>Skills:</strong> SQLi, XSS<br />
-							<strong>Certifications:</strong> CISSP, CEH<br />
-							<strong>Writing sample:</strong> <a>writingsample.doc</a><br />
-							<strong>Rating:</strong>  {star}{star}{star}<br />
-							<strong>Reviews:</strong> No reviews
-						</div>
-
-						<div className="card-back card-face">
-							<strong>Experience:</strong> 2000000 years<br />
-							<strong>Skills:</strong> SQLi, XSS<br />
-							<strong>Certifications:</strong> CISSP, CEH<br />
-							<strong>Writing sample:</strong> <a>writingsample.doc</a><br />
-							<strong>Rating:</strong>  {star}{star}{star}<br />
-							<strong>Reviews:</strong> No reviews
-						</div>
-
-						<div style={{color:"transparent", backfaceVisibility: 'hidden'}}>
-							<strong>Experience:</strong> 2 years<br />
-							<strong>Skills:</strong> SQLi, XSS<br />
-							<strong>Certifications:</strong> CISSP, CEH<br />
-							<strong>Writing sample:</strong> <a>writingsample.doc</a><br />
-							<strong>Rating:</strong>  {star}{star}{star}<br />
-							<strong>Reviews:</strong> No reviews
-						</div>
-					</div>
-
-
-					<footer className="card-footer">
-						<a className="card-footer-item yes">Interested</a>
-						<a className="card-footer-item no">Not Interested</a>
-					</footer>
+				<div className="column is-4">
+					<Card />
+					<Card />
 				</div>
-
-				<div className="card">
-					<div className="card-content">
-					<strong>Experience:</strong> 6 years<br />
-					<strong>Skills:</strong> LAN/WAN VPN<br />
-					<strong>Certifications:</strong> CISM<br />
-					<strong>Writing sample:</strong> <a>writingsample.doc</a><br />
-					<strong>Rating:</strong>  {star}{star}{star}{star}<br />
-					<strong>Reviews:</strong> No reviews
-					</div>
-					<footer className="card-footer">
-						<a className="card-footer-item yes">Interested</a>
-						<a className="card-footer-item no">Not Interested</a>
-					</footer>
+				<div className="column is-4">
+					<Card />
+					<Card />
 				</div>
-			</div>
-				*/}
-
-			<div className="column is-4">
-				<Card
-					experience={23}
-					skills="SQLi, XSS"
-				/>
-				<Card
-					experience="2 years"
-					skills="SQLi, XSS"
-				/>
-				{/* <div className="card">
-				<div className="card-content">
-				<strong>Experience:</strong> 3 years<br />
-				<strong>Skills:</strong> SSH Firewall Understanding<br />
-				<strong>Certifications:</strong> Security+<br />
-				<strong>Writing sample:</strong> <a>writingsample.doc</a><br />
-				<strong>Rating:</strong> {star}{star}{star}<br />
-				<strong>Reviews:</strong> No reviews
+				<div className="column is-4">
+					<Card />
+					<Card />
 				</div>
-				<footer className="card-footer">
-					<a className="card-footer-item yes">Interested</a>
-					<a className="card-footer-item no">Not Interested</a>
-				</footer>
-				</div>
-				<div className="card">
-				<div className="card-content">
-				<strong>Experience:</strong> 5 years<br />
-				<strong>Skills:</strong> Security Monitoring, Web Security Auditing<br />
-				<strong>Certifications:</strong> GSEC <br />
-				<strong>Writing sample:</strong> <a>writingsample.doc</a><br />
-				<strong>Rating:</strong>  {star}{star}<br />
-				<strong>Reviews:</strong> No reviews
-				</div>
-				<footer className="card-footer">
-					<a className="card-footer-item yes">Interested</a>
-					<a className="card-footer-item no">Not Interested</a>
-				</footer>
-				</div> */}
-			</div>
-
-
-			<div className="column is-4">
-				<Card
-					experience={23}
-					skills="SQLi, XSS"
-				/>
-				<Card
-					experience="2 years"
-					skills="SQLi, XSS"
-				/>
-				{/* <div className="card">
-				<div className="card-content">
-				<strong>Experience:</strong> 2 years<br />
-				<strong>Skills:</strong> Virtualization Environment, Web Security Auditing<br />
-				<strong>Certifications:</strong> SSCP <br />
-				<strong>Writing sample:</strong> <a>writingsample.doc</a><br />
-				<strong>Rating:</strong>  {star}{star}{star}{star}<br />
-				<strong>Reviews:</strong> No reviews
-				</div>
-				<footer className="card-footer">
-					<a className="card-footer-item yes">Interested</a>
-					<a className="card-footer-item no">Not Interested</a>
-				</footer>
-				</div>
-
-				<div className="card">
-				<div className="card-content">
-				<strong>Experience:</strong> 11 years<br />
-				<strong>Skills:</strong>  SQLi, Web Security Auditing<br />
-				<strong>Certifications:</strong> CISSP <br />
-				<strong>Writing sample:</strong> <a>writingsample.doc</a><br />
-				<strong>Rating:</strong>  {star}{star}{star}{star}{star}<br />
-				<strong>Reviews:</strong> No reviews
-				</div>
-				<footer className="card-footer">
-					<a className="card-footer-item yes">Interested</a>
-					<a className="card-footer-item no">Not Interested</a>
-				</footer>
-				</div> */}
-
-			</div>
-
 			</div>
 		</div>
 	)
