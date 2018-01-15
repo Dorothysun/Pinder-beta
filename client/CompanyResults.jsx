@@ -3,7 +3,6 @@ var star = <span className="fa fa-star checked"></span>;
 
 function stars () {
 	let num = Math.round(Math.random() * 4) + 1;
-	console.log(num);
 	if (num === 1)
 		return (<div>
 					<span className="fa fa-star checked"></span>
@@ -59,9 +58,9 @@ function getCerts() {
 	let numCerts = Math.round((Math.random() * 4) + 1);
 	let ret = [];
 	for (let i = 0; i < numCerts; i++) {
-		let cert = certs[Math.round(Math.random() * certs.length) - 1];
+		let cert = certs[Math.round(Math.random() * (certs.length - 1))];
 		while (ret.includes(cert))
-			cert = certs[Math.round(Math.random() * certs.length) - 1];
+			cert = certs[Math.round(Math.random() * (certs.length - 1))];
 		ret.push(cert);
 	}
 	return ret.join(', ');
@@ -75,12 +74,12 @@ var skills = [
 ];
 
 function getSkills() {
-	let numSkills = Math.round((Math.random() * 3) + 2);
+	let numSkills = Math.round((Math.random() * 2) + 2);
 	let ret = [];
 	for (let i = 0; i < numSkills; i++) {
-		let skill = skills[Math.round(Math.random() * skills.length) - 1];
+		let skill = skills[Math.round(Math.random() * (skills.length - 1))];
 		while (ret.includes(skill))
-			skill = skills[Math.round(Math.random() * skills.length) - 1];
+			skill = skills[Math.round(Math.random() * (skills.length - 1))];
 		ret.push(skill);
 	}
 	return ret.join(', ');
@@ -93,12 +92,12 @@ var systems = [
 ];
 
 function getSystems() {
-	let numSystems = Math.round((Math.random() * 3) + 1);
+	let numSystems = Math.round((Math.random() * 2) + 1);
 	let ret = [];
 	for (let i = 0; i < numSystems; i++) {
-		let system = systems[Math.round(Math.random() * systems.length) - 1];
+		let system = systems[Math.round(Math.random() * (systems.length - 1))];
 		while (ret.includes(system))
-			system = systems[Math.round(Math.random() * systems.length) - 1];
+			system = systems[Math.round(Math.random() * (systems.length - 1))];
 		ret.push(system);
 	}
 	return ret.join(', ');
@@ -129,7 +128,7 @@ class Card extends React.Component {
 					className={`card-content equipment-card ${this.state.flipped ? 'flipped' : 'not-flipped'}`} 
 					style={{position: 'relative'}}>
 					<div className="card-front card-face">
-						<table width="75%">
+						<table height="50%" width="75%">
 							<tr>
 								<th width="40%"> Rating </th>
 								<td width="50%">{stars()}</td>
