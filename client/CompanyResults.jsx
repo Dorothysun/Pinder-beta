@@ -212,6 +212,16 @@ const CompanyResults = (props) => {
 
 	return (
 		<div className="container content-wrapper">
+		<div className="navbar-brand">
+					<a className="navbar-item title" href="../">
+						<img id= "icon" src="../img/icon3.png" alt="Logo" height = "200" width = "80" />
+					</a>
+					<span className="navbar-burger burger" data-target="navbarMenu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
 		    <div className="hero-body" id="header">
 		    </div>	
 			

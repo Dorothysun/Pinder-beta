@@ -77,7 +77,7 @@ const CompanyMain = (props) => {
 									</li>
 									<li>
                                     	<Link className=""
-											to="/companymain"
+											to="/companyresults"
 											>
 											Recommended Testers
 										</Link>
@@ -93,20 +93,21 @@ const CompanyMain = (props) => {
                               </aside>
                            </div>
                            <div class="column is-half">
-                              <nav class="panel">
-                                 <p class="panel-heading">
-								 	Search for Tester
+                              <nav class="">
+                                 <p class="">
+								 	<font size="3">Search for Tester</font>
                                  </p>
+								 <div className="searchprof">
 									<tbody>
-										<tr>
-											<strong><td className="head">Rating </td></strong>
+										<tr><br/>
+											<strong><td className="head">Rating </td></strong><br/><br/>
 											<td className="result">{starinput} </td>
 										</tr>
 										<tr>
-										<strong><td className="head">Systems Used </td></strong>
+										<strong><td className="head">Systems Used </td></strong><br/><br/>
 										</tr>
 										<tr>
-											<td id="systems">
+										<td id="systems">
 											<form>
 											&emsp;<input type="checkbox" name="system" value="Windows"/> Windows<br/>
 											&emsp;<input type="checkbox" name="system" value="Linux"/> Linux<br/>
@@ -129,6 +130,7 @@ const CompanyMain = (props) => {
 											<td className="result"><input type="text"/> </td>
 										</tr>
 									</tbody>
+									</div>
                                  <div class="panel-block">
                                     <Link class="button is-link is-outlined is-fullwidth"
 									to="/companyresults">

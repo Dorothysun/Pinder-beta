@@ -48,7 +48,7 @@ const CompanyMain = (props) => {
 									</li>
 									<li>
                                     	<Link className=""
-											to="/companymain"
+											to="/companyresults"
 											>
 											Recommended Testers
 										</Link>
@@ -68,6 +68,7 @@ const CompanyMain = (props) => {
                                  <p class="">
 								 	<strong>Company Information</strong>
                                  </p>
+                                 <br />
 								 <table className="table" width="100%">
 									<tbody>
 										<tr>
@@ -114,6 +115,7 @@ const CompanyMain = (props) => {
 								<p class="">
 								 	<strong>Systems Used</strong>
                                 </p>
+                                <br />
 								<table className="table" width="100%">
 									<tbody>
 										<tr>
@@ -140,6 +142,7 @@ const CompanyMain = (props) => {
 								<p class="">
 								 	<strong>Minimum Tester Qualifications</strong>
                                 </p>
+                                <br />
                                 <table className="table" width="100%">
 									<tbody>
 										<tr>
@@ -157,7 +160,7 @@ const CompanyMain = (props) => {
 										</tr>
 									</tbody>
 								</table>
-																<table className="table" width="100%">
+								<table className="table" width="100%">
 									<tbody>
 										<tr>
 											<td className="result">
