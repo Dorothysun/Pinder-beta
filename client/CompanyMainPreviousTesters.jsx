@@ -80,48 +80,93 @@ const CompanyMain = (props) => {
                            </div>
                            <div class="column is-half">
                               <nav class="panel">
-                                 <p class="panel-heading">
-								 	Search for Tester
-                                 </p>
-								 <table className="table" />
+								 <table className="table" width="100%">
 									<tbody>
 										<tr>
-											<strong><td className="head">Rating </td></strong>
-											<td className="result">{starinput} </td>
+											<th className="head"><strong>Previously Used Testers</strong></th>
+											<th>Rating</th>
 										</tr>
 										<tr>
-										<strong><td className="head">Systems Used </td></strong>
-										</tr>
-										<tr>
-											<td id="systems">
-											<form>
-											&emsp;<input type="checkbox" name="system" value="Windows"/> Windows<br/>
-											&emsp;<input type="checkbox" name="system" value="Linux"/> Linux<br/>
-											&emsp;<input type="checkbox" name="system" value="Linux"/> Unix<br/>
-											&emsp;<input type="checkbox" name="system" value="Mac"/> Cisco Hardware<br/>
-											&emsp;<input type="checkbox" name="system" value="Other"/> McAfee Firewall<br/>
-											&emsp;<input type="checkbox" name="system" value="Other"/><input type="text" placeholder="Other System" /> <br/>
-											</form>
+											<td className="head"><a>&emsp;User 42892</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star-half checked"></span>
 											</td>
-										</tr><br/>
-										<tr>
-											<strong><td className="head" colspan="3">Minimum Qualifications</td></strong>
 										</tr>
 										<tr>
-											<strong><td className="headsub">Years Experience </td></strong>
-											<td className="result"><input type="text"/> </td>
+											<td className="head"><a>&emsp;User 82747</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star-half checked"></span>
+											</td>
 										</tr>
 										<tr>
-											<strong><td className="headsub">Certifications </td></strong>
-											<td className="result"><input type="text"/> </td>
+											<td className="head"><a>&emsp;User 74802</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+											</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 12849</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star-half checked"></span>
+											</td>
+										</tr>
+										<tr>
+										<td className="head"><a>&emsp;User 32472</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+											</td>
+										</tr>
+																				<tr>
+											<td className="head"><a>&emsp;User 82747</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+											</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 13578</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+											</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 75382</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star-half checked"></span>
+											</td>
+										</tr>
+										<tr>
+										<td className="head"><a>&emsp;User 42764</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star-half checked"></span>
+											</td>
 										</tr>
 									</tbody>
-                                 <div class="panel-block">
-                                    <Link class="button is-link is-outlined is-fullwidth"
-									to="/companyresults">
-                                    Search
-                                    </Link>
-                                 </div>
+									</table>
                               </nav>
                            </div>
                         </div>

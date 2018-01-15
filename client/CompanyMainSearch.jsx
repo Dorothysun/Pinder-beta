@@ -83,7 +83,6 @@ const CompanyMain = (props) => {
                                  <p class="panel-heading">
 								 	Search for Tester
                                  </p>
-								 <table className="table" />
 									<tbody>
 										<tr>
 											<strong><td className="head">Rating </td></strong>
