@@ -1,5 +1,5 @@
 ## DxT
-#Authors: 
+Authors: 
 Nikunj Agrawal
 Anindya Bhandari
 Michael Corso
