@@ -79,18 +79,54 @@ const CompanyMain = (props) => {
                            </div>
                            <div class="column is-half">
                               <nav class="panel">
-                                 <p class="panel-heading">
-								 	Search for Tester
+                                 <p class="">
+								 	Company Information
                                  </p>
-								 <table className="table" />
+								 <table className="table">
 									<tbody>
 										<tr>
-											<td className="head">Company Rating </td>
-											<td className="result"><span className="fa fa-star checked"></span>
+											<td className="head">Rating </td>
+											<td className="result">
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>  </td>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+											</td>
 										</tr>
+										<tr>
+											<td className="head">Recent Reviews</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 42892</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+											</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 74802</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+											</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 12849</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<table className="table">
+									<tbody>
 										<tr>
 											<td className="head">Company Systems Used </td>
 										</tr>
@@ -116,6 +152,7 @@ const CompanyMain = (props) => {
 											<td className="result">Result </td>
 										</tr>
 									</tbody>
+								</table>
                                  <div class="panel-block">
                                     <Link class="button is-link is-outlined is-fullwidth"
 									to="/companyresults">

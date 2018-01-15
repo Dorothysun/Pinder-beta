@@ -784,65 +784,6 @@ module.exports = emptyFunction;
 
 /***/ }),
 /* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(46);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(50);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(27);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(52);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(55);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(58);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(60);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(28);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(19);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(66);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(68);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(70);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(71);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***/ }),
-/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -939,7 +880,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -997,6 +938,65 @@ function invariant(condition, format, a, b, c, d, e, f) {
 
 module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+
+/***/ }),
+/* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(46);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(50);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(27);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(52);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(55);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(58);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(60);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(28);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(19);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(66);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(68);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(70);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(71);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /***/ }),
 /* 10 */
@@ -1320,7 +1320,7 @@ var locationsAreEqual = function locationsAreEqual(a, b) {
 
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(9);
+  var invariant = __webpack_require__(8);
   var warning = __webpack_require__(13);
   var ReactPropTypesSecret = __webpack_require__(16);
   var loggedTypeFailures = {};
@@ -2995,7 +2995,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(108);
+var isTextNode = __webpack_require__(107);
 
 /*eslint-disable no-bitwise */
 
@@ -3067,7 +3067,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(106);
+var _reactDom = __webpack_require__(105);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -3092,7 +3092,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(7);
+var _reactRouterDom = __webpack_require__(9);
 
 var _axios = __webpack_require__(74);
 
@@ -3126,7 +3126,7 @@ var _CompanyMainProfile = __webpack_require__(104);
 
 var _CompanyMainProfile2 = _interopRequireDefault(_CompanyMainProfile);
 
-var _CompanyMainSearch = __webpack_require__(105);
+var _CompanyMainSearch = __webpack_require__(114);
 
 var _CompanyMainSearch2 = _interopRequireDefault(_CompanyMainSearch);
 
@@ -3207,7 +3207,7 @@ exports.default = App;
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(8),n=__webpack_require__(12),p=__webpack_require__(6),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+var m=__webpack_require__(7),n=__webpack_require__(12),p=__webpack_require__(6),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -3243,9 +3243,9 @@ if (process.env.NODE_ENV !== "production") {
   (function() {
 'use strict';
 
-var _assign = __webpack_require__(8);
+var _assign = __webpack_require__(7);
 var emptyObject = __webpack_require__(12);
-var invariant = __webpack_require__(9);
+var invariant = __webpack_require__(8);
 var warning = __webpack_require__(13);
 var emptyFunction = __webpack_require__(6);
 var checkPropTypes = __webpack_require__(15);
@@ -4668,9 +4668,9 @@ BrowserRouter.propTypes = {
 
 
 var emptyFunction = __webpack_require__(6);
-var invariant = __webpack_require__(9);
+var invariant = __webpack_require__(8);
 var warning = __webpack_require__(13);
-var assign = __webpack_require__(8);
+var assign = __webpack_require__(7);
 
 var ReactPropTypesSecret = __webpack_require__(16);
 var checkPropTypes = __webpack_require__(15);
@@ -5218,7 +5218,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 var emptyFunction = __webpack_require__(6);
-var invariant = __webpack_require__(9);
+var invariant = __webpack_require__(8);
 var ReactPropTypesSecret = __webpack_require__(16);
 
 module.exports = function() {
@@ -18570,7 +18570,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(7);
+var _reactRouterDom = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18727,7 +18727,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(7);
+var _reactRouterDom = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18882,7 +18882,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(7);
+var _reactRouterDom = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19634,7 +19634,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(7);
+var _reactRouterDom = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19772,111 +19772,193 @@ var CompanyMain = function CompanyMain(props) {
 									{ 'class': 'panel' },
 									_react2.default.createElement(
 										'p',
-										{ 'class': 'panel-heading' },
-										'Search for Tester'
+										{ 'class': '' },
+										'Company Information'
 									),
-									_react2.default.createElement('table', { className: 'table' }),
 									_react2.default.createElement(
-										'tbody',
-										null,
+										'table',
+										{ className: 'table' },
 										_react2.default.createElement(
-											'tr',
+											'tbody',
 											null,
 											_react2.default.createElement(
-												'td',
-												{ className: 'head' },
-												'Company Rating '
+												'tr',
+												null,
+												_react2.default.createElement(
+													'td',
+													{ className: 'head' },
+													'Rating '
+												),
+												_react2.default.createElement(
+													'td',
+													{ className: 'result' },
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' })
+												)
 											),
 											_react2.default.createElement(
-												'td',
-												{ className: 'result' },
-												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
-												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
-												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
-												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
-												'  '
-											)
-										),
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ className: 'head' },
-												'Company Systems Used '
-											)
-										),
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ id: 'systems' },
+												'tr',
+												null,
 												_react2.default.createElement(
-													'ul',
-													null,
+													'td',
+													{ className: 'head' },
+													'Recent Reviews'
+												)
+											),
+											_react2.default.createElement(
+												'tr',
+												null,
+												_react2.default.createElement(
+													'td',
+													{ className: 'head' },
 													_react2.default.createElement(
-														'li',
+														'a',
 														null,
-														'Windows'
-													),
-													_react2.default.createElement(
-														'li',
-														null,
-														'Linux'
+														'\u2003User 42892'
 													)
+												),
+												_react2.default.createElement(
+													'td',
+													{ className: 'result' },
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' })
+												)
+											),
+											_react2.default.createElement(
+												'tr',
+												null,
+												_react2.default.createElement(
+													'td',
+													{ className: 'head' },
+													_react2.default.createElement(
+														'a',
+														null,
+														'\u2003User 74802'
+													)
+												),
+												_react2.default.createElement(
+													'td',
+													{ className: 'result' },
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' })
+												)
+											),
+											_react2.default.createElement(
+												'tr',
+												null,
+												_react2.default.createElement(
+													'td',
+													{ className: 'head' },
+													_react2.default.createElement(
+														'a',
+														null,
+														'\u2003User 12849'
+													)
+												),
+												_react2.default.createElement(
+													'td',
+													{ className: 'result' },
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+													_react2.default.createElement('span', { className: 'fa fa-star checked' })
 												)
 											)
-										),
+										)
+									),
+									_react2.default.createElement(
+										'table',
+										{ className: 'table' },
 										_react2.default.createElement(
-											'tr',
+											'tbody',
 											null,
 											_react2.default.createElement(
-												'td',
-												{ className: 'head' },
-												'Company Minimum Qualifications'
-											)
-										),
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ className: 'headsub' },
-												'Years Experience '
+												'tr',
+												null,
+												_react2.default.createElement(
+													'td',
+													{ className: 'head' },
+													'Company Systems Used '
+												)
 											),
 											_react2.default.createElement(
-												'td',
-												{ className: 'result' },
-												'5 '
-											)
-										),
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ className: 'headsub' },
-												'Certifications '
+												'tr',
+												null,
+												_react2.default.createElement(
+													'td',
+													{ id: 'systems' },
+													_react2.default.createElement(
+														'ul',
+														null,
+														_react2.default.createElement(
+															'li',
+															null,
+															'Windows'
+														),
+														_react2.default.createElement(
+															'li',
+															null,
+															'Linux'
+														)
+													)
+												)
 											),
 											_react2.default.createElement(
-												'td',
-												{ className: 'result' },
-												'5 '
-											)
-										),
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ className: 'head' },
-												'Previously Used Testers '
+												'tr',
+												null,
+												_react2.default.createElement(
+													'td',
+													{ className: 'head' },
+													'Company Minimum Qualifications'
+												)
 											),
 											_react2.default.createElement(
-												'td',
-												{ className: 'result' },
-												'Result '
+												'tr',
+												null,
+												_react2.default.createElement(
+													'td',
+													{ className: 'headsub' },
+													'Years Experience '
+												),
+												_react2.default.createElement(
+													'td',
+													{ className: 'result' },
+													'5 '
+												)
+											),
+											_react2.default.createElement(
+												'tr',
+												null,
+												_react2.default.createElement(
+													'td',
+													{ className: 'headsub' },
+													'Certifications '
+												),
+												_react2.default.createElement(
+													'td',
+													{ className: 'result' },
+													'5 '
+												)
+											),
+											_react2.default.createElement(
+												'tr',
+												null,
+												_react2.default.createElement(
+													'td',
+													{ className: 'head' },
+													'Previously Used Testers '
+												),
+												_react2.default.createElement(
+													'td',
+													{ className: 'result' },
+													'Result '
+												)
 											)
 										)
 									),
@@ -19904,289 +19986,6 @@ exports.default = CompanyMain;
 
 /***/ }),
 /* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(7);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var CompanyMain = function CompanyMain(props) {
-
-	return _react2.default.createElement(
-		'div',
-		{ className: 'container' },
-		_react2.default.createElement(
-			'div',
-			{ className: 'navbar-brand' },
-			_react2.default.createElement(
-				'a',
-				{ className: 'navbar-item title', href: '../' },
-				_react2.default.createElement('img', { id: 'icon', src: '../img/icon.png', alt: 'Logo' })
-			),
-			_react2.default.createElement(
-				'span',
-				{ className: 'navbar-burger burger', 'data-target': 'navbarMenu' },
-				_react2.default.createElement('span', null),
-				_react2.default.createElement('span', null),
-				_react2.default.createElement('span', null)
-			)
-		),
-		_react2.default.createElement(
-			'section',
-			{ 'class': 'section' },
-			_react2.default.createElement(
-				'div',
-				{ 'class': 'container' },
-				_react2.default.createElement(
-					'div',
-					{ 'class': 'columns' },
-					_react2.default.createElement('div', { 'class': 'column is-1' }),
-					_react2.default.createElement(
-						'div',
-						{ 'class': 'column is-7' },
-						_react2.default.createElement(
-							'div',
-							{ 'class': 'columns' },
-							_react2.default.createElement(
-								'div',
-								{ 'class': 'column is-half' },
-								_react2.default.createElement(
-									'aside',
-									{ 'class': 'menu' },
-									_react2.default.createElement(
-										'ul',
-										{ 'class': 'menu-list' },
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												_reactRouterDom.Link,
-												{ className: '',
-													to: '/companyprofile'
-												},
-												'Company Profile'
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												_reactRouterDom.Link,
-												{ className: 'is-active',
-													to: '/companysearch'
-												},
-												'Search for Testers'
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												_reactRouterDom.Link,
-												{ className: '',
-													to: '/companymain'
-												},
-												'Search History'
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												_reactRouterDom.Link,
-												{ className: '',
-													to: '/companymain'
-												},
-												'Previously Used Testers'
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												_reactRouterDom.Link,
-												{ className: '',
-													to: '/companymain'
-												},
-												'Recommended Testers'
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												_reactRouterDom.Link,
-												{ className: '',
-													to: '/companymain'
-												},
-												'Matches'
-											)
-										),
-										_react2.default.createElement(
-											'li',
-											null,
-											_react2.default.createElement(
-												_reactRouterDom.Link,
-												{ className: '',
-													to: '/companymain'
-												},
-												'Messages'
-											)
-										)
-									)
-								)
-							),
-							_react2.default.createElement(
-								'div',
-								{ 'class': 'column is-half' },
-								_react2.default.createElement(
-									'nav',
-									{ 'class': 'panel' },
-									_react2.default.createElement(
-										'p',
-										{ 'class': 'panel-heading' },
-										'Search for Tester'
-									),
-									_react2.default.createElement('table', { className: 'table' }),
-									_react2.default.createElement(
-										'tbody',
-										null,
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ className: 'head' },
-												'Company Rating '
-											),
-											_react2.default.createElement(
-												'td',
-												{ className: 'result' },
-												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
-												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
-												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
-												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
-												'  '
-											)
-										),
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ className: 'head' },
-												'Company Systems Used '
-											)
-										),
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ id: 'systems' },
-												_react2.default.createElement(
-													'ul',
-													null,
-													_react2.default.createElement(
-														'li',
-														null,
-														'Windows'
-													),
-													_react2.default.createElement(
-														'li',
-														null,
-														'Linux'
-													)
-												)
-											)
-										),
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ className: 'head' },
-												'Company Minimum Qualifications'
-											)
-										),
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ className: 'headsub' },
-												'Years Experience '
-											),
-											_react2.default.createElement(
-												'td',
-												{ className: 'result' },
-												'5 '
-											)
-										),
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ className: 'headsub' },
-												'Certifications '
-											),
-											_react2.default.createElement(
-												'td',
-												{ className: 'result' },
-												'5 '
-											)
-										),
-										_react2.default.createElement(
-											'tr',
-											null,
-											_react2.default.createElement(
-												'td',
-												{ className: 'head' },
-												'Previously Used Testers '
-											),
-											_react2.default.createElement(
-												'td',
-												{ className: 'result' },
-												'Result '
-											)
-										)
-									),
-									_react2.default.createElement(
-										'div',
-										{ 'class': 'panel-block' },
-										_react2.default.createElement(
-											_reactRouterDom.Link,
-											{ 'class': 'button is-link is-outlined is-fullwidth',
-												to: '/companyresults' },
-											'Search'
-										)
-									)
-								)
-							)
-						)
-					)
-				)
-			)
-		)
-	);
-};
-
-exports.default = CompanyMain;
-
-/***/ }),
-/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20224,15 +20023,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(107);
+  module.exports = __webpack_require__(106);
 } else {
-  module.exports = __webpack_require__(110);
+  module.exports = __webpack_require__(109);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 107 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20248,7 +20047,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(0),l=__webpack_require__(36),B=__webpack_require__(8),C=__webpack_require__(6),ba=__webpack_require__(37),da=__webpack_require__(38),ea=__webpack_require__(39),fa=__webpack_require__(40),ia=__webpack_require__(41),D=__webpack_require__(12);
+var aa=__webpack_require__(0),l=__webpack_require__(36),B=__webpack_require__(7),C=__webpack_require__(6),ba=__webpack_require__(37),da=__webpack_require__(38),ea=__webpack_require__(39),fa=__webpack_require__(40),ia=__webpack_require__(41),D=__webpack_require__(12);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -20468,7 +20267,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 108 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20483,7 +20282,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(109);
+var isNode = __webpack_require__(108);
 
 /**
  * @param {*} object The object to check.
@@ -20496,7 +20295,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 109 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20524,7 +20323,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 110 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20546,10 +20345,10 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var React = __webpack_require__(0);
-var invariant = __webpack_require__(9);
+var invariant = __webpack_require__(8);
 var warning = __webpack_require__(13);
 var ExecutionEnvironment = __webpack_require__(36);
-var _assign = __webpack_require__(8);
+var _assign = __webpack_require__(7);
 var emptyFunction = __webpack_require__(6);
 var EventListener = __webpack_require__(37);
 var getActiveElement = __webpack_require__(38);
@@ -20558,8 +20357,8 @@ var containsNode = __webpack_require__(40);
 var focusNode = __webpack_require__(41);
 var emptyObject = __webpack_require__(12);
 var checkPropTypes = __webpack_require__(15);
-var hyphenateStyleName = __webpack_require__(111);
-var camelizeStyleName = __webpack_require__(113);
+var hyphenateStyleName = __webpack_require__(110);
+var camelizeStyleName = __webpack_require__(112);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -35926,7 +35725,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 111 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35941,7 +35740,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(112);
+var hyphenate = __webpack_require__(111);
 
 var msPattern = /^ms-/;
 
@@ -35968,7 +35767,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 112 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36004,7 +35803,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 113 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36019,7 +35818,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(114);
+var camelize = __webpack_require__(113);
 
 var msPattern = /^-ms-/;
 
@@ -36047,7 +35846,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 114 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36080,6 +35879,289 @@ function camelize(string) {
 }
 
 module.exports = camelize;
+
+/***/ }),
+/* 114 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(9);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var CompanyMain = function CompanyMain(props) {
+
+	return _react2.default.createElement(
+		'div',
+		{ className: 'container' },
+		_react2.default.createElement(
+			'div',
+			{ className: 'navbar-brand' },
+			_react2.default.createElement(
+				'a',
+				{ className: 'navbar-item title', href: '../' },
+				_react2.default.createElement('img', { id: 'icon', src: '../img/icon.png', alt: 'Logo' })
+			),
+			_react2.default.createElement(
+				'span',
+				{ className: 'navbar-burger burger', 'data-target': 'navbarMenu' },
+				_react2.default.createElement('span', null),
+				_react2.default.createElement('span', null),
+				_react2.default.createElement('span', null)
+			)
+		),
+		_react2.default.createElement(
+			'section',
+			{ 'class': 'section' },
+			_react2.default.createElement(
+				'div',
+				{ 'class': 'container' },
+				_react2.default.createElement(
+					'div',
+					{ 'class': 'columns' },
+					_react2.default.createElement('div', { 'class': 'column is-1' }),
+					_react2.default.createElement(
+						'div',
+						{ 'class': 'column is-7' },
+						_react2.default.createElement(
+							'div',
+							{ 'class': 'columns' },
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'column is-half' },
+								_react2.default.createElement(
+									'aside',
+									{ 'class': 'menu' },
+									_react2.default.createElement(
+										'ul',
+										{ 'class': 'menu-list' },
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												_reactRouterDom.Link,
+												{ className: '',
+													to: '/companyprofile'
+												},
+												'Company Profile'
+											)
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												_reactRouterDom.Link,
+												{ className: 'is-active',
+													to: '/companysearch'
+												},
+												'Search for Testers'
+											)
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												_reactRouterDom.Link,
+												{ className: '',
+													to: '/companymain'
+												},
+												'Search History'
+											)
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												_reactRouterDom.Link,
+												{ className: '',
+													to: '/companymain'
+												},
+												'Previously Used Testers'
+											)
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												_reactRouterDom.Link,
+												{ className: '',
+													to: '/companymain'
+												},
+												'Recommended Testers'
+											)
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												_reactRouterDom.Link,
+												{ className: '',
+													to: '/companymain'
+												},
+												'Matches'
+											)
+										),
+										_react2.default.createElement(
+											'li',
+											null,
+											_react2.default.createElement(
+												_reactRouterDom.Link,
+												{ className: '',
+													to: '/companymain'
+												},
+												'Messages'
+											)
+										)
+									)
+								)
+							),
+							_react2.default.createElement(
+								'div',
+								{ 'class': 'column is-half' },
+								_react2.default.createElement(
+									'nav',
+									{ 'class': 'panel' },
+									_react2.default.createElement(
+										'p',
+										{ 'class': 'panel-heading' },
+										'Search for Tester'
+									),
+									_react2.default.createElement('table', { className: 'table' }),
+									_react2.default.createElement(
+										'tbody',
+										null,
+										_react2.default.createElement(
+											'tr',
+											null,
+											_react2.default.createElement(
+												'td',
+												{ className: 'head' },
+												'Company Rating '
+											),
+											_react2.default.createElement(
+												'td',
+												{ className: 'result' },
+												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+												_react2.default.createElement('span', { className: 'fa fa-star checked' }),
+												'  '
+											)
+										),
+										_react2.default.createElement(
+											'tr',
+											null,
+											_react2.default.createElement(
+												'td',
+												{ className: 'head' },
+												'Company Systems Used '
+											)
+										),
+										_react2.default.createElement(
+											'tr',
+											null,
+											_react2.default.createElement(
+												'td',
+												{ id: 'systems' },
+												_react2.default.createElement(
+													'ul',
+													null,
+													_react2.default.createElement(
+														'li',
+														null,
+														'Windows'
+													),
+													_react2.default.createElement(
+														'li',
+														null,
+														'Linux'
+													)
+												)
+											)
+										),
+										_react2.default.createElement(
+											'tr',
+											null,
+											_react2.default.createElement(
+												'td',
+												{ className: 'head' },
+												'Company Minimum Qualifications'
+											)
+										),
+										_react2.default.createElement(
+											'tr',
+											null,
+											_react2.default.createElement(
+												'td',
+												{ className: 'headsub' },
+												'Years Experience '
+											),
+											_react2.default.createElement(
+												'td',
+												{ className: 'result' },
+												'5 '
+											)
+										),
+										_react2.default.createElement(
+											'tr',
+											null,
+											_react2.default.createElement(
+												'td',
+												{ className: 'headsub' },
+												'Certifications '
+											),
+											_react2.default.createElement(
+												'td',
+												{ className: 'result' },
+												'5 '
+											)
+										),
+										_react2.default.createElement(
+											'tr',
+											null,
+											_react2.default.createElement(
+												'td',
+												{ className: 'head' },
+												'Previously Used Testers '
+											),
+											_react2.default.createElement(
+												'td',
+												{ className: 'result' },
+												'Result '
+											)
+										)
+									),
+									_react2.default.createElement(
+										'div',
+										{ 'class': 'panel-block' },
+										_react2.default.createElement(
+											_reactRouterDom.Link,
+											{ 'class': 'button is-link is-outlined is-fullwidth',
+												to: '/companyresults' },
+											'Search'
+										)
+									)
+								)
+							)
+						)
+					)
+				)
+			)
+		)
+	);
+};
+
+exports.default = CompanyMain;
 
 /***/ })
 /******/ ]);
