@@ -81,45 +81,24 @@ const CompanyMain = (props) => {
                            <div class="column is-half">
                               <nav class="panel">
                                  <p class="panel-heading">
-								 	Search for Tester
+								 	Your conversation with User 42892
                                  </p>
 								 <table className="table" />
-									<tbody>
-										<tr>
-											<strong><td className="head">Rating </td></strong>
-											<td className="result">{starinput} </td>
-										</tr>
-										<tr>
-										<strong><td className="head">Systems Used </td></strong>
-										</tr>
-										<tr>
-											<td id="systems">
-											<form>
-											&emsp;<input type="checkbox" name="system" value="Windows"/> Windows<br/>
-											&emsp;<input type="checkbox" name="system" value="Linux"/> Linux<br/>
-											&emsp;<input type="checkbox" name="system" value="Linux"/> Unix<br/>
-											&emsp;<input type="checkbox" name="system" value="Mac"/> Cisco Hardware<br/>
-											&emsp;<input type="checkbox" name="system" value="Other"/> McAfee Firewall<br/>
-											&emsp;<input type="checkbox" name="system" value="Other"/><input type="text" placeholder="Other System" /> <br/>
-											</form>
-											</td>
-										</tr><br/>
-										<tr>
-											<strong><td className="head" colspan="3">Minimum Qualifications</td></strong>
-										</tr>
-										<tr>
-											<strong><td className="headsub">Years Experience </td></strong>
-											<td className="result"><input type="text"/> </td>
-										</tr>
-										<tr>
-											<strong><td className="headsub">Certifications </td></strong>
-											<td className="result"><input type="text"/> </td>
-										</tr>
-									</tbody>
+								 <tbody>
+								 <tr><th valign = "top"> You: </th><td> Hey! I'm interested in hiring you for our app. </td></tr>
+                                 <tr> <th width = "28%" valign = "top"> User 42892: </th><td> Cool! What's it do tho </td> </tr>
+                                 <tr><th valign = "top"> You: </th> <td> We connect Pen Testers and Companies. Kind of like what we're trying to do right now! </td> </tr>
+                                 <tr> <th valign = "top"> User 42892: </th><td> OMG that joke was so lame not interested thank you {"\n\n\n"} </td> </tr>
+								 </tbody>
+								 <br/>
+								 <br/>
+								 <form>
+                                 <input type = "text" style={{width: 320}} placeholder = "Enter Message" />
+                                 </form>
                                  <div class="panel-block">
                                     <Link class="button is-link is-outlined is-fullwidth"
 									to="/companyresults">
-                                    Search
+                                    Send
                                     </Link>
                                  </div>
                               </nav>
