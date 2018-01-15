@@ -26,7 +26,7 @@ const CompanyMain = (props) => {
                               <aside class="menu">
                                  <ul class="menu-list">
                                     <li>
-                                    	<Link className="is-active"
+                                    	<Link className=""
 											to="/companyprofile"
 											>
 											Company Profile
@@ -41,7 +41,7 @@ const CompanyMain = (props) => {
                                     </li>
                                     <li>
                                     	<Link className=""
-											to="/companyprevioustesters"
+											to="/companymain"
 											>
 											Previously Used Testers
 										</Link>
@@ -54,7 +54,7 @@ const CompanyMain = (props) => {
 										</Link>
                                     </li>
                                     <li>
-                                    	<Link className=""
+                                    	<Link className="is-active"
 											to="/companymatches"
 											>
 											Matches
@@ -63,112 +63,70 @@ const CompanyMain = (props) => {
                                  </ul>
                               </aside>
                            </div>
-                           <div class="column is-half">
-                              <nav class="panel">
-                                 <p class="">
-								 	<strong>Company Information</strong>
-                                 </p>
+                           <div class="">
+                              <nav class="">
 								 <table className="table" width="100%">
 									<tbody>
 										<tr>
-											<td className="head">Rating </td>
-											<td className="result">
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-											</td>
-										</tr>
-										<tr>
-											<td className="head">Recent Reviews</td>
+											<th className="head"><strong>Matched Users</strong></th>
+											<th>Date Matched</th>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 42892</a></td>
 											<td className="result">
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
+												Jan 1, 2018 07:23 PM
+											</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 82747</a></td>
+											<td className="result">
+												Jan 8, 2018 01:03 PM
 											</td>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 74802</a></td>
 											<td className="result">
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
+												Jan 12, 2018 01:27 PM
 											</td>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 12849</a></td>
 											<td className="result">
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
+												Jan 14, 2018 05:16 PM
 											</td>
 										</tr>
-									</tbody>
-								</table>
-								<p class="">
-								 	<strong>Systems Used</strong>
-                                </p>
-								<table className="table" width="100%">
-									<tbody>
 										<tr>
-											<td className="result">&emsp;Debian Linux<br />
-																&emsp;Windows Server 2012<br />
-																&emsp;McAfee Firewall 315-C1-P<br />
-																&emsp;Cisco SG300 Switches<br />
-																</td>
-										</tr>
-									</tbody>
-								</table>
-								<table className="table" width="100%">
-									<tbody>
-										<tr>
+										<td className="head"><a>&emsp;User 32472</a></td>
 											<td className="result">
-												<input></input>
+												Jan 14, 2018 05:23 PM
 											</td>
+										</tr>
+																				<tr>
+											<td className="head"><a>&emsp;User 82747</a></td>
 											<td className="result">
-												<button>Add System</button>
+												Jan 14, 2018 05:43 PM
+											</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 13578</a></td>
+											<td className="result">
+												Jan 15, 2018 02:12 PM
+											</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 75382</a></td>
+											<td className="result">
+												Jan 15, 2018 02:50 PM
+											</td>
+										</tr>
+										<tr>
+										<td className="head"><a>&emsp;User 42764</a></td>
+											<td className="result">
+												Jan 15, 2018 04:17 PM
 											</td>
 										</tr>
 									</tbody>
-								</table>
-								<p class="">
-								 	<strong>Minimum Tester Qualifications</strong>
-                                </p>
-                                <table className="table" width="100%">
-									<tbody>
-										<tr>
-											<td className="headsub">Years Experience </td>
-											<td className="result">5 </td>
-										</tr>
-										<tr>
-											<td className="headsub">Certifications </td>
-										</tr>
-										<tr>
-										<td className="result">&emsp;CISSP<br />
-																&emsp;SSCP<br />
-																&emsp;OSCP<br />
-																</td>
-										</tr>
-									</tbody>
-								</table>
-																<table className="table" width="100%">
-									<tbody>
-										<tr>
-											<td className="result">
-												<input></input>
-											</td>
-											<td className="result">
-												<button>Add Cetification</button>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+									</table>
                               </nav>
                            </div>
                         </div>

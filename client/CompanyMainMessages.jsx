@@ -48,7 +48,7 @@ const CompanyMain = (props) => {
 										</Link>
 									</li>
                                     <li>
-	                                    <Link className="is-active"
+	                                    <Link className=""
 											to="/companysearch"
 											>
 											Search for Testers
@@ -70,7 +70,7 @@ const CompanyMain = (props) => {
                                     </li>
                                     <li>
                                     	<Link className=""
-											to="/companymatches"
+											to="/companymain"
 											>
 											Matches
 										</Link>
@@ -83,6 +83,7 @@ const CompanyMain = (props) => {
                                  <p class="panel-heading">
 								 	Search for Tester
                                  </p>
+								 <table className="table" width="100%">
 									<tbody>
 										<tr>
 											<strong><td className="head">Rating </td></strong>
@@ -115,6 +116,7 @@ const CompanyMain = (props) => {
 											<td className="result"><input type="text"/> </td>
 										</tr>
 									</tbody>
+								</table>
                                  <div class="panel-block">
                                     <Link class="button is-link is-outlined is-fullwidth"
 									to="/companyresults">

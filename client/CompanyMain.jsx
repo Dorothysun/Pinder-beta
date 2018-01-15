@@ -41,14 +41,7 @@ const CompanyMain = (props) => {
                                     </li>
                                     <li>
                                     	<Link className=""
-											to="/companymain"
-											>
-											Search History
-										</Link>
-                                    </li>
-                                    <li>
-                                    	<Link className=""
-											to="/companymain"
+											to="/companyprevioustesters"
 											>
 											Previously Used Testers
 										</Link>
@@ -62,16 +55,9 @@ const CompanyMain = (props) => {
                                     </li>
                                     <li>
                                     	<Link className=""
-											to="/companymain"
+											to="/companymatches"
 											>
 											Matches
-										</Link>
-                                    </li>
-                                    <li>
-                                    	<Link className=""
-											to="/companymain"
-											>
-											Messages
 										</Link>
                                     </li>
                                  </ul>

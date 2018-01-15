@@ -13,7 +13,9 @@ import CompanySearch from './CompanySearch.jsx';
 import CompanyResults from './CompanyResults.jsx';
 import CompanyMainProfile from './CompanyMainProfile.jsx';
 import CompanyMainSearch from './CompanyMainSearch.jsx';
-
+import CompanyMainMatches from './CompanyMainMatches.jsx';
+import CompanyMainMessages from './CompanyMainMessages.jsx';
+import CompanyMainPreviousTesters from './CompanyMainPreviousTesters.jsx';
 
 const chance = new Chance();
 
@@ -39,6 +41,15 @@ class App extends React.Component {
               <Route path='/companyresults' 
                   component={() => 
                     <CompanyResults />} />
+              <Route path='/companymatches' 
+                  component={() => 
+                    <CompanyMainMatches />} />
+              <Route path='/companymessages' 
+                  component={() => 
+                    <CompanyMainMessages />} />
+              <Route path='/companyprevioustesters' 
+                  component={() => 
+                    <CompanyMainPreviousTesters />} />
               <Route exact path='/' component={WhatAreYou} />
             </Switch>
         </div>

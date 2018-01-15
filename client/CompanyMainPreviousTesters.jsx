@@ -1,6 +1,21 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+var starinput = (<div class="stars">
+<form action="">
+  <input class="star star-5" id="star-5-2" type="radio" name="star"/>
+  <label class="star star-5" for="star-5-2"></label>
+  <input class="star star-4" id="star-4-2" type="radio" name="star"/>
+  <label class="star star-4" for="star-4-2"></label>
+  <input class="star star-3" id="star-3-2" type="radio" name="star"/>
+  <label class="star star-3" for="star-3-2"></label>
+  <input class="star star-2" id="star-2-2" type="radio" name="star"/>
+  <label class="star star-2" for="star-2-2"></label>
+  <input class="star star-1" id="star-1-2" type="radio" name="star"/>
+  <label class="star star-1" for="star-1-2"></label>
+</form>
+</div>);
+
 const CompanyMain = (props) => {
 
 	return (
@@ -26,7 +41,7 @@ const CompanyMain = (props) => {
                               <aside class="menu">
                                  <ul class="menu-list">
                                     <li>
-                                    	<Link className="is-active"
+                                    	<Link className=""
 											to="/companyprofile"
 											>
 											Company Profile
@@ -40,7 +55,7 @@ const CompanyMain = (props) => {
 										</Link>
                                     </li>
                                     <li>
-                                    	<Link className=""
+                                    	<Link className="is-active"
 											to="/companyprevioustesters"
 											>
 											Previously Used Testers
@@ -55,7 +70,7 @@ const CompanyMain = (props) => {
                                     </li>
                                     <li>
                                     	<Link className=""
-											to="/companymatches"
+											to="/companymain"
 											>
 											Matches
 										</Link>
@@ -65,22 +80,12 @@ const CompanyMain = (props) => {
                            </div>
                            <div class="column is-half">
                               <nav class="panel">
-                                 <p class="">
-								 	<strong>Company Information</strong>
-                                 </p>
 								 <table className="table" width="100%">
 									<tbody>
 										<tr>
-											<td className="head">Rating </td>
-											<td className="result">
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
-											</td>
-										</tr>
-										<tr>
-											<td className="head">Recent Reviews</td>
+											<th className="head"><strong>Previous Testers</strong></th>
+											<th>Rating</th>
+											<th>Date</th>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 42892</a></td>
@@ -89,8 +94,19 @@ const CompanyMain = (props) => {
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star checked"></span>
-												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star-half checked"></span>
 											</td>
+											<td className="result"> 2018-01</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 82747</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star-half checked"></span>
+											</td>
+											<td className="result"> 2017-11</td>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 74802</a></td>
@@ -99,76 +115,68 @@ const CompanyMain = (props) => {
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star checked"></span>
 											</td>
+											<td className="result"> 2017-07</td>
 										</tr>
 										<tr>
 											<td className="head"><a>&emsp;User 12849</a></td>
 											<td className="result">
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star-half checked"></span>
+											</td>
+											<td className="result"> 2017-04</td>
+										</tr>
+										<tr>
+										<td className="head"><a>&emsp;User 32472</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star checked"></span>
 												<span className="fa fa-star checked"></span>
 											</td>
+											<td className="result"> 2017-02</td>
 										</tr>
-									</tbody>
-								</table>
-								<p class="">
-								 	<strong>Systems Used</strong>
-                                </p>
-								<table className="table" width="100%">
-									<tbody>
-										<tr>
-											<td className="result">&emsp;Debian Linux<br />
-																&emsp;Windows Server 2012<br />
-																&emsp;McAfee Firewall 315-C1-P<br />
-																&emsp;Cisco SG300 Switches<br />
-																</td>
-										</tr>
-									</tbody>
-								</table>
-								<table className="table" width="100%">
-									<tbody>
-										<tr>
+																				<tr>
+											<td className="head"><a>&emsp;User 82747</a></td>
 											<td className="result">
-												<input></input>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
 											</td>
+											<td className="result"> 2017-02</td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 13578</a></td>
 											<td className="result">
-												<button>Add System</button>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
 											</td>
+											<td className="result"> 2016-12 </td>
+										</tr>
+										<tr>
+											<td className="head"><a>&emsp;User 75382</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star-half checked"></span>
+											</td>
+											<td className="result"> 2016-11 </td>
+										</tr>
+										<tr>
+										<td className="head"><a>&emsp;User 42764</a></td>
+											<td className="result">
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star checked"></span>
+												<span className="fa fa-star-half checked"></span>
+											</td>
+											<td className="result"> 2016-09 </td>
 										</tr>
 									</tbody>
-								</table>
-								<p class="">
-								 	<strong>Minimum Tester Qualifications</strong>
-                                </p>
-                                <table className="table" width="100%">
-									<tbody>
-										<tr>
-											<td className="headsub">Years Experience </td>
-											<td className="result">5 </td>
-										</tr>
-										<tr>
-											<td className="headsub">Certifications </td>
-										</tr>
-										<tr>
-										<td className="result">&emsp;CISSP<br />
-																&emsp;SSCP<br />
-																&emsp;OSCP<br />
-																</td>
-										</tr>
-									</tbody>
-								</table>
-																<table className="table" width="100%">
-									<tbody>
-										<tr>
-											<td className="result">
-												<input></input>
-											</td>
-											<td className="result">
-												<button>Add Cetification</button>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+									</table>
                               </nav>
                            </div>
                         </div>
