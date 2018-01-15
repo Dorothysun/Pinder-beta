@@ -77,3 +77,28 @@ label.star:before {
   content: '\f006';
   font-family: FontAwesome;
 }
+
+a.navbar-item:hover {
+    background-color: #E1E1EA;
+    color: black;
+}
+
+.navbar .container {
+    padding: 20px;
+}
+
+.navbar-item img {
+    max-height: inherit;
+}
+
+.font-color{
+    color:white;
+}
+
+.navbar .container{
+    padding:0;
+}
+
+.subtitle:not(:last-child), .title:not(:last-child){
+    margin-bottom: 0;
+}

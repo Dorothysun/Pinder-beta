@@ -14,9 +14,6 @@ html,body {
   background-color:"red";
 }
 
-.barheight{
-  height:10%;
-}
 
 .equipment-card {
     -transform-style: preserve-3d;

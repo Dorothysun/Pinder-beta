@@ -33,3 +33,30 @@ p {
 p.subtitle {
   padding-top: 1rem;
 }
+
+body #background {
+    background: url("../img/background.jpeg");    
+    background-size:     cover;                      /*           <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
+
+.navbar-end .a{
+    color: white;
+}
+/* .bgwidth { width: 100%; }
+.bgheight { height: 100%; } */
+
+/* .hero .navbar{
+    height:10%;
+} */
+
+.hero .navbar { 
+    background:rgba(97, 96, 98, 0.56);
+    /* height: 60px; */
+    /* filter: alpha(opacity=10); */
+    /* opacity: 0.6; */
+}
+/* 
+.hero-head{
+} */

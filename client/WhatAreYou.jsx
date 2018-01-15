@@ -9,7 +9,7 @@ const WhatAreYou = (props) => {
 			<nav className="navbar">
 			<div className="container">
 				<div className="navbar-brand">
-					<a className="navbar-item" href="../">
+					<a className="navbar-item title" href="../">
 						<img id= "icon" src="../img/icon.png" alt="Logo" />
 					</a>
 					<span className="navbar-burger burger" data-target="navbarMenu">
@@ -20,20 +20,15 @@ const WhatAreYou = (props) => {
 				</div>
 				<div id="navbarMenu" className="navbar-menu">
 				<div className="navbar-end">
-					<a className="navbar-item">
-					Home
+					<a className="navbar-item"><font color="white">Home</font>
 					</a>
-					<a className="navbar-item">
-					Examples
+					<a className="navbar-item"><font color="white">Examples</font>
 					</a>
-					<a className="navbar-item">
-					Features
+					<a className="navbar-item"><font color="white">Features</font>
 					</a>
-					<a className="navbar-item">
-					Team
+					<a className="navbar-item"><font color="white">Team</font>
 					</a>
-					<a className="navbar-item">
-					Help
+					<a className="navbar-item"><font color="white">Help</font>
 					</a>
 				</div>
 				</div>
@@ -46,14 +41,14 @@ const WhatAreYou = (props) => {
 				<div className="column is-5">
 					<figure className="image is-4by3">
 					{/* <img src="http://placehold.it/800x600" alt="Description" /> */}
-					<img id="logo" src="../img/front.png" alt="Logo" />					
+					{/* <img id="logo" src="../img/front.png" alt="Logo" />					 */}
 					</figure>
 				</div>
 				<div className="column is-6 is-offset-1">
-					<h1 className="title is-2">
+					<h1 className="title is-2 font-color">
 					Find the best date
 					</h1>
-					<h2 className="subtitle is-4">
+					<h2 className="subtitle is-4 font-color">
 					Today					
 					</h2>
 					<br />
