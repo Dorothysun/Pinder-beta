@@ -8,6 +8,7 @@ html, body {
   background: #F0F2F4;
 }
 .card {
+  background-color: black;
   margin-bottom: 4rem;
   height: 60%
 }
@@ -18,6 +19,7 @@ html, body {
   font-size: 12px;
   font-weight: bold;
   color: #666;
+  border-top: solid 2px;
 }
 
 .card-content p {
@@ -25,17 +27,17 @@ html, body {
 }
 
 .card-content{
-  height: 91%;
+  height: 90.2%;
   font-size:110%;
 }
-
 
 .section {
   padding: 1.5rem 1.5rem;
 }
 
 .card{
-  background-color:#f2f2f2;
+  background-color:#dcdcdc;
+  border: solid .5px;
 }
 .card:hover{
   background-color:white;
