@@ -59,9 +59,9 @@ function getCerts() {
 	let numCerts = Math.round((Math.random() * 4) + 1);
 	let ret = [];
 	for (let i = 0; i < numCerts; i++) {
-		let cert = certs[Math.round(Math.random() * certs.length)];
+		let cert = certs[Math.round(Math.random() * certs.length) - 1];
 		while (ret.includes(cert))
-			cert = certs[Math.round(Math.random() * certs.length)];
+			cert = certs[Math.round(Math.random() * certs.length) - 1];
 		ret.push(cert);
 	}
 	return ret.join(', ');
@@ -75,22 +75,34 @@ var skills = [
 ];
 
 function getSkills() {
-	let numSkills = Math.round((Math.random() * 4) + 2);
+	let numSkills = Math.round((Math.random() * 3) + 2);
 	let ret = [];
 	for (let i = 0; i < numSkills; i++) {
-		let skill = skills[Math.round(Math.random() * skills.length)];
+		let skill = skills[Math.round(Math.random() * skills.length) - 1];
 		while (ret.includes(skill))
-			skill = skills[Math.round(Math.random() * skills.length)];
+			skill = skills[Math.round(Math.random() * skills.length) - 1];
 		ret.push(skill);
 	}
 	return ret.join(', ');
 }
 
 var systems = [ 
-	'linux', 'unix', 'Windows Server 2008/2012', 'CISCO Switches',
+	'Linux', 'Unix', 'Windows Server 2008/2012', 'CISCO Switches',
 	'McAfee Firewalls', 'Sonic Wall Firewalls', 'Sophos Firewalls',
 	'Catalyst Switches'
 ];
+
+function getSystems() {
+	let numSystems = Math.round((Math.random() * 3) + 1);
+	let ret = [];
+	for (let i = 0; i < numSystems; i++) {
+		let system = systems[Math.round(Math.random() * systems.length) - 1];
+		while (ret.includes(system))
+			system = systems[Math.round(Math.random() * systems.length) - 1];
+		ret.push(system);
+	}
+	return ret.join(', ');
+}
 
 class Card extends React.Component {
 	constructor(props) {
@@ -135,6 +147,10 @@ class Card extends React.Component {
 								<td> {getCerts()}</td>
 							</tr>
 							<tr>
+								<th> Systems </th>
+								<td> {getSystems()}</td>
+							</tr>
+							<tr>
 								<th> Writing Sample </th>
 								<td><a>View Writing Sample</a></td>
 							</tr>
@@ -162,6 +178,10 @@ class Card extends React.Component {
 							<tr>
 								<th> Certifications </th>
 								<td> {getCerts()}</td>
+							</tr>
+							<tr>
+								<th> Systems </th>
+								<td> {getSystems()}</td>
 							</tr>
 							<tr>
 								<th> Writing Sample </th>
